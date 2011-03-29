@@ -1,0 +1,3081 @@
+Changes since 1.2 (all Changes from 1.2 to 1.2.4cvs at the time of 1.3.3.1 release are included in the 1.3.3.1 Version too)
+
+Scribus - 1.3.3.2cvs
+====================
+- 0003874: [PDF] Scribus generated flawed PDFs whenever ChessBase diagram fonts are used (fschmid)
+- 0003834: [Translation] Interface language cannot be changed (cbradney)
+- 0003851: [Fonts] not compatible with freetype-2.2 (avox)
+- 0003832: [Import / Export] Export to Image & PDF Draw Gray Margin Box (fschmid)
+- 0003296: [Plug-ins] Barcode generator changes page layout (jghali)
+- 0003705: [Picture Frames] TIFF files cause crash (jghali)
+- 0003868: [Usability] Inserting a glyph should clear the list of glyphs (fschmid)
+- 0003815: [General] Creating text frames in master pages copied from normal pages triggers crash (cbradney)
+- 0003593: [General] Crash in PageItem_TextFrame in 1.3.3.1cvs and 1.3.4 cvs (avox)
+- 0003522: [Win32] Crashes after some frames are moved (jghali)
+- 0003777: [User Interface] Delete page menu item is not working! (cbradney)
+- 0003859: [Picture Frames] Items in context menu greyed out until second invocation (cbradney)
+- 0003836: [Usability] Get rid of the white background by default on image frames? (cbradney)
+- 0003806: [User Interface] New CMYK icon for palettes uploaded (the current icon doesn't really represent reality) 
+(plinnell)
+- 0003840: [Translation] translation po file for greek interface (plinnell)
+- 0003819: [Translation] Estonian GUI Translation (cbradney)
+- 0003761: [Internal] crash when clicking into white space in "font preview" (cbradney)
+
+
+Scribus - 1.3.3.1
+=================
+- 0003607: [PDF] Dump lors de l'exportation en PDF
+- 0003603: [Releases] 1.3.3.1 Release (plinnell)
+
+Scribus - 1.3.3.1cvs
+====================
+- 0003130: [Scripter] newPage does load template, no error though (subik)
+- 0003510: [Scripter] Crash in Scripter Console when using F2 to run in console in Russian (subik)
+- 0003524: [Win32] scribus steals the focus when dragging files over scribus window (jghali)
+- 0003520: [Story Editor / Text Frames] copying inline frames results in crash (fschmid)
+- 0003560: [Import / Export] PDF export should not `upsample' images (fschmid)
+- 0003552: [Internal] Switching profiles to a corrupt profile in Doc Setup results in a crash (jghali)
+- 0003586: [Import / Export] Sometimes when you do an "Export as Image" some objects are missing. (fschmid)
+- 0003598: [Import / Export] antiword doesnt import that doc file. (jghali)
+- 0002747: [Usability] PDF Export: Image "quality" setting only applies to JPEG (plinnell)
+- 0003572: [User Interface] wrong tooltips for properties buttons (plinnell)
+- 0003567: [Translation] Updated de and de_ol translation files for 1.3.3.1 (plinnell)
+- 0003542: [Story Editor / Text Frames] Guide manager miscalculates columns (subik)
+- 0003267: [Translation] Interface doesn't use Galician (jghali)
+- 0003523: [Shape Drawing] group command is disabled after multiple duplicae (cbradney)
+- 0003420: [Win32] Scribus is unable to load GhostScript (plinnell)
+- 0003546: [Story Editor / Text Frames] Sig11 when attempting to insert a smart hyphen into an empty text frame (cbradney)
+- 0003524: [Win32] scribus steals the focus when dragging files over scribus window (jghali)
+- 0003510: [Scripter] Crash in Scripter Console when using F2 to run in console in Russian (subik)
+- 0003130: [Scripter] newPage does load template, no error though (subik)
+- 0003523: [Shape Drawing] group command is disabled after multiple duplicae (cbradney)
+
+
+
+Scribus - 1.3.3cvs
+==================
+- 0003438: [Plug-ins] font preview: on startup a preview is shown although no font is selected (subik)
+- 0003434: [General] Snap to guides can screw up vector graphics (fschmid)
+- 0003504: [Fonts] Duplicate Fonts are reported as broken, when in fact they are not (avox)
+- 0003465: [Translation] update of russian translation for upcoming v1.3.3 (cbradney)
+- 0003506: [Translation] Translation.sl (Slovenian) (plinnell)
+- 0003318: [Win32] crashes after some 10 frames are moved from page to page without saving (jghali)
+- 0003365: [Import / Export] Importing images from the attached ps file fails (avox)
+- 0003405: [User Interface] zoom from view menu changes page displayed (fschmid)
+- 0003469: [Import / Export] scribus produces broken screen and pdf output when importing a psd file with layers (fschmid)
+- 0003502: [Translation] Ukrainian translation update for the upcoming 1.3.3 release (cbradney)
+- 0003500: [Translation] Updated de and de_ol files (cbradney)
+- 0003498: [Translation] Dutch translation update for 1.3.3 (plinnell)
+- 0003499: [Translation] german 1.3.3 translation (cbradney)
+- 0003272: [PDF] Exported PDFX3 with missing TITLE-Information (fschmid)
+- 0003240: [Picture Frames] Clipping path still sometimes not correct (fschmid)
+- 0003238: [PDF] crash when exporting PDF (fschmid)
+- 0003427: [Win32] task bar reports "application scribus" if scribus windows gets grouped (cbradney)
+- 0003204: [General] Missing Aktion tag value for recreated bookmarks (fschmid)
+- 0003421: [Story Editor / Text Frames] inaccurate display and weird behavior of text alignment buttons in properties (cbradney)
+- 0003386: [PDF] Effects in Screen PDF display all pages without stopping (fschmid)
+- 0003145: [General] Switching UI language doesn't work for all dialogs (cbradney)
+- 0003372: [Undo/Redo] Restored text frames lose their content and don't accept sample text (avox)
+- 0003488: [Story Editor / Text Frames] Item list corruption when linking items and not renumbering them (cbradney)
+- 0003496: [User Interface] Untranslatable strings (cbradney)
+- 0003418: [Shape Drawing] "Round corners" in PP needs to be greyed out for polygons and shapes (fschmid)
+- 0003492: [Plug-ins] colorwheel: when doing import colors it should be possible to import by double click (subik)
+- 0003495: [Plug-ins] colorwheel: entering a value into radius field and pressing enter adds the colours (subik)
+- 0003491: [Plug-ins] color wheel: inner circle is not updated when choosing color components (subik)
+- 0003485: [Translation] Updated Danish Translation (plinnell)
+- 0003487: [Story Editor / Text Frames] Crash caused by middle clicking text frame when in frame linking mode. (cbradney)
+- 0003478: [General] Converting page to Master Page doesn't carry margins. (cbradney)
+- 0003438: [Plug-ins] font preview: on startup a preview is shown although no font is selected (subik)
+- 0003371: [Import / Export] Scribus doesn't read its own EPS export correctly (avox)
+- 0003483: [Translation] Polish translation update for 1.3.3 (cbradney)
+- 0003470: [Translation] Catalan translation update (plinnell)
+- 0003372: [Undo/Redo] Restored text frames lose their content and don't accept sample text (avox)
+- 0003467: [Translation] Galician translation update (plinnell)
+- 0003145: [General] Switching UI language doesn't work for all dialogs (cbradney)
+- 0003464: [Translation] Japanese Translation FIle for Scribus 1.3.2 (cbradney)
+- 0003411: [Story Editor / Text Frames] X/Y position co-ordinates revert to 0 (fschmid)
+- 0003456: [User Interface] Frame type cannot be changed from the context menu (fschmid)
+- 0003418: [Shape Drawing] "Round corners" in PP needs to be greyed out for polygons and shapes (fschmid)
+- 0003405: [User Interface] zoom from view menu changes page displayed (fschmid)
+- 0003435: [User Interface] Counting of items in document outline starts with zero (fschmid)
+- 0003413: [General] arrowheads on lines not duplicated (fschmid)
+- 0003447: [User Interface] Current icons to add objects don't work well on very dark objects (NEW ICONS INCLUDED) (fschmid)
+- 0003453: [Translation] translation update for 1.3.3 (fschmid)
+- 0003384: [User Interface] Barcode Generator: Wrong tooltip displayed (cbradney)
+- 0003388: [User Interface] Dialog for master pages is too small (cbradney)
+- 0003401: [Translation] pt_BR translation update (plinnell)
+- 0003380: [Internal] invalid properties state stored in files (cbradney)
+- 0003397: [Translation] Updated nb_NO translation for 1.3.3 cvs. (cbradney)
+- 0003398: [Translation] Updated Finnish translation (Tsoots)
+- 0003395: [Translation] Updated German de and de_ol files (plinnell)
+- 0003394: [Translation] Catalan translation update (plinnell)
+- 0003395: [Translation] Updated German de and de_ol files (plinnell)
+- 0003050: [User Interface] context menu text partially obscured (Tsoots)
+- 0003381: [User Interface] initial misdisplay of toolbars on starting Scribus (cbradney)
+- 0003387: [User Interface] Enlarge text field in the short words dialog (subik)
+- 0003393: [Translation] Polish translation update for 1.3.3 (cbradney)
+- 0003156: [Win32] Scribus window does not save maximized status on exit (jghali)
+- 0003383: [Story Editor / Text Frames] Change of text colour isn't registered in the properties palette (cbradney)
+- 0003382: [Story Editor / Text Frames] weird behavior of text box mirror buttons in new CVS (cbradney)
+- 0003392: [Translation] Danish updated translation for Scribus 1.3.3 (cbradney)
+- 0003391: [Translation] Catalan translation update (cbradney)
+- 0003204: [General] Missing Aktion tag value for recreated bookmarks (fschmid)
+- 0003390: [Undo/Redo] Crash when undoing creation of a text item while editing text in it (cbradney)
+- 0003309: [Usability] Ship Scribus with a deafult keyboard shortcut for the properties palette (plinnell)
+- 0003376: [Story Editor / Text Frames] Story Editor alwys offers non-existing ligatures (cbradney)
+- 0003368: [User Interface] erreur d'orthographe dans menu "Affichage" (cbradney)
+- 0003378: [Plug-ins] Barcode Generator: Wrong descriptions when changig the code type (subik)
+- 0003377: [Translation] Update for de.ts and first de_OL.ts files (cbradney)
+- 0003375: [Translation] pt_BR translation update (cbradney)
+- 0003132: [Win32] Drag files into the Scribus window should open them (jghali)
+- 0002989: [General] Refresh Issue on creating new doc (jghali)
+- 0003280: [User Interface] tools toolbar appears before the scribus window is open (Tsoots)
+- 0003362: [General] page margins are not shown correctly (cbradney)
+- 0002280: [Usability] Export to PDF / register "General" / tooltip of "Compatibility" (PDF-version) (plinnell)
+- 0003361: [Shape Drawing] fit to screen uses page size in document setup and not the real page dimensions. (cbradney)
+- 0001757: [User Interface] toolbar customizations are not being saved on exit. the original toolbar setting is always restored (Tsoots)
+- 0003356: [Import / Export] Crash when loading a .psd file into an image frame after importing a .eps file (avox)
+- 0003357: [Translation] German ts update (cbradney)
+- 0003248: [User Interface] Selection of lines is shown incorrectly (fschmid)
+- 0002989: [General] Refresh Issue on creating new doc (jghali)
+- 0003334: [Undo/Redo] Add in undo/redo for image offset, scale and DPI (cbradney)
+- 0002246: [Import / Export] PDF Export: Add tooltipp to Save button when it is disabled due to pdf/x-3 profile but empty info text (plinnell)
+- 0002387: [General] objects change their position too easy (cbradney)
+- 0003346: [Plug-ins] Font preview: crash when entering stars like * (subik)
+- 0003353: [General] Cancel opening of a sla with missing fonts and creating a new doc crashes scribus (cbradney)
+- 0003123: [Import / Export] Import sla file into new page & deleting this page leaves text frames behind (cbradney)
+- 0001440: [User Interface] unwanted resizing at click (fschmid)
+- 0003337: [User Interface] Moving controll points with mouse doesn't produce what the gui shows (fschmid)
+- 0003205: [General] Changing a bookmark's position does not enable "Save" button (fschmid)
+- 0002336: [User Interface] after adding a new Prepress-Check Profile is only displayed after reopening the preferences although it is created. (cbradney)
+- 0003290: [Styles] ParagraphStyles are not always alphabetically listed (subik)
+- 0003211: [User Interface] Margins in single page mode mixed up in Master Pages editing. (cbradney)
+- 0003340: [Picture Frames] Add in ability to paste contents of an image frame with an absolute relation to canvas (cbradney)
+- 0003137: [Picture Frames] editing a picture is not allowed directly after inserting it (cbradney)
+- 0003087: [Shape Drawing] Stroke width is limited to 36pt (cbradney)
+- 0003051: [Story Editor / Text Frames] mis-/nondisplay of overflow text near end of frame and in following linked frames (fschmid)
+- 0003064: [Internal] ReformDoc: TODO fix these tr("None") things (subik)
+- 0002716: [User Interface] Standard layout should only be available if it makes sense (subik)
+- 0000761: [User Interface] Right-click on graphics tablet triggers drag-and-drop (fschmid)
+- 0003333: [Translation] German ts update for 1.3.3. (cbradney)
+- 0003239: [Picture Frames] Picture mask not applied when using a clipping path (jghali)
+- 0003235: [User Interface] Allow resizing of frames with arrow keys (cbradney)
+- 0003141: [Scripter] wrong sizes fore create-function (subik)
+- 0003243: [User Interface] modifying master pages jumps to page 1 (fschmid)
+- 0002294: [User Interface] Undo System: Record multiple duplications as one action (Tsoots)
+- 0000697: [User Interface] ctrl+end / ctrl+home (cbradney)
+- 0000390: [User Interface] constrained movement of objects with a modifier key (cbradney)
+- 0003093: [Story Editor / Text Frames] ctrl+cursor right/left should ignore the spaces (cbradney)
+- 0000316: [User Interface] Image- and textframe creation by dragging from the right to the left side, and fom down to up isn´t possible (cbradney)
+- 0000250: [Shape Drawing] Add control-click/drag for lines to keep to 15 degree angles (cbradney)
+- 0003297: [General] Scribus Crashes with Code 11 when trying to create a MasterPage of al previously layouted Page. (cbradney)
+- 0000316: [User Interface] Image- and textframe creation by dragging from the right to the left side, and fom down to up isn´t possible (cbradney)
+- 0003298: [Translation] pt_BR translation (cbradney)
+- 0000250: [Shape Drawing] Add control-click/drag for lines to keep to 45 degree angles (cbradney)
+- 0003239: [Picture Frames] Picture mask not applied when using a clipping path (jghali)
+- 0000390: [User Interface] constrained movement of objects with a modifier key (cbradney)
+- 0000697: [User Interface] ctrl+end / ctrl+home (cbradney)
+- 0002435: [General] Trying to undo actions done on Master Page Objects whilst in operating on normal Pages triggers a crash. (Tsoots)
+- 0002335: [Usability] picture move mode: inconsistent cursor. the cursor randomly changes between a hand and a cross. (cbradney)
+- 0003240: [Picture Frames] Clipping path still sometimes not correct (fschmid)
+- 0003216: [Import / Export] Misplacing Characters/lines on eps Load (avox)
+- 0002294: [User Interface] Undo System: Record multiple duplications as one action (Tsoots)
+- 0003290: [Styles] ParagraphStyles are not always alphabetically listed (subik)
+- 0003285: [Fonts] Loosing i and l when converting them to outline and exportig to PDF (fschmid)
+- 0003286: [Integration] Attempt to edit image fails with "libgimpui-2.0-0.dll was not found" (plinnell)
+- 0003272: [PDF] Exported PDFX3 with missing TITLE-Information (fschmid)
+- 0003060: [Plug-ins] font preview: hold cursor down pressed updates the preview but not the font name (subik)
+- 0003279: [General] Converting text frame to polygon triggers crash (avox)
+- 0003154: [User Interface] Preflight button always says "ignore errors" even when it finds no errors. (subik)
+- 0003269: [Story Editor / Text Frames] Clear content doesn't work (avox)
+- 0002730: [Plug-ins] Barcode generation Engine via Plugin (subik)
+- 0003230: [Import / Export] Master page import and deletion issues (cbradney)
+- 0003231: [Printing] Images will be printing in black when you apply effects (jghali)
+- 0003167: [Picture Frames] EPS previews are wrong in image frames (fschmid)
+- 0002054: [General] Hang on saving a complex drawing as an scs. (fschmid)
+- 0002684: [Picture Frames] Enlargement of shapes on values other than per cent (cbradney)
+- 0003249: [User Interface] Allow showing and hiding of rulers (cbradney)
+- 0003251: [PDF] Missing converted to path vectors in PDF export (fschmid)
+- 0003254: [Plug-ins] Update for Short Words French (plinnell)
+- 0003253: [Import / Export] Add Microsoft Office Word Importer (Tsoots)
+- 0003260: [Import / Export] Try to make grouped images visible makes crash (cbradney)
+- 0003192: [User Interface] Preview-Background-Color in Change Paragraph Style Dialoge not applied (subik)
+- 0002716: [User Interface] Standard layout should only be available if it makes sense (subik)
+- 0003126: [Documentation] Help index does not have headings (subik)
+- 0003234: [Import / Export] Palm PDB importer (subik)
+- 0003263: [Translation] new version of scribus.ru.ts (cbradney)
+- 0003243: [User Interface] modifying master pages jumps to page 1 (fschmid)
+- 0003252: [Translation] GenericName[sv] in scribus.desktop is not in Swedish (plinnell)
+- 0003253: [Import / Export] Add Microsoft Office Word Importer (Tsoots)
+- 0003249: [User Interface] Allow showing and hiding of rulers (cbradney)
+- 0003216: [Import / Export] Misplacing Characters/lines on eps Load (avox)
+- 0003245: [Story Editor / Text Frames] Cursor positioning when the canvas size is extended by a frame off a page is incorrect (cbradney)
+- 0003212: [User Interface] Applying Master doesn't change margins on page. (fschmid)
+- 0003145: [General] Switching UI language doesn't work for all dialogs (cbradney)
+- 0003216: [Import / Export] Misplacing Characters/lines on eps Load (avox)
+- 0003237: [Translation] Translation update: pt_BR (cbradney)
+- 0002741: [Usability] changes on the properties pallete are never undone (cbradney)
+- 0003231: [Printing] Images will be printing in black when you apply effects (jghali)
+- 0002684: [Picture Frames] Enlargement of shapes on values other than per cent (cbradney)
+- 0003230: [Import / Export] Master page import and deletion issues (cbradney)
+- 0002054: [General] Hang on saving a complex drawing as an scs. (fschmid)
+- 0003212: [User Interface] Applying Master doesn't change margins on page. (fschmid)
+- 0003110: [Shape Drawing] 'Combine Polygons' may leave holes in objects. (fschmid)
+- 0003166: [User Interface] incorrect ruler origin, possible loss of precision in page item placement (fschmid)
+- 0001757: [User Interface] toolbar customizations are not being saved on exit. the original toolbar setting is always restored (Tsoots)
+- 0003052: [User Interface] desire persistence of UI settings (Tsoots)
+- 0003103: [User Interface] Text size is always 0.5 pt (cbradney)
+- 0002596: [General] Switching GUI from German to Polish: some strings don't switch (cbradney)
+- 0003153: [Printing] Preflight does not ignore items marked 'printing disabled' (fschmid)
+- 0003121: [Story Editor / Text Frames] copy text frames with text attached to a path won't work (fschmid)
+- 0003165: [Story Editor / Text Frames] Inserting any character over selected text from the Insert menu doesn't overwrite the selection (cbradney)
+- 0003158: [User Interface] fonts in property palette are sorted A-Z, then a-z (fschmid)
+- 0002786: [Picture Frames] Use Exif info in jpeg,Tiff and PSD for previews and thumbnails (fschmid)
+- 0003174: [Plug-ins] Collect for output fails to include image files in the directory (subik)
+- 0002616: [User Interface] Arrange pages is still broken (fschmid)
+- 0003122: [Plug-ins] Change the sample text in the font preview window (subik)
+- 0003058: [User Interface] Horizontal (vertical) guides are removed when moving them to the scratch space at the right or left side (top or bottom) (fschmid)
+- 0003166: [User Interface] incorrect ruler origin, possible loss of precision in page item placement (fschmid)
+- 0003139: [User Interface] Arrange Pages: Pages created in this palette do not have a page number in it (fschmid)
+- 0003134: [User Interface] copy with right click and drag does not work (cbradney)
+- 0003067: [Win32] home icon looks wrong (jghali)
+- 0003070: [Win32] issue with activating picture edit mode with doubleclick (jghali)
+- 0003116: [Printing] Add in ability to import printer minimum margins from CUPS (cbradney)
+- 0002356: [Usability] File - open recent files: Add accelerators for the entries (&1, &2 etc) (cbradney)
+- 0003169: [User Interface] Path separators in recent file menu should be a backslash on windows (cbradney)
+- 0003165: [Story Editor / Text Frames] Inserting any character over selected text from the Insert menu doesn't overwrite the selection (cbradney)
+- 0003153: [Printing] Preflight does not ignore items marked 'printing disabled' (fschmid)
+- 0003136: [Win32] gimp-win-remote doesn't work (jghali)
+- 0003135: [Win32] Edit picture crashes GIMP 2.2 (jghali)
+- 0003142: [Fonts] Add symbols for font formats in all dialogs where the font can be changed (fschmid)
+- 0003146: [General] Sample text: "NO" button works as "Yes" (cbradney)
+- 0003134: [User Interface] copy with right click and drag does not work (cbradney)
+- 0003059: [Picture Frames] if show picture is disabled then the doubleclick to edit the position of the picture should also be disabled. (cbradney)
+- 0003147: [Printing] Add in ability to get the printer margins from the printer for prefs or current document (cbradney)
+- 0003148: [Translation] Updated Danish Translation for 1.3.x (plinnell)
+- 0003139: [User Interface] Arrange Pages: Pages created in this palette do not have a page number in it (fschmid)
+- 0003138: [User Interface] Layer Palette: layers should have unique names (fschmid)
+- 0002296: [Story Editor / Text Frames] always take regular font style as standard, some have bold, some italics (fschmid)
+- 0001557: [Plug-ins] current document as template
+- 0003133: [Win32] Even after closing a file i cannot delete the folder that was containing the file (jghali)
+- 0003110: [Shape Drawing] 'Combine Polygons' may leave holes in objects. (fschmid)
+- 0003070: [Win32] issue with activating picture edit mode with doubleclick (jghali)
+- 0003090: [User Interface] guide manager displays wrong guides (subik)
+- 0003044: [User Interface] Name of plug-ins in "About plug-ins" dialog don't fit ListBox (subik)
+- 0003119: [Story Editor / Text Frames] Cadre de texte personnalisé (fschmid)
+- 0003049: [Plug-ins] no preview displayed in font preview box (subik)
+- 0003071: [Win32] StoryEditor's window caption is out of reach by default (jghali)
+- 0003081: [Story Editor / Text Frames] selecting text in a frame crashes scribus (cbradney)
+- 0003069: [Documentation] Make COPYING and other basic docs install too (ringerc)
+- 0003083: [Story Editor / Text Frames] Paragraph style preview crashed when in edit mode (subik)
+- 0003086: [Import / Export] Crash when opening OpenOffice.org Draw file
+- 0003053: [General] Scribus eats all my memory when built with cairo support (fschmid)
+- 0003077: [Printing] Clip to margins option should be disabled by default (jghali)
+- 0003079: [Shape Drawing] Select bezier tool, right click on canvas = crash (cbradney)
+- 0003068: [Translation] Ukrainian Translation Update for 1.3.2 release. (cbradney)
+
+Scribus - 1.3.2
+===============
+- 0002869: [Integration] Please put Scribus on Ubuntu/Gnome into Graphics menu (malex)
+- 0003082: [Website] Add News item into sf.net (plinnell)
+- 0002362: [PPCOSX] Scribus hangs or crashes while searching for fonts (avox)
+
+Scribus - 1.3.2cvs
+==================
+
+- 0002843: [Story Editor / Text Frames] masterpages: table containing sample text doesnt display it (fschmid)
+- 0003022: [Shape Drawing] Opening a Polygon with the Node-Editor doesn't work at all. (cbradney)
+- 0003021: [Shape Drawing] Closing Polylines with the Node-Editor sometimes causes change of the object being edited (fschmid)
+- 0002881: [PPCOSX] Scribus/Aqua cannot write or read directories/files (avox)
+- 0003040: [Win32] on the page layout palette every page has a white rectangle inside its icon. (jghali)
+- 0002843: [Story Editor / Text Frames] masterpages: table containing sample text doesnt display it (fschmid)
+- 0003046: [Translation] update of russian translation for upcoming v1.3.2 (cbradney)
+- 0003021: [Shape Drawing] Closing Polylines with the Node-Editor sometimes causes change of the object being edited (fschmid)
+- 0003022: [Shape Drawing] Opening a Polygon with the Node-Editor doesn't work at all. (cbradney)
+- 0003034: [Documentation] docs html fonts are too small in code or pre tags on windows (jghali)
+- 0002948: [Scripter] scripter constantly grabs focus if running a long script (jghali)
+- 0003035: [Translation] German translation update for 1.3.2 (plinnell)
+- 0003033: [Translation] Finnish Translation update (Tsoots)
+- 0003030: [Translation] Updated nb_NO translation for 1.3.2 (cbradney)
+- 0003029: [Translation] Updated German translation for 1.3.2 (cbradney)
+- 0003015: [User Interface] When scratch space is changed, master pages are drawn incorrectly (fschmid)
+- 0001391: [User Interface] Double click does not select the word under the cursor (cbradney)
+- 0003025: [General] Crash after creating a text frame and double click to edit it (cbradney)
+- 0003026: [Translation] German translation for 1.3.2. (cbradney)
+- 0003024: [Shape Drawing] Converting Objects with the Context-Menu doesn't work always correctly. (cbradney)
+- 0003023: [Shape Drawing] Changing the level of an Object with the Context-Menu or the Properties Palette doesn't work correctly. (cbradney)
+- 0002792: [Printing] EPS images are shown too small when printed (fschmid)
+- 0003000: [Documentation] Clean up the Templates for 1.3.2 Release (plinnell)
+- 0002872: [General] Collect for output duplicates images unnecessarily (subik)
+- 0001771: [Picture Frames] Unable to choose scale frame to image size, does not exist, only exists in the context menu of "adjust frame to picture" (cbradney)
+- 0003016: [General] Canvas mode: Impossible to move textcursor by mouseclick to end of sentence (cbradney)
+- 0003018: [Translation] Polish translation update for 1.3.2cvs (cbradney)
+- 0002983: [Printing] br1 template causes crash when print preview is chosen with defaults (fschmid)
+- 0002961: [Plug-ins] scrolling down the font list in the font preview makes the preview part bigger and bigger (subik)
+- 0002966: [Picture Frames] state of active layers is not saved with a psd-file (fschmid)
+- 0002912: [Story Editor / Text Frames] Page/Copy won't always redraw textframes correctly (fschmid)
+- 0002981: [Picture Frames] Appending EPS image to imageframe leads to wrong rendered image (fschmid)
+- 0002988: [Fonts] Font Substitutions do not work automatically with doc created on linux, then opened on Win32 (jghali)
+- 0003003: [Fonts] Font Substitution Mismatches going from Win32 > Linux (jghali)
+- 0003009: [Win32] any text after "@" disappears when entered in the SE on Win32 (jghali)
+- 0000387: [Import / Export] importing a page
+- 0002944: [Story Editor / Text Frames] bad cursor placing in textframes when two columns (cbradney)
+- 0002656: [General] Crash working with font sampler generated docs (cbradney)
+- 0002510: [Import / Export] Sig. 11 when importing text (oo writer) and substituting font (cbradney)
+- 0003004: [Usability] different order of layers in context menu and layer palette (cbradney)
+- 0003012: [Story Editor / Text Frames] Resizing a multiselection of textboxes changes font size (cbradney)
+- 0002873: [Story Editor / Text Frames] Linking several text frames (cbradney)
+- 0002056: [Picture Frames] the image effect dialog should be also opened by the image context menu (cbradney)
+- 0002638: [User Interface] "Unlink text frames" tool availability is weird (cbradney)
+- 0002946: [Scripter] patch for faster insertText() (subik)
+- 0001759: [General] improve file dialogs with last used files
+- 0003010: [User Interface] refresh issue with two layers and selected objects (cbradney)
+- 0002982: [Import / Export] Fill color in text frame blocks text export to PDF (cbradney)
+- 0002832: [Plug-ins] Color Artifacts in Color Wheel under win32 (subik)
+- 0002968: [Plug-ins] color wheel: list of colors in the document is not updated (subik)
+- 0002293: [User Interface] Ctrl +- should zoom in/out by the stepping value set in preferences (cbradney)
+- 0002995: [Story Editor / Text Frames] press shift+end should select the the whole line but it only selects the line -1 character (cbradney)
+- 0002960: [Picture Frames] rotating picture frames rotates the mouse controls too (fschmid)
+- 0002946: [Scripter] patch for faster insertText() (subik)
+- 0002982: [Import / Export] Fill color in text frame blocks text export to PDF (cbradney)
+- 0002998: [User Interface] the zoom out button does not respect the minimal zoom factor set in preferences (cbradney)
+- 0002964: [General] Crash changing PDF version prefs (ringerc)
+- 0002958: [Picture Frames] End the picture move mode by doubleclick does not work. (cbradney)
+- 0002990: [Win32] new paths for fonts are not recognized (jghali)
+- 0002977: [General] Importing Master Pages produces signal 11 crashes (sometimes) and always imports the page into another master (cbradney)
+- 0002875: [Internal] crash while playing with documents (open, close) (ringerc)
+- 0002624: [User Interface] activating spot or registration colour enlarges the edit colour dialog (fschmid)
+- 0001913: [Import / Export] Save as SVG compressed adds incorrect extension (subik)
+- 0002921: [Picture Frames] Crash with Sig 11 when importing the attached cmyk jpg image with embedded icc profile (plinnell)
+- 0002871: [General] resize canvas to standard size around doc pages (fschmid)
+- 0001139: [Picture Frames] Assign GIMP effects filters to pictures (plinnell)
+- 0001099: [General] Inline graphics (fschmid)
+- 0002770: [Scripter] setStyle (Scripter) applies only to first selected frame (subik)
+- 0001606: [Scripter] setStyle changes complete frame style despite selection (subik)
+- 0001346: [Story Editor / Text Frames] Tiny frames (plinnell)
+- 0001591: [Story Editor / Text Frames] Layout changes after document opened (fschmid)
+- 0002756: [Fonts] Hebrew letters don't print correctly from scribus (fschmid)
+- 0002303: [User Interface] delete all guides, please (subik)
+- 0002937: [Picture Frames] image will be display if "display" was set false before import (fschmid)
+- 0002943: [Internal] Patch : replace system() calls by using QProcess (fschmid)
+- 0000273: [Import / Export] More PDF presentation effects wanted (fschmid)
+- 0002938: [User Interface] basepoint being ignored (fschmid)
+- 0002945: [Usability] Can't change column number for newly created text frame (cbradney)
+- 0002969: [Internal] Undoing creation of any object crashes Scribus (cbradney)
+- 0002293: [User Interface] Ctrl +- should zoom in/out by the stepping value set in preferences (cbradney)
+- 0002972: [Internal] EPS, PDF in image frame, PS/EPS file preview broken (ringerc)
+- 0002956: [General] Scribus stops on launching while "Initializing Story Editor" (jghali)
+- 0002951: [Internal] Crash when closing last open document using CTL-W (fschmid)
+- 0002945: [Usability] Can't change column number for newly created text frame (cbradney)
+- 0002957: [Translation] Polish translation update for 1.3.2cvs (plinnell)
+- 0002950: [Translation] scribus --help > Unicode glyphs replaced by ? (ringerc)
+- 0002912: [Story Editor / Text Frames] Page/Copy won't always redraw textframes correctly (fschmid)
+- 0001993: [Import / Export] New PDF viewer and presentation effects with visible bookmarks or full screen (fschmid)
+- 0002938: [-] basepoint being ignored (fschmid)
+- 0002937: [Picture Frames] image will be display if "display" was set false before import (fschmid)
+- 0001214: [User Interface] margins for facing landscape pages (plinnell)
+- 0002303: [User Interface] delete all guides, please (subik)
+- 0002756: [Fonts] Hebrew letters don't print correctly from scribus (fschmid)
+- 0002871: [General] resize canvas to standard size around doc pages (fschmid)
+- 0002921: [Picture Frames] Crash with Sig 11 when importing the attached cmyk jpg image with embedded icc profile (plinnell)
+- 0001913: [Import / Export] Save as SVG compressed adds incorrect extension (subik)
+- 0002624: [User Interface] activating spot or registration colour enlarges the edit colour dialog (fschmid)
+- 0001099: [General] Inline graphics (fschmid)
+- 0001759: [General] improve file dialogs with last used files
+- 0001591: [Story Editor / Text Frames] Layout changes after document opened (fschmid)
+- 0001346: [Story Editor / Text Frames] Tiny frames (plinnell)
+- 0001606: [Scripter] setStyle changes complete frame style despite selection (subik)
+- 0002770: [Scripter] setStyle (Scripter) applies only to first selected frame (subik)
+- 0000952: [Documentation] Need a brief doc of what tags the HTML importer can handle (subik)
+- 0002800: [Import / Export] Wanted option to import EPS or SVG into a new document. (ringerc)
+- 0002257: [Import / Export] Importing svg leads to crash (cbradney)
+- 0002857: [General] SIG #11 (after using Paragraph Styles) (cbradney)
+- 0002914: [General] Edit Nodes Palette does not trigger un-saved state after changes (fschmid)
+- 0002738: [Styles] Copying text frames produces duplicated Paragraph Styles (duplicated Styles are prefixed by “Copy of”) (cbradney)
+- 0002740: [Story Editor / Text Frames] Text frames: Impossible to locate the cursor at the end of line (cbradney)
+- 0001254: [User Interface] Cant get into panning mode when object is selected without clicking away (cbradney)
+- 0001308: [User Interface] Support simple variables in spinbox calculations (cbradney)
+- 0002711: [Internal] order of the page in document (cbradney)
+- 0002463: [Internal] Issues with win32 build (jghali)
+- 0002929: [Translation] Polish translation update for 1.3.2 (cbradney)
+- 0002463: [Internal] Issues with win32 build (jghali)
+- 0002886: [General] Incorrect Measurements displaying in inches in palette (cbradney)
+- 0002711: [Internal] order of the page in document (cbradney)
+- 0002923: [General] Scribus does not start correctly under Gnome (cbradney)
+- 0000722: [User Interface] "Printing" message box (cbradney)
+- 0001308: [User Interface] Support simple variables in spinbox calculations (cbradney)
+- 0002795: [User Interface] Add panning option to a mouse button drag (cbradney)
+- 0001254: [User Interface] Cant get into panning mode when object is selected without clicking away (cbradney)
+- 0002915: [Internal] fparser library has been updated (fschmid)
+- 0002917: [Translation] Hungarian translation update (cbradney)
+- 0002740: [Story Editor / Text Frames] Text frames: Impossible to locate the cursor at the end of line (cbradney)
+- 0002738: [Styles] Copying text frames produces duplicated Paragraph Styles (duplicated Styles are prefixed by “Copy of”) (cbradney)
+- 0002420: [User Interface] Error message at startup is covered by the splash screen and the splash does not go away by clicking on it (ringerc)
+- 0002914: [General] Edit Nodes Palette does not trigger un-saved state after changes (fschmid)
+- 0002840: [Story Editor / Text Frames] multiple duplicating: textframes are not updated (cbradney)
+- 0002907: [Picture Frames] Adjust frame to image size has a minor rounding error (fschmid)
+- 0002805: [Picture Frames] Crash when deleting content of picture frames with effects applied (cbradney)
+- 0002291: [User Interface] after editing a colour that colour should still have the focus (cbradney)
+- 0002910: [Picture Frames] Multiple duplicate does not duplicate picture effects (fschmid)
+- 0002857: [General] SIG #11 (after using Paragraph Styles) (cbradney)
+- 0002908: [General] Flipping a group of objects triggers crash (cbradney)
+- 0002257: [Import / Export] Importing svg leads to crash (cbradney)
+- 0002906: [User Interface] Copy page to master page places items relative to location of original page, not the new master page's origin (cbradney)
+- 0002621: [Picture Frames] Color profiles for jpegs not saved (fschmid)
+- 0002892: [Import / Export] PDF form created by Scribus cannot be processed by ghostscript (fschmid)
+- 0002903: [User Interface] Implement a better progress dialog for printing and pdf export, with cancellation possibilty (cbradney)
+- 0002894: [Import / Export] Export to pdf doesn't colour arrowheads (fschmid)
+- 0002688: [Import / Export] PDF export needs progress dialog (cbradney)
+- 0002825: [User Interface] guidelines and grids are too thick (cbradney)
+- 0002649: [Win32] Unable to restore from minimized with modal dialogs active (jghali)
+- 0002797: [Win32] Scribus Does not find fonts installed via ATM Deluxe (jghali)
+- 0002282: [General] Scribus crashes when opening a file from the tutorial from Niyam Bhushan (cbradney)
+- 0002800: [Import / Export] Wanted option to import EPS or SVG into a new document. (ringerc
+- 0002817: [Usability] on the property palette the x/y,rotation values can still be changed after locking the objects (cbradney)
+- 0002355: [Import / Export] PDF Export: add accelerator for export layers and change resolution (cbradney)
+- 0002825: [User Interface] guidelines and grids are too thick (cbradney)
+- 0002282: [General] Scribus crashes when opening a file from the tutorial from Niyam Bhushan (fschmid)
+- 0000774: [User Interface] option to add guidelines to every page in a document (subik)
+- 0002855: [General] In manage guides, automatic guides row/col gap uses pts while displaying inches (subik)
+- 0002634: [Story Editor / Text Frames] "Automatic guides" referring to "selection" doesn' t work for columns (subik)
+- 0002633: [Story Editor / Text Frames] "Automatic Guides" doesn't take into account different page margins (subik)
+- 0002859: [User Interface] Bright fonts in the paragraph preview are unreadable (subik)
+- 0002783: [User Interface] Tidy up section numbering GUI and add some more functionality (cbradney)
+- 0002798: [PPCOSX] Scribus crashes when duplicating a text area with colour graduation (avox)
+- 0002775: [General] color profile discarded or swapped (fschmid)
+- 0002774: [PPCOSX] Silently stops at launch during ICC profiles readings (International characters) (ringerc)
+- 0002757: [General] When I insert a pdf field into a document and use underline only, it is not editable in the pdf. (fschmid)
+- 0002630: [Scripter] Constant FIRSTPAGERIGHT/FIRSTPAGELEFT works in the wrong direction (subik)
+- 0002807: [Import / Export] Crash when opening *.sla file (cbradney)
+- 0002720: [Styles] replace paragraph style on delete (fschmid)
+- 0002837: [User Interface] Sig11 on duplicate or import of master pages (cbradney)
+- 0001083: [User Interface] Smaller font size for tool palettes (Tsoots)
+- 0002856: [Import / Export] Running collect for output a subsequent time does not copy the images or update their paths (subik)
+- 0000709: [User Interface] Switched Yes/No and Yes/No/Cancel dialogues (cbradney)
+- 0002398: [Internal] Get plugins to compile on Windows (win32) (jghali)
+- 0002634: [Story Editor / Text Frames] "Automatic guides" referring to "selection" doesn' t work for columns (subik)
+- 0000774: [User Interface] option to add guidelines to every page in a document (subik)
+- 0002633: [Story Editor / Text Frames] "Automatic Guides" doesn't take into account different page margins (subik)
+- 0002859: [-] Bright fonts in the paragraph preview are unreadable (subik)
+- 0001083: [User Interface] Smaller font size for tool palettes (Tsoots)
+- 0002856: [Import / Export] Running collect for output a subsequent time does not copy the images or update their paths (subik)
+- 0002606: [General] "Delete" key doesn't delete frames (cbradney)
+- 0002854: [General] Scribus crashes after canceling startup dialog (plinnell)
+- 0002830: [Scripter] Cannot edit the text frames created using font sampler script (cbradney)
+- 0002848: [Import / Export] Scribus generated PDF has a wrong layout in Acrobat Reader (fschmid)
+- 0002850: [Translation] Updated nb_NO translation for 1.3.2cvs (plinnell)
+- 0002847: [User Interface] Spelling mistake in new document dialog (cbradney)
+- 0002423: [Documentation] add a howto for lipsum (plinnell)
+- 0002848: [Import / Export] Scribus generated PDF has a wrong layout in Acrobat Reader (fschmid)
+- 0002824: [Import / Export] import image: preview is buggy for some pictures (fschmid)
+- 0002815: [Printing] prepress checker doesnt recognize transparency in gradients for print preview (fschmid)
+- 0002829: [General] Ignore Button in pre-flighter does not work (fschmid)
+- 0002837: [User Interface] Sig11 on duplicate or import of master pages (cbradney)
+- 0002739: [Picture Frames] images gets "invisible" while editing shape (fschmid)
+- 0002830: [Scripter] Cannot edit the text frames created using font sampler script (cbradney)
+- 0002810: [Translation] Updated nb_NO translation for 1.3.2cvs (plinnell)
+- 0002824: [Import / Export] import image: preview is buggy for some pictures (fschmid)
+- 0002811: [Story Editor / Text Frames] SE doesn't remember the position where it was opened the last time (subik)
+- 0001246: [Picture Frames] doubleclick on image to move it works only after doubleclick, leave frame,doubleclick again (cbradney)
+- 0002814: [Printing] text with outline on a path looks wrong in print preview (fschmid)
+- 0002816: [Story Editor / Text Frames] cursor should be placed at the beginning of the textframe when pressing E to edit to (fschmid)
+- 0002082: [User Interface] add/remove image effects from the "in use" list by double-clicking the items (cbradney)
+- 0002820: [Translation] German translation update (cbradney)
+- 0002815: [Shape Drawing] prepress checker doesnt recognize transparency in gradients for print preview (fschmid)
+- 0002818: [Documentation] Typo in section "How to obtain the Scribus source" (cbradney)
+- 0002807: [Import / Export] Crash when opening *.sla file (cbradney)
+- 0002799: [Win32] Scripter : msvc compatibility patch (subik)
+- 0002806: [Translation] Updated nb_NO translation for 1.3.2cvs (plinnell)
+- 0002803: [Translation] Updated Danish Translation (plinnell)
+- 0002771: [Story Editor / Text Frames] Cursor position is not retained on window switch (malex)
+- 0002801: [Win32] Fix a bug where fonts located in subdirectories would not be loaded (cbradney)
+- 0002352: [User Interface] startup dialog: reach tabs by shortcuts (idea: alt+1, alt+2, alt+3) (cbradney)
+- 0002273: [Internal] Load correctly document located at drive root (win32) (cbradney)
+- 0002082: [User Interface] add/remove image effects from the "in use" list by double-clicking the items (cbradney)
+- 0001246: [Picture Frames] doubleclick on image to move it works only after doubleclick, leave frame,doubleclick again (cbradney)
+- 0002746: [Usability] PDF Export: Image compression settings could be clearer (ringerc)
+- 0002655: [Fonts] Startup font scan is very slow (fschmid)
+- 0002780: [Printing] Print range ìnput field has no focus (cbradney)
+- 0002219: [Internal] On Win32, add the ability to locate special directories and sytem fonts folder (ringerc)
+- 0002714: [Fonts] Embedding TrueType Fonts into PDF sometimes fails (fschmid)
+- 0002723: [Import / Export] Transparency in Gradients is lost in PDF export - regression from 1.2.4cvs (fschmid)
+- 0002772: [Import / Export] PDF export of raster images is broken (fschmid)
+- 0002690: [Import / Export] User requested compression choice not respected when exporting .jpg files into PDF (fschmid)
+- 0002719: [Import / Export] When importing an eps its size is set to 1 pt (fschmid)
+- 0002728: [Internal] Fix bad encoding handling in FileLoader, ScribusXML's .sla loading (ringerc)
+- 0002665: [Plug-ins] short words: buttons are activated after mouse_click (subik)
+- 0002721: [Plug-ins] Russian in Short Words (plinnell)
+- 0002666: [Plug-ins] Color names are not translated if i merge colors from the color wheel plugin (subik)
+- 0002787: [Internal] Memory leak in colour pixmap caches (cbradney)
+- 0002743: [General] Problem with XYZ when changing basepoints (cbradney)
+- 0002768: [User Interface] "Measurement" entry in Window Menu is higher than the other entries (cbradney)
+- 0002761: [Internal] Slow moving large vector groups - profiling data (fschmid)
+- 0002765: [General] copy and paste inserts page on the wrong page (fschmid)
+- 0002794: [Win32] Add a scribus font directory on win32 plus some scpaths cleanup (cbradney)
+- 0001742: [General] Let page numbered 1 be after document page 1 (cbradney)
+- 0002778: [General] Implement section numbering (cbradney)
+- 0002213: [Internal] mscv compatibility for main.cpp (jghali)
+- 0002183: [Documentation] Regenerate the doxygen docs for 1.3.1 (subik)
+- 0002701: [Scripter] Running Font sampler results in 1st page in right hand side of work area (subik)
+- 0002742: [Usability] modifier for big steps on spin boxes (fschmid)
+- 0002769: [Story Editor / Text Frames] New Style: preview is not updated if the value for character spacing is changed (fschmid)
+- 0002757: [General] When I insert a pdf field into a document and use underline only, it is not editable in the pdf. (fschmid)
+- 0002664: [Win32] Msvc compatibility patch (2005-10-03) (ringerc)
+- 0002630: [Scripter] Constant FIRSTPAGERIGHT/FIRSTPAGELEFT works in the wrong direction (subik)
+- 0002775: [General] color profile discarded or swapped (fschmid)
+- 0002739: [Picture Frames] images gets "invisible" while editing shape (fschmid)
+- 0002774: [PPCOSX] Silently stops at launch during ICC profiles readings (International characters) (ringerc)
+- 0000315: [User Interface] Document navigation improvements
+- 0002766: [User Interface] "Cut" in context menu is larger than the other entries. (cbradney)
+- 0002760: [Scripter] russian localization for CalendarWizard.py (plinnell)
+- 0002749: [General] Scribus crash with Signal 11 when trying to convert a page to Master Page (cbradney)
+- 0002732: [Translation] Italian sample text (plinnell)
+- 0002744: [User Interface] PDF Export/Printing: Add missing tooltips for advanced printing fucntions (plinnell)
+- 0002748: [Shape Drawing] Rounded corners with negative value are wrong (cbradney)
+- 0002743: [General] Problem with XYZ when changing basepoints (cbradney)
+- 0002746: [Usability] PDF Export: Image compression settings could be clearer (ringerc)
+- 0002666: [Plug-ins] Color names are not translated if i merge colors from the color wheel plugin (subik)
+- 0002720: [Styles] replace paragraph style on delete (fschmid)
+- 0002083: [Story Editor / Text Frames] inserting any text places the cursor in front of the inserted text although it should be after the inserted text (cbradney)
+- 0002728: [Internal] Fix bad encoding handling in FileLoader, ScribusXML's .sla loading (ringerc)
+- 0002183: [Documentation] Regenerate the doxygen docs for 1.3.1 (subik)
+- 0002665: [Plug-ins] short words: buttons are activated after mouse_click (subik)
+- 0002719: [Import / Export] When importing an eps its size is set to 1 pt (fschmid)
+- 0002722: [User Interface] Too small window by default (fschmid)
+- 0002723: [Import / Export] Transparency in Gradients is lost in PDF export - regression from 1.2.4cvs (fschmid)
+- 0002704: [General] Can't undo Custom Tab Fill char in Prefs/Tools (fschmid)
+- 0002721: [Plug-ins] Russian in Short Words (plinnell)
+- 0002718: [Translation] Updated Slovak Translation (plinnell)
+- 0002714: [Fonts] Embedding TrueType Fonts into PDF sometimes fails (fschmid)
+- 0002702: [User Interface] Tweak linked frame markers for size and colour (cbradney)
+- 0002710: [Shape Drawing] Change the keyboard modifiers for size locking. (cbradney)
+- 0002698: [Win32] Crash in ScImage when loading the textbased template (fschmid)
+- 0002606: [General] "Delete" key doesn't delete frames (cbradney)
+- 0002710: [Shape Drawing] Change the keyboard modifiers for size locking. (cbradney)
+- 0002083: [Story Editor / Text Frames] inserting any text places the cursor in front of the inserted text although it should be after the inserted text (cbradney)
+- 0002698: [Win32] Crash in ScImage when loading the textbased template (fschmid)
+- 0002697: [Import / Export] "collect for output" should change picture-paths to the archive output path (subik)
+- 0002702: [User Interface] Tweak linked frame markers for size and colour (cbradney)
+- 0002246: [Import / Export] Possibility to export PDF/X3 without infotext (fschmid)
+- 0002677: [Import / Export] OO Draw Import Crashes on Import - Regression from 1.2.x (fschmid)
+- 0002699: [General] running the scripter font sampler with current cvs crashes on run (cbradney)
+- 0002681: [Printing] Bug in print preview (fschmid)
+- 0002692: [Usability] warning dialog when closing unsaved document (cbradney)
+- 0002682: [Usability] "Add Node" button looses state (fschmid)
+- 0002689: [Printing] Spotcolours are converted to Processcolours when applied to Text. (fschmid)
+- 0002696: [Fonts] crash when replacing missing fonts in NL1 template (fschmid)
+- 0002687: [Internal] Latest font refactoring breaks code on linux but not on AVox Mac (avox)
+- 0002655: [Fonts] Startup font scan is very slow (fschmid)
+- 0002690: [Import / Export] User requested compression choice not respected when exporting .jpg files into PDF (fschmid)
+- 0002509: [Win32] Trying to load Arial Unicode MS with font preview cause crash (Win32) (jghali)
+- 0002234: [User Interface] Add a count to the copy page dialog (cbradney)
+- 0002675: [Translation] Polish localization for the CalendarWizard.py script (subik)
+- 0002671: [Build System] message in Xterminal (avox)
+- 0002569: [Plug-ins] Short-words: punctuation is not handled (subik)
+- 0002658: [Translation] Polish Translation Update for 1.3.1 (plinnell)
+- 0002654: [Internal] Possible bug in slotEditCopy (avox)
+- 0002653: [Translation] updated translation into Russian (cbradney)
+- 0002070: [PPCOSX] Print preview does not work (avox)
+
+
+Scribus - 1.3.1cvs
+==================
+- 0002488: [Releases] 1.3.1 release (plinnell)
+- 0001522: [General] configure wrongly reports detected Python version (subik)
+- 0002240: [PPCOSX] Story Editor Loses Focus When Called (avox)
+- 0001666: [Printing] Registration color reduced to black (fschmid)
+- 0002167: [Internal] Spot colours (fschmid)
+- 0002240: [PPCOSX] Story Editor Loses Focus When Called (avox)
+- 0002625: [Plug-ins] Cancelling Short Words triggers a crash (subik)
+- 0002381: [Shape Drawing] zooming is not possible with ctrl & +- when doubleclicking a shape to edit it (cbradney)
+- 0002422: [Internal] Attempting to change document preferences after running Font Sampler causes a crash
+- 0002478: [Story Editor / Text Frames] Editing text frames deletes text (fschmid)
+- 0002097: [Plug-ins] Re-write plugin API (ringerc)
+- 0002318: [General] duplicating a page duplicates it on top of every page (fschmid)
+- 0002643: [General] "Display Unprintable Area in Margin Colour": Colour isn't drawn correctly (fschmid)
+- 0002636: [General] When leaving the "link text frames" tool, the text chains are not hidden even when "Show text chains" is disabled (fschmid)
+- 0002569: [Plug-ins] Short-words: punctuation is not handled (subik)
+- 0002625: [Plug-ins] Cancelling Short Words triggers a crash (subik)
+- 0002639: [Plug-ins] Crash when deleting a text frame being edited (fschmid)
+- 0002496: [Styles] Scribus crashes with Sig 11 after trying to import a Master Page from a different document (fschmid)
+- 0001365: [Shape Drawing] Convert text on a path to outlines (fschmid)
+- 0002613: [Scripter] getAllObjects() and getPageItems() appear to return all the objects/items in document instead of just ones on the current page (fschmid)
+- 0002617: [Story Editor / Text Frames] Text flow around objects doesn't work as it should in one-column text frames (fschmid)
+- 0002619: [User Interface] Re-order quotation marks in the "Insert" menu (cbradney)
+- 0002640: [Translation] Ukrainian translation update for the upcoming 1.3.1 release (cbradney)
+- 0002627: [Fonts] PDF Export has problems with opentype fonts when split across several pages (fschmid)
+- 0002628: [Translation] Updated Danish Translation (plinnell)
+- 0002629: [Translation] Catalan translation update (plinnell)
+- 0002626: [Translation] german translation update (cbradney)
+- 0002623: [Translation] Polish Translation Update for 1.3.1 (fschmid)
+- 0002622: [Translation] Updated Danish Translation (plinnell)
+- 0002614: [General] Units in Doc preferences are not calculating properly in inches (cbradney)
+- 0002451: [Import / Export] "?" instead of cyrillic letters in pdf bookmarks (fschmid)
+- 0002381: [Shape Drawing] zooming is not possible with ctrl & +- when doubleclicking a shape to edit it (cbradney)
+- 0002287: [Import / Export] import a ps-file moves the ruler away (ringerc)
+- 0002612: [Picture Frames] Clipping paths don't get parsed correctly (fschmid)
+- 0002246: [Import / Export] Possibility to export PDF/X3 without infotext (fschmid)
+- 0002502: [Win32] psimport patch (win32 compatibility) (fschmid)
+- 0002321: [Win32] Add GhostScript support when gs directory contains blank spaces (win32) (fschmid)
+- 0002418: [Win32] Export symbols from plugins to enable loading (win32) (ringerc)
+- 0002466: [Win32] Perform ps to ps conversion using an explicit call to ghostscript (win32 compatibility) (fschmid)
+- 0002446: [Win32] Patch for gettext plugins and printpreview (win32 compatibility) (fschmid)
+- 0002467: [Win32] Search for pictures function does not work on win32 (cbradney)
+- 0002272: [Win32] Modified Path2Relative function for win32 compatibility (fschmid)
+- 0002490: [Win32] ScPaths patches (win32 compatibility) (fschmid)
+- 0002410: [Win32] Export symbols from main app (for win32 compat) (ringerc)
+- 0002442: [Win32] Patches for ps and pdf export (win32 compatibility) (fschmid)
+- 0002611: [Win32] Msvc compatibility patch (2005-09-24) (fschmid)
+- 0002428: [Picture Frames] EPS not transparent in PDF (fschmid)
+- 0002360: [User Interface] style - tabulators: the scroll buttons for the ruler don't work (fschmid)
+- 0002574: [General] When a master page is duplicated, in the saved doc, the duplicated items are on the source master page, not on the duplicata (fschmid)
+- 0002230: [User Interface] Report gs version being used in about dialog (ringerc)
+- 0002577: [General] Scribus forgets the Input profiles I have set on the next reload (fschmid)
+- 0002434: [General] Page copy doesn't work properly when inserting before (fschmid)
+- 0002393: [Story Editor / Text Frames] error message when linking in status bar (subik)
+- 0002602: [Story Editor / Text Frames] Text selection in the story editor is mighty slow (fschmid)
+- 0002607: [User Interface] Inconsistancy in doc settings and preferences (fschmid)
+- 0002604: [Translation] Class 'MyPluginImpl' lacks Q_OBJECT macro (cbradney)
+- 0002593: [Translation] Polish Translation Update for 1.3.1 (plinnell)
+- 0001929: [Import / Export] exporting selection to eps clips content (fschmid)
+- 0002399: [Shape Drawing] Ctrl + drag resizing is broken (fschmid)
+- 0002602: [Story Editor / Text Frames] Text selection in the story editor is mighty slow (fschmid)
+- 0002287: [Import / Export] import a ps-file moves the ruler away (ringerc)
+- 0002607: [User Interface] Inconsistancy in doc settings and preferences (fschmid)
+- 0002246: [Import / Export] Possibility to export PDF/X3 without infotext (fschmid)
+- 0002610: [Translation] Catalan translation update (plinnell)
+- 0002604: [Translation] Class 'MyPluginImpl' lacks Q_OBJECT macro (cbradney)
+- 0002570: [Story Editor / Text Frames] Special characters, when copied to search/replace dialog, are replaced by their raw display character (fschmid)
+- 0002417: [User Interface] Add a moving tool tip to the scrollbar to show the active page when scrolling (fschmid)
+- 0002571: [User Interface] copy page with tables not goods (fschmid)
+- 0002541: [Import / Export] PS/EPS importer crashes when used from File->Open (fschmid)
+- 0002553: [Build System] Make fails (ringerc)
+- 0002431: [General] Default layout for double sided documents (subik)
+- 0002594: [General] Signal 11 when (cbradney)
+- 0002536: [General] Add a dialog to the colour wheel dialog to enter "start" colour (subik)
+- 0002598: [Translation] updated slovenian translation (cbradney)
+- 0002595: [Translation] Galician Translation Update (plinnell)
+- 0002451: [Import / Export] "?" instead of cyrillic letters in pdf bookmarks (fschmid)
+- 0002567: [Picture Frames] Adjust Frame To Image is not independent of the canvas preview resolution (fschmid)
+- 0002322: [Internal] Rename CMYKColor to ScColor (fschmid)
+- 0002579: [Plug-ins] Polygon creation bug in EPS/PS importer after code clean (cbradney)
+- 0001176: [General] Calendar Helper (subik)
+- 0002517: [User Interface] menu entry for the story editor is heigher than any other menu entry (fschmid)
+- 0002562: [General] Easy move of image inside the frame with key - mouse combination (fschmid)
+- 0002592: [Translation] Missing strings in 1.3.1cvs TS file (cbradney)
+- 0002588: [Translation] Missing strings in TS file after update (cbradney)
+- 0002434: [General] Page copy doesn't work properly when inserting before (fschmid)
+- 0002393: [Story Editor / Text Frames] error message when linking in status bar (subik)
+- 0002561: [Printing] Crash when trying to Print Preview Font Sampler Output (fschmid)
+- 0002577: [General] Scribus forgets the Input profiles I have set on the next reload (fschmid)
+- 0002574: [General] When a master page is duplicated, in the saved doc, the duplicated items are on the source master page, not on the duplicata (fschmid)
+- 0002439: [User Interface] Recently run scripts are not remembered in the menu. (ringerc)
+- 0001666: [Printing] Registration color reduced to black (fschmid)
+- 0002110: [General] margins should be rotated as well
+- 0002406: [User Interface] Deleting Layer #1 causes Signal 11 crash (cbradney)
+- 0002498: [Story Editor / Text Frames] Dialog is not closing (cbradney)
+- 0001930: [Import / Export] Export produces broken PDF or EPS (fschmid)
+- 0002496: [Styles] Scribus crashes with Sig 11 after trying to import a Master Page from a different document (fschmid)
+- 0002410: [Internal] Export symbols from main app (for win32 compat) (ringerc)
+- 0001961: [Internal] Limit symbol visibility in plug-ins for efficiency (ringerc)
+- 0002212: [Internal] Check for preferences writing errors and warn user. (ringerc)
+- 0002097: [Plug-ins] Re-write plugin API (ringerc)
+- 0002314: [User Interface] clicking on the layer handler on the bottom of scribus twice should fold the drop down menu again (fschmid)
+- 0002216: [Internal] 1.3's Import Pages doesnt know about 1.3 documents (fschmid)
+- 0002315: [General] copying a page doesn't copy the orientation (fschmid)
+- 0002395: [Internal] Portability: Casting between pointer and int (fschmid)
+- 0001445: [General] enable optional building with cairo (fschmid)
+- 0002502: [Internal] psimport patch (win32 compatibility) (fschmid)
+- 0002440: [General] Scribus crashes when updating the TOC (cbradney)
+- 0001039: [Story Editor / Text Frames] converting multiple text frames to outlines (cbradney)
+- 0002312: [Printing] add "ignore" button the prepress checker when activating the print preview (fschmid)
+- 0002521: [Printing] Add 'Print' and 'Cancel' to print preview dialog (fschmid)
+- 0002442: [Internal] Patches for ps and pdf export (win32 compatibility) (fschmid)
+- 0002515: [Internal] Msvc compatibility patch (2005-08-31) (fschmid)
+- 0002519: [Internal] Incorrect Reading of prefs triggers pop-up on launch (ringerc)
+- 0001894: [General] no conversion CMYK -> CMYK for image unless image contains embedded profile (fschmid)
+- 0002529: [General] Doc Checker Preferences not properly saved (fschmid)
+- 0002523: [General] Convert page to master page (fschmid)
+- 0002522: [Printing] Add a zoom in/out function to print preview (subik)
+- 0002360: [User Interface] style - tabulators: the scroll buttons for the ruler don't work (fschmid)
+- 0002497: [General] Crash when applying a text frame (fschmid)
+- 0002491: [General] Trying change the gui preferences in for the Qt theme, causes loop (jghali)
+- 0002079: [User Interface] show CMYK.Color values as tooltip when moving the cursor over a color in the property palette (fschmid)
+- 0002490: [Internal] ScPaths patches (win32 compatibility) (fschmid)
+- 0002428: [Picture Frames] EPS not transparent in PDF (fschmid)
+- 0002473: [Internal] lack of Q_OBJECT macro (cbradney)
+- 0002327: [Internal] Superscript % lost when opening preferences screen (cbradney)
+- 0002452: [-] question marks instead of cyrillic letters in startup splash screens (ringerc)
+- 0002272: [Internal] Modified Path2Relative function for win32 compatibility (fschmid)
+- 0002430: [User Interface] Move items to an appropriate menu (cbradney)
+- 0002467: [General] Search for pictures function does not work on win32 (cbradney)
+- 0002481: [Usability] confusing names of buttons in fonts preview plug-in (subik)
+- 0002482: [Translation] another update of scribus.ru.ts (plinnell)
+- 0002484: [Translation] Updated Galician (1.3.0cvs) (fschmid)
+- 0002466: [Internal] Perform ps to ps conversion using an explicit call to ghostscript (win32 compatibility) (fschmid)
+- 0002446: [Internal] Patch for gettext plugins and printpreview (win32 compatibility) (fschmid)
+- 0002372: [Internal] Fixes for platform dependent system() calls (fschmid)
+- 0002254: [Internal] Enable GhostScript to be called on Windows (fschmid)
+- 0002256: [Internal] When adding custom font path, path miss the last character (fschmid)
+- 0002284: [Internal] Avoid lots of memory reallocation in ScImage class (fschmid)
+- 0002453: [Import / Export] Option for PDF export to split files. (fschmid)
+- 0002455: [General] Color Wheel Displays shifted colors when enabling CMS (fschmid)
+- 0001708: [User Interface] Color Wheel (subik)
+- 0002477: [Import / Export] Crash on EPS export with spot colors. (fschmid)
+- 0002469: [Translation] translation update german (plinnell)
+- 0002459: [General] When Gamut check and the printer's colour emulation are activated, text in 100 % K is shown in Gamut warning colour (fschmid)
+- 0002167: [Internal] Spot colours (fschmid)
+- 0002454: [General] CMYK Color Management prefs are not honored (fschmid)
+- 0002035: [General] Color Management display is incorrect. (fschmid)
+- 0002242: [Build System] Configure fails even after make -f Makefile.cvs on the source tarball (ringerc)
+- 0000509: [General] Vertical ruler has problems with number placement for large pages. (fschmid)
+- 0002413: [User Interface] Add Page(s) -- wrong master page applied (fschmid)
+- 0002424: [Usability] Confusing "New Doc" dialog: right page or left page? (fschmid)
+- 0002426: [Scripter] Typo in the Exception (fschmid)
+- 0002418: [Internal] Export symbols from plugins to enable loading (win32) (ringerc)
+- 0002321: [Internal] Add GhostScript support when gs directory contains blank spaces (win32) (fschmid)
+- 0002261: [Internal] Platform independent implementation of getGSVersion (ringerc)
+- 0002236: [Internal] Convert gtgettext.cpp to new plugin loading api (ringerc)
+- 0002394: [Internal] Fix msvc compatibility problem in scribusdoc.cpp (cbradney)
+- 0002365: [General] Crash when you delete a Layer (cbradney)
+- 0002397: [Picture Frames] Regression: EPS with clipping path does not work anymore with 1.3.0 (fschmid)
+- 0000496: [Story Editor / Text Frames] Make "LoremIpsum.txt" translatable via TS/PO (subik)
+- 0002415: [Translation] German lorem ipsum to include into the cvs repository (plinnell)
+- 0002370: [User Interface] make the unit selector at the bottom a combobox and sort the entries alphabetically. (fschmid)
+- 0002374: [User Interface] not possible to start selection from scratch space (fschmid)
+- 0002347: [Import / Export] Opening a ps file or double clicking a file with the new startup dialog just makes the file dialog disappear, nothing else (fschmid)
+- 0002408: [Translation] German ts update (cbradney)
+- 0002289: [Styles] edit colour creates a copy of the colour (fschmid)
+- 0002300: [User Interface] visual error when creating and removing a guide line (fschmid)
+- 0002346: [User Interface] layer selector always display the not active layer (fschmid)
+- 0002380: [Translation] Untranslatable strings in the Object Menu (subik)
+- 0002342: [Story Editor / Text Frames] Ctrl+A doesnt work in text frames. nothing becomes selected. (subik)
+- 0002390: [Translation] Updated Galician (1.3) (plinnell)
+- 0002351: [Usability] after starting a selection the cursor should not change even if it goes over guides (fschmid)
+- 0002304: [User Interface] Location of Image Editor / Ghostscript Preference not usable on non-Linux platofrms (cbradney)
+- 0002301: [User Interface] new doc dialog: dialog gets bigger when selecting facing pages (subik)
+- 0002359: [User Interface] Tabulators: fill characters are not translatable (fschmid)
+- 0002333: [Translation] Translation update for German (plinnell)
+- 0002337: [User Interface] Manage Page Properties: create a4 landscape page. set to a3. its changed to portrait although landscape is selected. (fschmid)
+- 0002334: [Usability] disable the move cursor for an object when it is locked. (fschmid)
+- 0002326: [Internal] Allow GhostScript to be automatically detected on Windows (fschmid)
+- 0002188: [General] Adjustable distance between pages (fschmid)
+- 0002306: [User Interface] Manage Page Properties: add combobox to choose page size (fschmid)
+- 0002309: [Import / Export] SVG import crashes with attached file (fschmid)
+- 0002318: [General] duplicating a page duplicates it on top of every page (fschmid)
+- 0002302: [User Interface] double clicking a recent document should open it (subik)
+- 0002189: [General] Different Page sizes in one document (fschmid)
+- 0001144: [User Interface] Allow offset rulers and/or co-ordinate space in UI (makes full bleed work easier) (fschmid)
+- 0002288: [Translation] Updated nb_NO translation for 1.3.1cvs. (fschmid)
+- 0002305: [Scripter] Font Sampler Script fails with current CVS (cbradney)
+- 0002283: [User Interface] When reopening a document with two pages I cannot reach the second one (fschmid)
+- 0000405: [General] drag rulers to measure things (fschmid)
+- 0002255: [General] Insert Sample Text > Wrong language description: Hebrew, not "Jiddish" (subik)
+- 0002249: [User Interface] Tab order in initial dialog (fschmid)
+- 0002265: [General] Crash after adding objects to pages > 1 (fschmid)
+- 0001803: [User Interface] Strings in dialog PDF-Export (fschmid)
+- 0001522: [General] configure wrongly reports detected Python version (subik)
+
+
+
+
+
+
+Scribus - 1.3.0cvs
+==================
+- 0002046: [User Interface] Scribus appears to lock up when using Manage Pictures "Search" function (ringerc)
+- 0000349: [User Interface] If a file is saved under a default name under a non-English locale it does not show up in the "Recent documents" submenu. (ringerc)
+- 0001075: [General] Add-Item-to-Index checkbox in properties dialog (cbradney)
+- 0002214: [Internal] Platform independent implementation of PicStatus (ringerc)
+- 0002175: [User Interface] "apply master page" dialog elements don't fit (fschmid)
+- 0002203: [Story Editor / Text Frames] sample text generator adds the text to the existing instead of replacing it (subik)
+- 0002146: [User Interface] page size limited to 352.7778 cm (cbradney)
+- 0002206: [Internal] Little patches for improved msvc compatibility (cbradney)
+- 0002087: [Internal] Migrate font path prefs to 1.3 prefs API (ringerc)
+- 0001811: [Picture Frames] Tools - manage images: Search button does not work (ringerc)
+- 0000176: [Releases] 1.3 release Metabug (fschmid)
+- 0002235: [User Interface] change tab order in page -> manage margins to make it user friendly (cbradney)-
+- 0001811: [Picture Frames] Tools - manage images: Search button does not work (ringerc)
+- 0002224: [Import / Export] no preview available for attached document when trying to import the pdf into scribus (fschmid)
+- 0002214: [Internal] Platform independent implementation of PicStatus (ringerc)
+- 0002046: [User Interface] Scribus appears to lock up when using Manage Pictures "Search" function (ringerc)
+- 0001722: [User Interface] create page / inserte frame / crash (fschmid)
+- 0001616: [Internal] PATCH: add getters and properties for all existing setters in PageItem (cbradney)
+- 0001550: [User Interface] Wrong postition of "Preferences" menu item (fschmid)
+- 0002179: [Scripter] Current 1.3.0 cvs does not display sjc's scripter properly (fschmid)
+- 0002178: [Story Editor / Text Frames] Shift return and return have swapped functionality (cbradney)
+- 0002203: [Story Editor / Text Frames] sample text generator adds the text to the existing instead of replacing it (subik)
+- 0002218: [Translation] Update Danish Translation (cbradney)
+- 0001923: [User Interface] properties window doesn't remember "keep ratio" for size. (cbradney)
+- 0002111: [Story Editor / Text Frames] style designation and text paragraphs not aligned (see screenshot) (fschmid)
+- 0002198: [Internal] Solves a MSVC.net compiler limitation in color.h (ringerc)
+- 0002197: [Internal] Msvc compiler needs full type definition before destructor call (ringerc)
+- 0002206: [Internal] Little patches for improved msvc compatibility (cbradney)
+- 0002211: [User Interface] Doc Checker/Preflight Verifier names should match (cbradney)
+- 0002210: [Internal] Fix msvc compatiliby problem in tocgenerator.cpp (ringerc)
+- 0001387: [Story Editor / Text Frames] manual linebreak (shift-return) works only in a frame, not in the story editor (fschmid)
+- 0002209: [Story Editor / Text Frames] Tabs in Para Styles do not get picked up on the main page view or canvas (fschmid)
+- 0000349: [User Interface] If a file is saved under a default name under a non-English locale it does not show up in the "Recent documents" submenu. (ringerc)
+- 0002166: [Internal] Platform independent library loading (ringerc)
+- 0002168: [Translation] Polish Translation Update for 1.3.0 (cbradney)
+- 0000081: [General] Ability to change page orientation after document creation (fschmid)
+- 0002156: [Scripter] Closing console doesn't change status in the menu (cbradney)
+- 0002160: [Scripter] Import SVGs with Python (ringerc)
+- 0002066: [User Interface] behaviour of 'lock aspect ratio' (cbradney)
+- 0001923: [User Interface] properties window doesn't remember "keep ratio" for size. (cbradney)
+- 0002045: [Import / Export] Crash when creating a doc from template (Tsoots)
+- 0002159: [Internal] Naming conflict in scribusstructs.h (cbradney)
+- 0001802: [General] Document change not recognized when just moving an object (fschmid)
+- 0002153: [Translation] german translation update (cbradney)
+- 0002150: [Internal] Value Names in Unit enum conflicts with declarations in windows.h (cbradney)
+- 0001555: [Story Editor / Text Frames] too many modal dialogs (e.g. story editor) (cbradney)
+- 0001883: [Import / Export] Problem importing templates from older version (fschmid)
+- 0001957: [User Interface] Rename Page Templates to be Master Pages (cbradney)
+- 0001761: [Import / Export] Implement an OASIS document format importer (Tsoots)
+- 0001762: [Build System] Implement a configure check for libtiff 3.6+ (ringerc)
+- 0001723: [Internal] Page sizes are innaccurate where they are predefined values (cbradney)
+- 0001690: [User Interface] Alllow the loading of customised shortcut sets (cbradney)
+- 0001616: [Internal] PATCH: add getters and properties for all existing setters in PageItem (cbradney)
+- 0001550: [User Interface] Wrong postition of "Preferences" menu item (fschmid)
+- 0001529: [User Interface] "Undo history" palette (Tsoots)
+- 0001609: [Internal] [PATCH] Minor PageItem cleanups (Tsoots)
+- 0001886: [User Interface] soft proofing is always applied even not checked in interface (fschmid)
+- 0001582: [Import / Export] A Preflight checker for Files (fschmid)
+- 0001807: [User Interface] New file dialog opens with width and height disabled even if Custom page size is selected (cbradney)
+- 0001881: [User Interface] 1 bit icons are not shown on Mac (cbradney)
+- 0001885: [Picture Frames] bad icc conversion on screen (fschmid)
+- 0001960: [Import / Export] Some vectors not exported to PDF (fschmid)
+- 0002099: [User Interface] Make Story Editor non modal (cbradney)
+- 0002103: [Internal] Import of 1.2.2 and 1.3 font path prefs is currently broken (ringerc)
+- 0002147: [Translation] Polish Translation Update for 1.3.0 (cbradney)
+- 0002129: [Scripter] groupObjects API function and documentation are inconsistent. (ringerc)
+- 0002136: [Translation] updated translation into Russian (cbradney)
+- 0002130: [Story Editor / Text Frames] Linespacing to big after paragraph with huge font size. (fschmid)
+- 0002131: [Shape Drawing] When a group is deleted the display isn't updated correctly. (fschmid)
+- 0002129: [Scripter] groupObjects API function and documentation are inconsistent. (ringerc)
+- 0002087: [Internal] Migrate font path prefs to 1.3 prefs API (ringerc)
+- 0002103: [-] Import of 1.2.2 and 1.3 font path prefs is currently broken (ringerc)
+- 0001792: [Import / Export] Implement PDF 1.5 support for layers (fschmid)
+- 0001744: [Internal] Add in centimeters as a unit of measurment (cbradney)
+- 0001722: [User Interface] create page / inserte frame / crash (fschmid)
+- 0001822: [Internal] Loss of precision in some fields in setup screen, eg, baseline grid. (cbradney)
+- 0001819: [Import / Export] Scribus dies with no Errormessage when loading attached 1.2.2 file (fschmid)
+- 0001833: [User Interface] Implement Control +/- for zoom functions (cbradney)
+- 0001781: [Story Editor / Text Frames] force regeneration of bookmarks etc. (fschmid)
+- 0001484: [User Interface] Double clicking on text frames may need to be repeated many times (fschmid)
+- 0001837: [User Interface] Sig11 in Outline palette (fschmid)
+- 0001836: [User Interface] Crash on moving object from scratch area to work area (Tsoots)
+- 0001991: [PPCOSX] Native 1.3.0 build for Aqua won't launch (avox)
+- 0001684: [General] Integrate MacOSX scripts to enable it to build easier in fink (ringerc)
+- 0002072: [User Interface] Font preview in paragraph style editor inherits the canvas zoom level (fschmid)
+- 0002076: [Story Editor / Text Frames] Hard (non-breaking) space does not work after a dash "-". (fschmid)
+- 0002047: [Scripter] Function to convert unit in another unit (mm -> pt) (ringerc)
+- 0002088: [Story Editor / Text Frames] Import EPS/PS in Text mode! (cbradney)
+- 0001571: [User Interface] Setting of View -> Snap to guide and Snap to grid doesn't save (fschmid)
+- 0001006: [Story Editor / Text Frames] white text is not visible (fschmid)
+- 0002099: [-] Make Story Editor non modal (cbradney)
+- 0002036: [Import / Export] request for a frame break (fschmid)
+- 0001205: [User Interface] Insert Special window UI defects (fschmid)
+- 0002051: [User Interface] Show effective image DPI in Properties->Image (fschmid)
+- 0001223: [Story Editor / Text Frames] Make non-printable "characters" visible (fschmid)
+- 0002067: [Shape Drawing] multiple objects color settings (cbradney)
+- 0001602: [User Interface] insert a color picker to pick colors from pictures etc (cbradney)
+- 0001780: [Fonts] Pick a font colour from image (cbradney)
+- 0001102: [User Interface] Make all functions from Right click context menu appear on Item menu (cbradney)
+- 0002076: [Story Editor / Text Frames] Hard (non-breaking) space does not work after a dash "-". (fschmid)
+- 0001571: [User Interface] Setting of View -> Snap to guide and Snap to grid doesn't save (fschmid)
+- 0002072: [User Interface] Font preview in paragraph style editor inherits the canvas zoom level (fschmid)
+- 0002051: [User Interface] Show effective image DPI in Properties->Image (fschmid)
+- 0001780: [Fonts] Pick a font colour from image (cbradney)
+- 0001602: [User Interface] insert a color picker to pick colors from pictures etc (cbradney)
+- 0002067: [Shape Drawing] multiple objects color settings (cbradney)
+- 0001142: [User Interface] RFE: Move Baseline Grid controls (cbradney)
+- 0001558: [Internal] Item > Distribue/Align, should be ever present and a toolbar (cbradney)
+- 0002036: [Import / Export] request for a frame break (fschmid)
+- 0001730: [Shape Drawing] Distribute/Align doesn't correctly distribute space (cbradney)
+- 0000262: [General] Aligning objects based on the position of the first selected object (cbradney)
+- 0002043: [Story Editor / Text Frames] Hard space cannot be inserted while in Story Editor (cbradney)
+- 0001689: [General] Move all measurement calculations to units.cpp/.h (cbradney)
+- 0001101: [User Interface] Add in general align tools in Distribute/Align (cbradney)
+- 0001223: [Story Editor / Text Frames] Make non-printable "characters" visible (fschmid)
+- 0002033: [Picture Frames] double click on empty image frame should open get image dialog (fschmid)
+- 0001802: [General] Document change not recognized when just moving an object (fschmid)
+- 0002042: [Story Editor / Text Frames] Crash when adding new pages to document with automatic text frames (fschmid)
+- 0001074: [General] Tab Leaders (fschmid)
+- 0001816: [Fonts] Fonts are only recognized in 'pfa', 'pfb', 'ttf' and 'otf' files. (cbradney)
+- 0002037: [Translation] Polish translation update for 1.3.0cvs (plinnell)
+- 0002034: [Story Editor / Text Frames] Drop cap in first text column misaligned to second column (fschmid)
+- 0002031: [Story Editor / Text Frames] Editing txt in text frame: CTRL+C copies the whole scribus document (cbradney)
+- 0001651: [Internal] Rewrite menus to use actions based system (cbradney)
+- 0002020: [Import / Export] Going from 1.2.x to 1.3.x does not import rotated stuff correctly (fschmid)
+- 0001175: [General] Switching between GUI languages from within Scribus (cbradney)
+- 0001456: [User Interface] various docs settings (subik)
+- 0001175: [General] Switching between GUI languages from within Scribus (cbradney)
+- 0002020: [Import / Export] Going from 1.2.x to 1.3.x does not import rotated stuff correctly (fschmid)
+- 0001651: [Internal] Rewrite menus to use actions based system (cbradney)
+- 0001895: [User Interface] Some pages are not editable (fschmid)
+- 0001958: [Internal] 1.3 uses LittleCMS types outside #ifdef HAVE_CMS blocks (cbradney)
+- 0001951: [Story Editor / Text Frames] paragraph breaking onto new page behaves like new para (fschmid)
+- 0001991: [Default] Native 1.3.0 build for Aqua won't launch (avox)
+- 0001998: [Story Editor / Text Frames] native Aqua Build crashes in story editor (avox)
+- 0002014: [Story Editor / Text Frames] Implement baseline offset for characters. (fschmid)
+- 0002013: [Story Editor / Text Frames] Implement vertical scaling for characters. (fschmid)
+- 0001981: [General] Add columns and gutter in Guide manager (subik)
+- 0002008: [Default] 1.3: Help browser display error after maximizing (subik)
+- 0002009: [Translation] "scribus --help" output should be translatable too (cbradney)
+- 0001140: [Picture Frames] Additional image properties (fschmid)
+- 0001507: [Story Editor / Text Frames] Add font vertical scaling (fschmid)
+- 0001311: [User Interface] feature: preview of changed paragraph style (fschmid)
+- 0001042: [User Interface] show more information when importing pictures (fschmid)
+- 0002001: [Translation] Updated British English translation for 1.3 (cbradney)
+- 0001999: [Translation] Polish translation update for 1.3.0cvs (plinnell)
+- 0001982: [Story Editor / Text Frames] Implement custom underlining styles (fschmid)
+- 0001983: [Story Editor / Text Frames] Implement custom strikethru styles (fschmid)
+- 0001995: [Default] Add "Underline Words" to Style->Effects (fschmid)
+- 0001127: [Styles] *All caps* option in Style>Effects (fschmid)
+- 0001991: [Default] Native 1.3.0 build for Aqua won't launch (avox)
+- 0001621: [User Interface] inserting frames through the menus (cbradney)
+- 0001631: [Import / Export] when importing an eps, there is a quite severe distortion of colors,
+- 0001969: [User Interface] Automatic creation of guides (split page in 2, 3, 4...) (subik)
+- 0001973: [User Interface] Guides, more improvements [PATCH] (subik)
+- 0001526: [User Interface] "Guides" tab in Preferences (fschmid)
+- 0001528: [User Interface] "View" tab in Preferences (fschmid)
+- 0001619: [General] Create Shortcut for Story-Editor (cbradney)
+- 0001953: [User Interface] Cursor positioning with mouse broken at non-100% zoom (fschmid)
+- 0000663: [User Interface] Templates: Outline palette doesn't show templates (cbradney)
+- 0001951: [Story Editor / Text Frames] paragraph breaking onto new page behaves like new para (fschmid)
+- 0001960: [Default] Some vectors not exported to PDF (fschmid)
+- 0001831: [User Interface] after selecting a tool by its shortcut and moving the cursor over an existing object resets the cursor (fschmid)
+- 0001883: [Default] Problem importing templates from older version (fschmid)
+- 0001888: [Import / Export] vectormask inside jpeg cannot be use (fschmid)
+- 0001889: [Import / Export] Parsing Photoshop resource must be strictly controlled (fschmid)
+- 0001958: [Internal] 1.3 uses LittleCMS types outside #ifdef HAVE_CMS blocks (cbradney)
+- 0001895: [User Interface] Some pages are not editable (fschmid)
+- 0001955: [Story Editor / Text Frames] First Automatic text frame wrongly positioned for facing pages (fschmid)
+- 0001957: [Default] Rename Page Templates to be Master Pages (cbradney)
+- 0000237: [Picture Frames] Enable Toggling low-res / high - res display of picture on the canvas (fschmid)
+- 0001890: [Import / Export] Embedded profile in Photoshop file are not use (fschmid)
+- 0001922: [Scripter] getPosition ingnored pageoffset (ringerc)
+- 0001882: [Scripter] Dimensions are strange in scripter (ringerc)
+- 0001543: [Scripter] calling Scripter procedures or functions won't affect Mpalette widgets (subik)
+- 0001906: [Scripter] sizeObject() sets wrong size (ringerc)
+- 0001740: [General] Apply color to a grayscale tiff in scribus, without altering the linked file - colorizing the image to the desired color (fschmid)
+- 0001950: [Scripter] docUnitXToPageX wrong (ringerc)
+- 0000651: [Documentation] Enhancements to the Help Browser (subik)
+- 0001740: [General] Apply color to a grayscale tiff in scribus, without altering the linked file - colorizing the image to the desired color (fschmid)
+- 0001931: [User Interface] Document not flagged as modified after template deletion (ringerc)
+- 0001891: [Import / Export] vectormask from tiff file cannot be use (plinnell)
+- 0001882: [Scripter] Dimensions are strange in scripter (ringerc)
+- 0001922: [Scripter] getPosition ingnored pageoffset (ringerc)
+- 0001691: [Picture Frames] Options for performance (eg, DPI view in image frames, currently 72) low, med, hi, 72, 144, 300 ? (fschmid)
+- 0000766: [Styles] Templates don't change left/right when a page is inserted
+- 0000237: [Picture Frames] Enable Toggling low-res / high - res display of picture on the canvas (fschmid)
+- 0001890: [Import / Export] Embedded profile in Photoshop file are not use (fschmid)
+- 0001873: [Story Editor / Text Frames] Sometimes the linking of Textframes gets garbled during save. (fschmid)
+- 0001857: [General] add the Open Office color set (plinnell)
+- 0001887: [Import / Export] jpeg with embedded icc profile do not use it (fschmid)
+- 0001885: [Default] bad icc conversion on screen (fschmid)
+- 0001886: [Default] soft proofing is always applied even not checked in interface (fschmid)
+- 0001909: [Picture Frames] previews on the canvas display pixelated with CMS (fschmid)
+- 0001892: [Import / Export] properties panel for image scale wrong (fschmid)
+- 0001902: [Picture Frames] crash when trying to move an image within a frame (cbradney)
+- 0001883: [Default] Problem importing templates from older version (fschmid)
+- 0001888: [Import / Export] vectormask inside jpeg cannot be use (fschmid)
+- 0001889: [Import / Export] Parsing Photoshop resource must be strictly controlled (fschmid)
+- 0001434: [Story Editor / Text Frames] double-click on style should open edit-style dialog (subik)
+- 0001777: [User Interface] accessing any tool by pressing *one* key shortcut (cbradney)
+- 0001872: [General] Manage Guides Dialog crashes when the document unit is set to cm (fschmid)
+- 0001561: [User Interface] Escape behaviour in story editor (ringerc)
+- 0001877: [Import / Export] PDF export of document crashes (fschmid)
+- 0001878: [Import / Export] resampling image for export results in PDF error (fschmid)
+- 0001881: [Default] 1 bit icons are not shown on Mac (cbradney)
+- 0001867: [Translation] Galician Translation Update. For 1.3. (subik)
+- 0001901: [Internal] Stripping binaries breaks MacOS/X's plug-in loading (ringerc)
+- 0001857: [General] add the Open Office color set (plinnell)
+- 0001873: [Story Editor / Text Frames] Sometimes the linking of Textframes gets garbled during save. (fschmid)
+- 0001848: [General] Tool for copying certain Object Properties to another Object (fschmid)
+- 0001638: [User Interface] wrong sequence of menus (cbradney)
+- 0001801: [Import / Export] File open leads to crash signal #11 due to out of memory (fschmid)
+- 0001856: [General] Using "SaveAs" leads to an immediate crash (Tsoots)
+- 0001055: [Fonts] Scribus is extremely CPU and memory hungry when processing documents with large fonts (fschmid)
+- 0001729: [User Interface] Interface to access and edit the file Short Words refers to (subik)
+- 0001781: [Default] force regeneration of bookmarks etc. (fschmid)
+- 0001633: [General] plugins manager (subik)
+- 0001863: [Import / Export] Wrong export of CMYK Images to PDF when PDF-X/3 is choosen (fschmid)
+- 0001852: [User Interface] Crashing on changing color fill method (fschmid)
+- 0001434: [Story Editor / Text Frames] double-click on style should open edit-style dialog (subik)
+- 0001484: [Default] Double clicking on text frames may need to be repeated many times (fschmid)
+- 0000766: [Styles] Templates don't change left/right when a page is inserted
+- 0001844: [General] After screen size adjustment last page of the doc does not show fully. (fschmid)
+- 0001845: [User Interface] X,Y position are not correct when dragging guides away from rulers (fschmid)
+- 0001358: [General] Ability to apply a template to all odd (or even) pages to a range of pages in Page>Apply template (cbradney)
+- 0001842: [General] Create a de-select all key (cbradney)
+- 0001841: [Internal] seg fault on changing item-type (cbradney)
+- 0000114: [Import / Export] Adobe PSD File Importer (fschmid)
+- 0001836: [Default] Crash on moving object from scratch area to work area (Tsoots)
+- 0001837: [Default] Sig11 in Outline palette (fschmid)
+- 0001826: [Import / Export] Lines are exported to PDF and Postscript slightly rotated (fschmid)
+- 0001828: [General] Lines are sligthly rotated when you duplicate them (fschmid)
+- 0001827: [Import / Export] RGB-Colours are slightly shifted when a Page is exported to an Image (fschmid)
+- 0001829: [Picture Frames] CMYK-JPG, PDF with spaces in filename and *.TIFF (not *.TIF) are imported incorrectly (fschmid)
+- 0001833: [Default] Implement Control +/- for zoom functions (cbradney)
+- 0001588: [Story Editor / Text Frames] wrong EOL with supscripts (fschmid)
+- 0001831: [User Interface] after selecting a tool by its shortcut and moving the cursor over an existing object resets the cursor (fschmid)
+- 0001603: [User Interface] pressing ctrl and having selected an object sets notsaved state, although nothing changed (fschmid)
+- 0001033: [Picture Frames] TIFF not found in non-US path (fschmid)
+- 0001830: [Translation] updated slovenian translation (cbradney)
+- 0001777: [User Interface] accessing any tool by pressing *one* key shortcut (cbradney)
+- 0000192: [Story Editor / Text Frames] Text and image frames must be able to spread across the facing pages spread (fschmid)
+- 0000506: [General] Unprompted objects resizing after more objects selection (fschmid)
+- 0000562: [Shape Drawing] arrow-heads for line styles (fschmid)
+- 0000773: [User Interface] save doc options when scribus exits (fschmid)
+- 0001390: [User Interface] Font-preview in Styleeditor (subik)
+- 0000945: [Fonts] option to choose between temporar and permanent font substitution (cbradney)
+- 0001758: [User Interface] page palette: is empty when starting new document (cbradney)
+- 0001595: [User Interface] insert page number (cbradney)
+- 0001594: [Story Editor / Text Frames] inserting a page number, by the documented cntrl + # , does not work (cbradney)
+- 0001817: [Shape Drawing] Line changes angle after closing and re-opening (fschmid)
+- 0001584: [Import / Export] PNG image appears in "negative" colors in PDF (fschmid)
+- 0001803: [User Interface] Strings in dialog PDF-Export (fschmid)
+- 0001818: [Import / Export] Image import - greyscale jpg recognised as RGB (fschmid)
+- 0001820: [Import / Export] export generates much too large files (fschmid)
+- 0001753: [User Interface] Set the shortcut ctrl+f to search&replace as a standard shortcut (cbradney)
+- 0001821: [Import / Export] margins switched on even-paged documents (fschmid)
+- 0001819: [Default] Scribus dies with no Errormessage when loading attached 1.2.2 file (fschmid)
+- 0001822: [Default] Loss of precision in some fields in setup screen, eg, baseline grid. (cbradney)
+- 0000826: [Picture Frames] cmyk-jpg gets blue colour engraving (fschmid)
+- 0001722: [Default] create page / inserte frame / crash (fschmid)
+- 0001744: [Default] Add in centimeters as a unit of measurment (cbradney)
+- 0001799: [User Interface] Margins are drawn on the wrong spot when editing a template page (fschmid)
+- 0001807: [Default] New file dialog opens with width and height disabled even if Custom page size is selected (cbradney)
+- 0001813: [General] Can not start program without removing .scribus (.scribus/prefs13.xml) (cbradney)
+- 0001800: [Translation] Galician Translation Update (cbradney)
+- 0001798: [User Interface] "Arrange Pages" doesn't get updated (fschmid)
+- 0001805: [User Interface] Supress of font embedding in PDF-X3 (fschmid)
+- 0001797: [Internal] 3rd part plugin compilation - missing h files plus some typos (subik)
+- 0001796: [General] Scribus crashes when duplicating a template-page (fschmid)
+- 0001789: [Import / Export] lines in tables do not export properly when line size is less than 1.0 pt (fschmid)
+- 0000006: [User Interface] Ability to show some sort of indicator to show how a textframe chain flows (fschmid)
+- 0001290: [Story Editor / Text Frames] Caret invisible in new text frames (fschmid)
+- 0001535: [General] annotation settings issue (fschmid)
+- 0001792: [Default] Implement PDF 1.5 support for layers (fschmid)
+- 0001719: [Story Editor / Text Frames] Deleting first character of text frame leaves editing mode (fschmid)
+- 0001718: [Story Editor / Text Frames] Can edit first empty line of text frame (fschmid)
+- 0001784: [Internal] mistyped ScratchLeft in <DOCUMENT> (ringerc)
+- 0001732: [User Interface] in the rotation field of the xyz-tab after 360° comes 0° (fschmid)
+- 0001732: [User Interface] in the rotation field of the xyz-tab after 360° comes 0° (fschmid)
+- 0001719: [Story Editor / Text Frames] Deleting first character of text frame leaves editing mode (fschmid)
+- 0001765: [Picture Frames] selectin "goto" in the picture manager crashes scribus (fschmid)
+- 0001582: [Default] A Preflight checker for Files (fschmid)
+- 0001766: [General] Display of right hand margin too long (fschmid)
+- 0001741: [Scripter] textoverflows() not working (subik)
+- 0001762: [Default] Implement a configure check for libtiff 3.6+ (ringerc)
+- 0001761: [Default] Implement an OASIS document format importer (Tsoots)
+- 0001744: [Default] Add in centimeters as a unit of measurment (cbradney)
+- 0001733: [User Interface] Quit key should quit scribus even when a palette has focus (cbradney)
+- 0001658: [Scripter] PATCH: Minor scripter fixes, initialize variable in ScrAction constructor (ringerc)
+- 0001722: [Default] create page / inserte frame / crash (fschmid)
+- 0001723: [Default] Page sizes are innaccurate where they are predefined values (cbradney)
+- 0001690: [Default] Alllow the loading of customised shortcut sets (cbradney)
+- 0000826: [Picture Frames] cmyk-jpg gets blue colour engraving (fschmid)
+- 0001550: [Default] Wrong postition of "Preferences" menu item (fschmid)
+- 0001637: [User Interface] new icons for navigation bar (fschmid)
+- 0001655: [Internal] PATCH: remove last traces of PType (Tsoots)
+- 0001654: [Internal] PATCH: check for constructor failure in tree.cpp (Tsoots)
+- 0001224: [Scripter] Scripter support for checking if a text box is overflowing. (subik)
+- 0001639: [Internal] PATCH: Convert PageItem::PType to a protected enumerated member (cbradney)
+- 0001626: [Story Editor / Text Frames] Added Bulgarian Hyphenation Patterns (fschmid)
+- 0001628: [Scripter] PATCH: Basic version of Qt property based scripter interface for pageitems (subik)
+- 0001632: [Internal] PATCH: add getters and properties for all existing setters in PageItem (Round 2) (Tsoots)
+- 0001563: [User Interface] Show type icons for fonts in create PDF dialog
+- 0001623: [Internal] PATCH: Convert more PageItem members to protected (cbradney)
+- 0001616: [Default] PATCH: add getters and properties for all existing setters in PageItem (cbradney)
+- 0001609: [Default] [PATCH] Minor PageItem cleanups (Tsoots)
+- 0001611: [User Interface] PATCH: fix doc checker so that action is toggled on all hide types (cbradney)
+- 0001610: [Internal] PATCH: build fix for no lcms (cbradney)
+- 0001599: [Picture Frames] Make Images moveable with the Cursor keys when in Edit Mode. (fschmid)
+- 0001590: [Internal] [PATCH] Don't redraw the whole canvas when deselecting a single item (fschmid)
+- 0001589: [Scripter] 1.3 scripter object positioning fixes (subik)
+- 0001538: [Default] Textframe disappears (fschmid)
+- 0001529: [Default] "Undo history" palette (Tsoots)
+- 0001559: [Fonts] Warn about missing glyphs on print, export (fschmid)
+- 0001548: [Default] Redesign of Preferences - Guides (fschmid)
+- 0001535: [General] annotation settings issue (fschmid)
+- 0001528: [User Interface] "View" tab in Preferences (fschmid)
+- 0001248: [Picture Frames] delete content should reset properties too (fschmid)
+- 0001340: [Default] Occasional crash when trying to move locked frames/drawings (fschmid)
+- 0001390: [User Interface] Font-preview in Styleeditor (subik)
+- 0001290: [Story Editor / Text Frames] Caret invisible in new text frames (fschmid)
+- 0000562: [Shape Drawing] arrow-heads for line styles (fschmid)
+- 0000773: [User Interface] save doc options when scribus exits (fschmid)
+- 0000506: [General] Unprompted objects resizing after more objects selection (fschmid)
+- 0000006: [User Interface] Ability to show some sort of indicator to show how a textframe chain flows (fschmid)
+- 0000192: [Story Editor / Text Frames] Text and image frames must be able to spread across the facing pages spread (fschmid)
+- 0001525: [General] Unexpectedly access to the Manage Guides dialog (fschmid)
+- 0001524: [User Interface] Grey out "page number field" in Page>Insert>at End (cbradney)
+- 0001437: [User Interface] Usability-improvement for Extras:Insert Special. Make it possible to select the font (fschmid)
+- 0001301: [User Interface] Text frame tool is confused when clicking on existing text frames
+- 0001438: [User Interface] Usability-improvement for Extras:Insert Special. Point out that you can use the RMB for the magnifier (subik)
+- 0001419: [General] Clear a selection by clicking outside the page boundary... (cbradney)
+- 0001366: [Internal] Remove header class interdependencies (cbradney)
+- 0000964: [User Interface] make settings > preferences look like most kde apps
+- 0000159: [General] scratch space, please!
+- 0001323: [User Interface] 1.3.0cvs: Implement -ns/--no-splash option on startup (cbradney)
+- 0001724: [Default] replaced fonts in templates to avoid non-free licenses (cbradney)
+- 0001681: [Scripter] add setBookmark (subik)
+- 0001706: [Translation] Short-Words - Brazilian Portuguese Update (subik)
+- 0001454: [Translation] pythons strings. several issues (cbradney)
+- 0001705: [Translation] Brazilian Portguese Translation Update (cbradney)
+- 0001618: [User Interface] automatically add .scs to the scrapbook name (cbradney)
+- 0001715: [Translation] Updated Danish Translation (plinnell)
+- 0001520: [Documentation] configure refuses to compile with Qt version lower than 3.3 (plinnell)
+- 0001687: [Default] 1.2.1 crashes when deleting a locked object
+- 0001642: [Import / Export] Attach text to path is not accurate (fschmid)
+- 0001679: [Translation] Galician Translation Update (cbradney)
+- 0001672: [Scripter] setColumnGap and getPageMargin ignore Unit (ringerc)
+- 0001664: [Printing] No print preview and error in postscript output (fschmid)
+- 0001667: [Documentation] PATCH: Update scripter FAQ, fix escaping of coding standards (plinnell)
+- 0001647: [Plug-ins] /usr/lib/scribus/plugins/scribus-short-words.rc must not be executable (subik)
+- 0001583: [Translation] Brazilian Portuguese Translation Update (cbradney)
+- 0001452: [Scripter] Feature request - export image in script (subik)
+- 0001523: [Scripter] Script console blocks when waiting for input (subik)
+- 0001644: [Scripter] PATCH: Split MenuTest out of scriptplugin.cpp and rename (cbradney)
+- 0001643: [Translation] Update translation for Albanian (SQ) (cbradney)
+- 0001636: [Translation] Update of russian translation (cbradney)
+- 0001649: [Translation] Brazilian Portuguese hyphenation (cbradney)
+- 0001612: [Scripter] PATCH: fix moveObject and moveObjectAbs for groups (subik)
+- 0001614: [Default] PATCH: scale image to frame control from scripter (subik)
+- 0001585: [Scripter] [PATCH] Macro manager for Scripter (cbradney)
+- 0001604: [General] Crash when deleting pages (cbradney)
+- 0001608: [Translation] Please include Short Words translation strings into Scribus TS files (subik)
+- 0001615: [Translation] Polish translation update for 1.2.2cvs (cbradney)
+- 0001597: [Plug-ins] short-words plugin doesn't build and blocks the entire build. (subik)
+- 0001600: [Import / Export] Non-break spaces from OpenOffice.org should be converted into Scribus' ones (Tsoots)
+- 0001596: [Picture Frames] Image movement within frame has max in mm (32.764) and in (1.2864), not in pt and p. (fschmid)
+- 0001389: [Plug-ins] short words for 1.2.1(cvs) (subik)
+- 0001560: [Scripter] [patch] minor scripter fixes for selection and text color (subik)
+- 0001570: [Translation] Ukrainian translation update (cbradney)
+- 0001521: [Documentation] Compilation aborts when using Python 2.2 (subik)
+- 0001536: [Translation] updated translation into Russian (plinnell)
+- 0001544: [Translation] Galician Translation Update (plinnell)
+- 0001515: [Scripter] scaleImage won't work (subik)
+- 0001541: [General] scribus/plugins/scriptplugin/scripts/COPYING file is not needed and is a nuisance during packaging (cbradney)
+- 0001516: [Story Editor / Text Frames] Can't import text from OO.o + can't import .txt without loosing all diacritic marks (French) (cbradney)
+- 0001513: [Default] Crash in help browser if doc/en help files are all deleted (cbradney)
+
+Changes since 1.2RC1 
+
+26.08.2004
+	* bug     # 583: if I try to change the level of a group, only the level of one object is changed
+	* bug     #1004: PDF Export with annotations sometimes creates errors
+
+25.08.2004
+	* bug     # 842: New file > landscape has width and height reversed.
+	* bug     #1000: Layer selector does not align layer name properly
+
+24.08.2004
+	* bug     # 263: distribute items shuffles the order of the items
+	* bug     # 991: layer selector doesnt reflect the order of the layers
+	* bug     # 996: Changing paragraph style in story editor then exit and text frame does not redraw, then goes blank
+	* bug     # 998: Story Editor adds lines after paragraphs
+	* bug     # 999: PDF Elements lose names on save
+	* feature # 993: New french translators
+	* feature # 995: Update of russian translation
+
+23.08.2004
+	* bug     # 804: Color tab for fill/line color doesn't jump to the specific color when entering the beginning character
+	* bug     # 960: Python scripting only accepts text in Latin1
+	* bug     # 985: Dingbat font did not work
+	* bug     # 991: layer selector doesnt reflect the order of the layers
+	* bug     # 992: French translation for Scribus 1.2
+	* feature # 988: Italian Translation Update for 1.2
+	* feature # 989: Russian Translation Update for 1.2
+
+22.08.2004
+	* bug     # 728: "Hanging Conjunctions"
+	* feature # 953: small improvement to the layer selector at the bottom
+	* feature # 983: German ts-file for 1.2
+
+21.08.2004
+	* feature # 980: Finnish translation update
+	* feature # 981: czech translation
+	* feature # 982: scribus 1.2rc1slovene translation file
+
+20.08.2004
+	* bug     # 977: Font spacing problem
+	* bug     # 978: Selecting text font size box deselects text inside the Story Editor
+	* bug     # 979: Some characters need to be presented as entity references when saving as template
+
+19.08.2004
+	* bug     # 547: multi-frame text disappears from later frames
+
+18.08.2004
+	* bug     # 962: Scribus crashes when opening a document not in .sla format
+	* bug     # 976: settings-->hyphenator: wrong window title in German
+	* feature # 973: Ukrainian Translation Update
+	* feature # 974: Czech translation for 1.2rc
+	* feature # 975: Updated Polish translation
+
+Changes since Version 1.1.7
+
+15.08.2004
+	* bug     #963: Scribus crashes after launching font substitution dialog with document templates
+
+14.08.2004
+	* feature #828: Group members should be hidden for aligning and other operations
+
+13.08.2004
+	* bug     #263: distribute items shuffles the order of the items
+	* feature #966: Scribus 1.2 Slovene translation file
+
+11.08.2004
+	* bug     #957: Scribus crashes when adding new paragraph style while text is selected
+	* bug     #962: Scribus crashes when opening a document not in .sla format
+	* feature #965: Welsh translation of 1.2rc1
+
+09.08.2004
+	* bug     #955: When switching between multiple windows size and X,Y origin location are not updated for the selected object
+
+08.08.2004
+	* bug     #160: zoom tool should recenter
+	* bug     #616: Properties/Language: Wrong language descriptions
+	* bug     #784: changing zoom level jumps to various pages
+	* bug     #947: Ukrainian Translation Update
+	* bug     #949: Saving
+	* feature #946: Danish translation for 1.2
+	* feature #951: Finnish translation update
+
+07.08.2004
+	* bug     #724: No left aligned page numbers
+	* bug     #925: clicking on bookmarks in bookmark window should activate the corresponding text frame
+	* bug     #936: shortcuts for palettes activates only hides them again when then main window has the focus
+	* bug     #940: "general" is not highlighted when calling settings > preferences
+	* bug     #942: change icon style for warning icon in replace font dialog
+	* bug     #943: Deleting selected text in SE makes Scribus crash
+	* feature # 28: Prepare shortcut keys for menus and dialogs, and more hotkeys for actions for 1.2 release
+	* feature # 77: Prepare tooltips for 1.2 release
+	* feature #190: left, right, centered, ... styles
+	* feature #938: German Translation Update for 1.2
+	* feature #939: British English Translation Update for 1.2
+	* feature #941: German ts-file for 1.2
+	* feature #944: Polish translation for 1.2
+
+06.08.2004
+	* bug     #167: spacing across columns/frames
+	* bug     #312: Newlines not handled properly when c/p'ing
+	* bug     #602: shift+scroll doesn't work in the text size box...
+	* bug     #724: No left aligned page numbers
+	* feature #650: cleaning-up main.cpp
+	* feature #933: Scripter crash on running sample script when no previous documents open
+	* feature #934: Search/Replace enabled when multiple items are selected and they arent all text frames
+	* feature #935: add option to apply a template page to all odd/even pages
+
+04.08.2004
+	* bug     #790: Update Picture From Right-Click Menu Does Not Work
+	* bug     #927: layer chooser on the bottom of scribus isnt updated after adding a new layer immediately
+	* bug     #930: different width of opacity and shade text fields on the property palette, colors
+	* feature #767: enter shouldnt close guideline dialog
+	* feature #890: changing the level of of objects with pageup / pagedown keys
+
+03.08.2004
+	* bug     #926: with disabled guidelines the guide line cursor is shown when clicking onto a ruler
+	* bug     #929: alignment in story editor does not work with empty text frame for the first paragraph
+
+02.08.2004
+	* bug     #467: The *Cancel* button does not work after using the *Apply* button in Distribute/Align feature
+	* bug     #658: Templates: issues with text editing in story editor
+	* bug     #659: Templates > Story Editor & Properties: Confusion about styles
+	* bug     #707: Endian issues with images on fink?
+	* bug     #921: importing SVG does not set save flag
+	* bug     #928: Ukrainian Translation Update
+	* feature # 25: Add Find & Replace option to Story Editor / Text Frames
+	* feature # 25: Add Find & Replace option to Story Editor / Text Frames
+	* feature #138: Add Clear Contents right click option for linked text frames
+	* feature #883: Way of Switching between edit and select mode
+	* feature #904: integrate font preview plugin to the story editor
+
+01.08.2004
+	* bug     #450: Dialog Tools>Layers needs <ESC> binding and loose the "X" button
+	* bug     #768: insert sample text
+	* bug     #794: Style>Colors: Color list doesn't disappear when cursor moves away
+	* bug     #858: Palettes do not hide with F10 when one is selected
+	* feature #902: hyphenate in linked text frames
+
+31.07.2004
+	* bug     #527: Wrong page shown in Properties Palette when reopened
+	* bug     #528: Wrong page shown in Properties Palette - COLORS - when reopened
+	* bug     #919: Text from story editor duplicates when two text frames are linked...
+	* feature #909: add access possibility to text styles to the story editor
+	* feature #920: Updated French Translation
+
+30.07.2004
+	* bug     #905: first line typed in the story editor is invisible
+	* bug     #910: text alignment does not work after the first line
+	* bug     #911: selected text gets unselected after changing the alignment setting of the selected text
+	* bug     #912: improve stroke/fill color style
+	* bug     #913: pressing shift after changing values for kerning, size & widht reset that values
+	* feature #906: french translation updated
+	* feature #907: improve "update textframe"
+
+29.07.2004
+	* bug     #135: Text properties disappears when using story editor and not set by styles
+	* bug     #899: ctrl+a doesnt select the whole text
+	* bug     #900: selecting text alignment without any text in the editor crashes scribus
+	* bug     #905: first line typed in the story editor is invisible
+	* bug     #908: toolbar for stroke color not movable if stroke is disabled
+	* feature #901: Polish Translation Update
+	* feature #903: British English Translation Update
+
+28.07.2004
+	* bug     #135: Text properties disappears when using story editor and not set by styles
+	* feature #746: Story Editor rewrite
+	* feature #896: German translation update
+	* feature #897: Finnish translation update
+
+27.07.2004
+	* bug     #892: resizing imported svg with rotated elements  hurts gradients
+	* feature #893: Polish Translation Update
+	* feature #894: Crash when hypenating Swedish Texts
+
+26.07.2004
+	* bug     #891: gradients position does not change when objects are re-sized
+
+24.07.2004
+	* feature #884: German language update
+	* feature #888: Updated Danish Translation
+
+21.07.2004
+	* bug     #878: Scribus crashes repeatedly while editing frame shapes
+	* bug     #879: problem with registration color
+	* feature # 58: Add registration colour for colour crop, fold and registration marks
+	* feature #880: Updated British English translation
+	* feature #881: Polish Translation Update
+
+18.07.2004
+	* bug     #874: Tab order in Multiple Duplicate
+	* bug     #875: Preset values for linescreen angles, per color
+	* feature # 98: Ability to have distance of text from outside edge of text or image frame
+	* feature # 98: Ability to have distance of text from outside edge of text or image frame
+	* feature #871: Corrupted PDF export issue
+
+17.07.2004
+	* bug     #860: Lots of crash saying that is due to signal 11
+
+16.07.2004
+	* bug     #860: Lots of crash saying that is due to signal 11
+	* bug     #868: Editing shapes of frames needs lock/unlock actions
+	* feature #848: Baseline Grid Behaviour
+	* feature #855: Setting Linescreen in PDF export
+	* feature #864: Ukrainian Translation Update
+
+15.07.2004
+	* bug     #863: Issue with background gradients overwriting images
+
+14.07.2004
+	* bug     #399: unable to copy from Properties/Geometry if object is locked
+	* bug     #861: Cut / Copy / Paste broken on Paste
+
+13.07.2004
+	* bug     #756: Scribus does not honor settings for custom page sizes
+	* bug     #850: moving grouped vector elements imported from large-scale eps
+	* bug     #859: New File with Custom Page Size and mm, page size gets smaller when switching portrait and landscape
+	* feature #848: Baseline Grid Behaviour
+	* feature #856: Translation update for German
+	* feature #857: Polish Translation Update
+
+11.07.2004
+	* bug     #852: import SVG, export PDF, import SVG again => crash
+	* feature #844: selecting importet eps text very slow and not nice
+
+08.07.2004
+	* bug     #849: Scribus mailing list seems seems to be down
+	* bug     #851: SVG import does not support paths properly
+
+04.07.2004
+	* bug     #844: selecting importet eps text very slow and not nice
+	* feature #578: one-click/keyboard for toggling off and on all dialogboxes+guides etc
+	* feature #845: Export Selection only to EPS
+
+03.07.2004
+	* feature #789: Calculating error
+	* feature #841: Implement the primary Dublin Core Metadata Element Set for RDF Implementation
+
+01.07.2004
+	* feature #678: check buttons instead of lock/unlock and hide/show
+	* feature #785: Add option to export PDFs with custom page numbers
+	* feature #838: german update
+	* feature #839: Updated Czech Translation
+
+29.06.2004
+	* feature #678: check buttons instead of lock/unlock and hide/show
+	* feature #744: importing a range of pages into another
+	* feature #834: slovenian update
+
+28.06.2004
+	* feature #  3: Ability to create pages when importing pages from other documents
+
+27.06.2004
+	* bug     #832: Scribus RC1cvs crashes (SIG #11) while opening a document
+
+24.06.2004
+	* bug     #829: when emergency save it called - font tags are stripped from the top of file
+	* feature #831: Updated Brazilian Translation
+
+23.06.2004
+	* bug     #823: When dragging to and from the Scrapbook, unneeded styles are copied
+	* bug     #824: Modifying a paragraph style does not affect all text previously formatted with that style.
+
+22.06.2004
+	* bug     #568: Copying items creates copies of paragraph styles
+	* bug     #821: Detaching a text from a path doesn't keep the rotation for the path.
+	* bug     #822: Gradients in PDF rendered in the wrong direction
+
+21.06.2004
+	* bug     #817: Ukrainian Translation Update
+	* bug     #818: Attaching text from a path resets the rotation (if any) of a rotated path
+	* bug     #820: Don't display the & Characters for Shortcuts in the Splash Screen
+
+20.06.2004
+	* bug     #343: Ctrl+H shouldn't delete characters
+	* bug     #812: drop caps error with linked text frames on pdf export
+	* feature #355: Allow of automatic page margin creation / snappy page margins.
+	* feature #787: Complete the ps-importer for reading OpenOffice generated files
+	* feature #814: Updated Danish Translation
+	* feature #815: Updated Norwegian Translation
+
+19.06.2004
+	* bug     #813: Snap to Guides for moving and resizing of Groups
+	* feature #799: Feature Request: Select All
+
+18.06.2004
+	* bug     #765: Paragraph indentation oops when rendering to pdf
+	* bug     #781: Story Editor>Edit>Insert special... does nothing
+	* bug     #807: saving doc in template mode corrupts file
+	* bug     #811: indent not shown when editing styles
+	* feature #795: Polish Translation Update
+	* feature #800: Finnish translation update
+	* feature #801: Norwegian Translation Update
+	* feature #802: Italian Translation Update
+	* feature #806: german translation update
+	* feature #808: First Line Indent not saved from Paragraph Styles after closing and reopening the editor
+
+15.06.2004
+	* bug     #655: Window enlarge each time I select a file
+	* bug     #703: guidelines interfere  selecting a group of objects
+	* bug     #780: Automatic Pagenumber not placed correct on Export
+	* feature #203: Snap to Grid/Guidelines too strong
+	* feature #778: Updated Russian Translation
+
+11.06.2004
+	* bug     #633: Drop caps not reaching to the top, and other issues
+	* bug     #655: Window enlarge each time I select a file
+	* bug     #671: measurement icon
+	* bug     #703: guidelines interfere  selecting a group of objects
+	* feature #770: Update for the German language
+
+10.06.2004
+	* bug     #755: Collect for Output should ask confirmation
+	* bug     #760: "icons" dir does not get copied by "make dist"
+	* feature #761: Right-click on graphics tablet triggers drag-and-drop
+	* feature #764: Enable transparent Gradients in PDF
+
+08.06.2004
+	* bug     #356: Margin Dialog not intuituve enough
+	* bug     #721: add "current page" to print dialog
+	* bug     #750: Placing guides in the foreground not saved on document save
+	* bug     #751: Text box border magically reappears on reopening previously saved document
+	* bug     #756: Scribus does not honor settings for custom page sizes
+	* bug     #758: v1.1.7 (Alyssa) compile stops with an error at file scribusview.cpp
+	* feature #759: Ability to create PostScript Level 2 or Level 1 only files.
+
+06.06.2004
+	* feature #745: Tracker for 1.1.7
+	* feature #754: Inclusion of Tsoots "New from Template" Plugin
+
+Changes since Version 1.1.6
+
+04.06.2004
+	* bug     #753: Guidelines couldn't be locked
+	* feature #743: Slovenian Translation Update for 1.1.7
+	* feature #747: Polish Translation Update for 1.1.7
+	* feature #748: British English Translation Update for 1.1.7
+	* feature #749: updated UK and FI translations
+	* feature #752: Updated Danish Translation for 1.1.7
+
+02.06.2004
+	* bug     #739: Fonts Preview plugin entry in extras menu is not translatable
+	* feature #741: german .ts update for 1.1.7
+	* feature #742: Czech Translation for 1.1.7
+
+01.06.2004
+	* bug     #720: print dialog does not allow entering of page numbers
+	* bug     #729: Importing SVG with gradient sometimes misses the colors
+	* bug     #733: Choosing and unchoosing Fill buton makes color dialog smaller
+	* bug     #735: move  "save document" up
+	* bug     #737: When dragging the two endpoints of a gradient in the new editor you can only drag left to 1% and right to 99%
+	* feature #732: updated translation files for slovenian language
+	* feature #734: Update for the German language
+	* feature #738: Finnish translation update
+
+29.05.2004
+	* bug     #707: Endian issues with images on fink?
+	* bug     #715: When using Free Linear Gradient, importing an SVG can change the gradient
+	* bug     #720: print dialog does not allow entering of page numbers
+	* feature #662: Missing option to save Scribus file
+	* feature #718: german translation update
+	* feature #727: Add ability for Removing Recently Used Docs
+	* feature #731: Ability to have Gradients with more than 2 Colors
+
+26.05.2004
+	* bug     #713: "Line Style" to "Type of Line"
+	* feature #688: improve the zoom-icon function
+	* feature #714: Added new type of Gradient "Free linear Gradient"
+
+24.05.2004
+	* bug     #623: Selecting Compress file deletes existing file name in dialog
+	* bug     #647: Export as image plugin numbers images as "pagenumber - firstpagenumber".
+	* feature #706: Image placement in a frame if not at 0,0 in frame, changes based on zoom level
+	* feature #710: Updated Czech Translation
+	* feature #711: Updated Brazilian Translation
+	* feature #712: Updated Welsh Translation
+
+23.05.2004
+	* bug     #394: SVG: vertical gradient imported as horizontal gradient
+	* feature #688: improve the zoom-icon function
+	* feature #700: German update
+	* feature #704: saving doesnt add the *.sla suffix
+	* feature #705: No new e-mail since May 17
+
+22.05.2004
+	* bug     #606: Pressing END causes wrong cursor jump
+	* feature #680: show grouped objects as grouped in the object manager
+	* feature #681: sort objects in object manager
+	* feature #690: doubleclick out of the shape could end editing
+	* feature #694: Updated Polish Translation
+
+20.05.2004
+	* bug     #684: open-entry in the library should be moved
+	* bug     #692: New Parameter for GetAllObjects
+	* feature #643: Enable EPS and PS Import as Vector Objects
+	* feature #677: Remove lingering empty messages from some .ts files
+	* feature #679: Update for the German language
+	* feature #687: put the pdf-options in the context menu in a submenu
+	* feature #693: Updated Russian Translation
+
+19.05.2004
+	* bug     #673: Borders of tools are messed up on startup
+	* feature #672: integrate the font preview plugin
+	* feature #675: Update for the German language
+	* feature #676: British English Translation Update
+
+17.05.2004
+	* bug     #656: wrong button behaviour in new xport as bitmap dialog
+	* bug     #665: Line handles do not update after moving the line
+	* bug     #667: Sliders misaligned and not the same length in Edit>Color>New dialog
+	* bug     #669: cannot insert a tab into text frame using scripter
+	* feature #670: Update for the German language
+	* feature #674: French translation update
+
+16.05.2004
+	* bug     #282: Update language detection to use LC_* variables
+	* bug     #623: Selecting Compress file deletes existing file name in dialog
+	* bug     #660: UI translations shouldn't influence scribus behaviour
+	* bug     #664: Bug 572 reloaded
+	* feature #657: update for the german language
+	* feature #661: Finnish translation update
+
+15.05.2004
+	* bug     #604: Grouped items can be grouped again
+	* bug     #634: Can't edit Line Style name
+	* bug     #649: Minor string update
+	* bug     #652: scribus.ca.qm does not get installed on "make install"
+	* feature #406: save must be enabled while creating templates
+	* feature #563: measurement tool
+	* feature #621: Need an addition to the scripter API: variable that is set by using "-lang xx".
+	* feature #653: Implement Settings menu, cleaning up Edit, Tools and Help menu
+
+13.05.2004
+	* bug     #634: Can't edit Line Style name
+	* bug     #638: Rename the translation file for Basque language
+	* bug     #644: Crash caused by mouse cursor crossing from linked text frame # 2 to # 1
+	* bug     #645: Update scribus.no_NO.po to remove some obsolete strings that interfere with msgmerge
+	* bug     #646: There are many empty tr( "" ) strings that confuse and slow down xgettext on the .pot file update
+	* feature #592: Ability to export a page to a bitmap format
+	* feature #640: delete any object by pressing <del>
+
+12.05.2004
+	* bug     #613: Autotools fix for Debian
+	* bug     #625: Suggestion for Speed up of SVG Import
+	* bug     #630: Pasting text in direct text editing.
+	* bug     #634: Can't edit Line Style name
+	* bug     #637: Scribus crashes after a drag with the Right Mouse Button
+	* feature #631: update for german
+	* feature #635: Ukrainian Translation Update
+	* feature #636: Update Danish Translation
+
+09.05.2004
+	* bug     #604: Grouped items can be grouped again
+	* bug     #620: Differing tab settings can cause wrapping text on top of other text
+	* bug     #622: Merge of charselect* and svgexport* POs
+	* bug     #624: Scribus is inserting incorrect paths into file names when saving
+	* feature #609: same style for saturation and intensity of a color
+	* feature #629: Improve the Tabmanager and the EditStyle Dialogs with a Ruler for setting Tabs and Indents.
+
+08.05.2004
+	* bug     #608: Change buttons for "center" and "right" alignment...
+	* bug     #613: Autotools fix for Debian
+	* bug     #618: Minor rearranging of right click menu items
+	* feature #231: Add in ability to import Colour Sets into current document
+	* feature #614: Polish translation update
+	* feature #615: Icon Set Number Two
+	* feature #617: Ability to set, move and delete Tabs in the Ruler
+	* feature #619: Fixes for broken POs
+
+07.05.2004
+	* bug     #596: strange behaviour of tab indicator in textfields
+
+06.05.2004
+	* bug     #596: strange behaviour of tab indicator in textfields
+	* feature #578: one-click/keyboard for toggling off and on all dialogboxes+guides etc
+	* feature #594: French translation update
+	* feature #597: Issue with ending lines of paragraphs not aligning correctly with distances and alignment
+	* feature #598: update for the german language
+
+05.05.2004
+	* bug     #590: Trying to copy frames from actual page to a just made page template crashes scribus with signal 11.
+	* feature #593: Added three new Hyphenation Dictionarys: Lithuanian, Swedish and Slovene
+
+04.05.2004
+	* bug     #554: table context menu - layer is missing
+	* bug     #580: No translation strings for units in "File>Document Setup"
+	* bug     #581: Ruler coordinates in the status bar and the units changer don't have translation strings.
+	* bug     #582: Muster.cpp and newtemp.cpp both translate the text and titel strings, missing Units translations in prefs and main gui
+	* bug     #588: Clicking on the canvas within the "mouse grab radius" from a guide moves the guide.
+	* feature #584: Ukrainian translation update
+	* feature #587: Finnish translation update
+	* feature #589: British English translation update
+	* feature #591: Updated Czech Translation
+
+02.05.2004
+	* bug     #471: guideline symbols are reversed
+	* bug     #571: Seems impossible to actually apply any kind of tab immediately after a right tab
+	* bug     #572: Layers palette still shows a "Background" layer after the last document is closed
+	* bug     #573: View menu should be greyed out if no document is open
+	* feature #552: Tabs could be shown in the ruler
+	* feature #560: layer and level should be displayed in properties and/or status line
+	* feature #574: Windows menu item should be greyed out if no documents are open
+
+01.05.2004
+	* bug     #396: PDF Export: text field at wrong position
+	* bug     #554: table context menu - layer is missing
+	* feature #570: Added Translation for the Basque language
+
+30.04.2004
+	* bug     #499: svg text and box import don't work correctly
+	* bug     #535: Story editor: can't delete selected text with Backspace
+	* bug     #540: Mixed white fonts size on bottom of splash screen
+	* bug     #542: PDF-Export changes img-size on copied pages when downsampling is enabeled
+	* bug     #546: Updated Russian Translation from Alexandre Prokoudine
+	* bug     #549: Empty Object Name
+	* bug     #557: Strange message while updating TS file
+	* bug     #558: Updated some tooltips
+	* feature #536: Please move "Print Preview" to "File" menu
+	* feature #545: translation files for Slovene
+	* feature #548: TS-Update German
+	* feature #550: Unique Object Names
+	* feature #551: edit colour by doubleclick
+	* feature #559: Ugly icons - new icons set
+	* feature #561: Translation update German
+
+28.04.2004
+	* bug     #499: svg text and box import don't work correctly
+	* bug     #525: Insert page after any given page in a document causes a crash with signal 11
+	* bug     #530: Sending an object to another layer does not activate the save button
+	* bug     #534: Scribus closing: After cancel of 'Saving dialog', Scribus is closed, but data are lost
+	* bug     #537: Improve rendering speed of images
+	* feature #503: Item renaming in overview
+	* feature #531: Speaking names for objects
+	* feature #539: Add new Splash Screen and Icons
+
+27.04.2004
+	* feature #529: Polish TS/QM update
+
+26.04.2004
+	* bug     #476: Text is placed to the right of where Scribus thinks it is
+	* bug     #526: Red squares on object's border should not exist when object size is locked
+
+25.04.2004
+	* bug     #517: Move Level RMB menu items to a submenu
+	* bug     #518: Please replace sample PDF form and PHP script in the docs
+	* bug     #519: Deleting multiple characters or spaces causes Sig 11
+	* bug     #524: Textframes with Gradients as Background are not exported correctly
+	* feature #497: Beeing able to determine the column width instead of the gutter width (at will)
+	* feature #503: Item renaming in overview
+	* feature #521: TS-Update German
+
+24.04.2004
+	* bug     #495: unclosed SVG paths not importing properly
+	* bug     #508: Short font and color list in object properties, bad dialog
+	* bug     #513: Not able delete highlighted guide
+	* bug     #514: Guide manager -> Guide coordinate will be resetted to 0.00
+	* feature #462: PDF export resets color tints to solids
+	* feature #511: "Lock object size" in context menu
+	* Fixed Bug #514, Spinbox values are reset to 0.0 in Polish Language. 
+	* Fixed Bug #513, Not able to delete highlighted Guide in the Guidemanager. 
+	* Fixed Bug #508, Short font and color list in object properties. 
+	* Fixed Bug #495, unclosed SVG paths not importing properly 
+	* Opening the same document twice is now no loner possible. 
+
+23.04.2004
+	* Fixed wrong clipping in the Postscript output with styled lines. 
+	* Fixed vanishing text in flipped Textframes when zooming in. 
+	* Updated the Czech and Danish Translations. 
+	* Fixed Bug #511 "Lock object size" is now in context menu 
+	* Fixed Bug #510 Translated units are shown as question marks in the Page>Manage guides dialog. 
+	* Fixed Bug #501 screen refresh when editing tables not nice. 
+	* Fixed Bug #493 Additional Patch to configure for Debian Systems. 
+	* Fixed Bug #462 PDF export resets color tints to solids. 
+
+18.04.2004
+	* Fixed wrong display with flipped textframes. 
+	* Added "Insert LoremIpsum" Command for Textframes to the Context Menue. 
+	* Fixed display issues with Tables. 
+	* Updated the Czech and Russian Translation. 
+
+17.04.2004
+	* Fixed minor error in PDF export with tables. 
+	* Transparent areas in EPS-Images are handled now correct in PDF-Export. 
+
+16.04.2004
+	* Updated the German and Finnish translations. 
+	* Fixed recognition of en_GB locale. 
+
+14.04.2004
+	* Updated the Polish translation 
+	* The Color Names are now editable in the Color Chooser. 
+	* The Cups Options panel is now resizeable. 
+	* The ESC-Key closes now the Scripting Console. 
+
+13.04.2004
+	* Updated the British translation. 
+
+12.04.2004
+	* Added new command "Adjust Frame to Picture" to the context menu. 
+	* Added "Insert Special" Command to the Story Editor. 
+	* You can now insert any Unicode character by entering the 4-digit Hex code after 
+	* pressing F12. 
+
+11.04.2004
+	* Fixed wrong placement of characters in the PDF export. 
+	* Updated the Brazilian translation. 
+
+10.04.2004
+	* Panning mode is now toggled by pressing space. Worls only when not editing a textframe. 
+	* Pressing Shift+Return inserts now a new line into a paragraph, does not count as a paragraph seperator. 
+	* Improved behaviour of the hyphenation, you can set now the number of hyphenations allowed to follow each other. 
+	* Added more Tooltips. 
+
+09.04.2004
+	* Made various adjustments to dialog buttons. 
+	* Improved Panning. 
+
+08.04.2004
+	* Fixed crash when exporting texts on a path to PDF. 
+	* You can scroll now with the Mouse when no Object is selected and you press CTRL and move the Mouse. 
+
+07.04.2004
+	* Applied patch for better detecting CUPS. 
+	* Improved the forced aligning of Text again. 
+
+06.04.2004
+	* Improved forced aligning of text. 
+	* Changed the Styles Listbox to a Combobox in the Properties Palette. 
+
+05.04.2004
+	* Updated the Ukrainian translation. 
+	* Fixed Issues with Polylines on Export to PDF and Postscript. 
+	* Moved the Icons to $prefix/share/scribus/icons to be FHS compliant. 
+
+04.04.2004
+	* Fixed rounding problems with the Baseline Grid. 
+
+03.04.2004
+	* Added a frame independent baseline setting for textframes 
+	* Updated the Finnish Translation. 
+
+02.04.2004
+	* Flipping state of images is now preserved when updating or editing images, Bug #408 
+	* Properties Palette is now updated immediately after text style change, Bug #404 
+	* Textcolor is now imported too when appending Styles, Bug #402 
+	* Applying "No Style" resets now all Textproperties to the default style, Bug #400 
+	* You can now move Objects in 0.1 Point units when pressing CTRL and the Cursor Keys, Bug #397 
+	* Colors in PDF-Textfields are now exported correctly, Bug #396 
+	* Pressing Tab while editing a Text doesn't jump to the Pageselector anymore, Bug #395 
+	* Pressing Shift while rotating the Mouse Whell scrolls now horizontal, Bug #388 
+	* Updated several Tooltips. 
+
+30.03.2004
+	* Fixed Issue on export to PDF and Postscript with objects with zero line width 
+	* Fixed Issues with locked Objects and Groups. 
+	* Double clicking on a Table Cell selects this Cell now. 
+	* Resizing Tableitems with the Properties Palette should work now. 
+	* Updated Polish Translation. 
+	* Added horizontal Scrolling with the horizontal MouseWheel if available. 
+	* Fixed compilation issues. 
+
+29.03.2004
+	* Removed implicit closing of Polylines in the SVG importer. 
+	* Added a "Keep aspect ratio" Button to the X-Y-Z Tab of the Properties Palette. 
+	* Added the missing pageselector.h file to the install function. 
+
+Changes since Version 1.1.5
+27.03.2004	Fixed Bug #364, Kerning isn't apllied anymore for the first Character of a line.
+		Enabled all resizing Handles for Groups.
+		Improved zooming (Patch from Jean-Jacques Sarton)
+
+26.03.2004	Fixed Cursor position when overwriting selections.
+		Resizing lock works also for Groups now.
+ 
+25.03.2004	Fixed Bug when dragging Objects from the Scrapbook to Template Pages.
+		Improved the drawing of the ouline Box when resizing Objects.
+		Some more Patches from Jean-Jacques Sarton.
+		Updated the Finnish Translation.
+		Fixes for the zooming.
+
+18.03.2004	Fixes for rotated Tables and Borderlines.
+
+14.03.2004	Added first basic Support for Tables.
+		Jean-Jacques Sarton completed the Textselection with the Cursor Keys:
+			Shift+Cursor Key selects Chararcters.
+			Ctrl+Shift+Cursor Key selects Words.
+			Ctrl+Cursor Up/Down selects Lines.
+			Ctrl+Home selects Text from the Start to the Cursor Position.
+			Ctrl+End selects Text from the Cursor Position to the End.
+			Ctrl+Cursor Key moves to the next Word.
+		Updated the Danish Translation.
+
+13.03.2004	Added Patch from Jean-Jacques Sarton to enable Textselection with the Cursor Keys and Shift pressed.
+		Fixed Crash when cutting Text (also by Jean-Jacques Sarton).
+		Improved Object resizing and selecting.
+		Improved Display when moving Objects.
+
+12.03.2004	Updated the Polish Translation.
+		Fixed a Typo in the Brazilian Translation.
+
+11.03.2004	Added ToolTips for the Preferences.
+		When dragging Linked Textframes between Pages with the Mouse the linkage is now keeped.
+		Updated the Scripter Commands for Linked Textframes too.
+
+10.03.2004	Enabled dragging of Objects between Pages.
+		When you convert a Textframe to outlines the important properties are copied too, Bug #337.
+
+09.03.2004	Updated the Ukrainian Translation.
+		Finally fixed placement of the Icons for PDF-Buttons.
+		Objects keep their Name now when they are Cut and Pasted.
+
+08.03.2004	Fixed behaviour of the Icons of PDF-Buttons.
+		Added more ToolTips.
+
+07.04.2004	Added an Option to the Preferences to determine if the Contents of a Page
+		are clipped at the Margins or not.
+		Added a Folder for storing official approved Scripts.
+		Added some Patches from Jean-Jacques Sarton which speed up image handling.
+
+06.03.2004	Added Settings for the external Tools to the Preferences.
+		Scribus should now be more stable when it finds a corrupt Font on startup.
+		Fixed Bugs #323, #311, #209 and #80
+
+05.03.2004	Improved the PDF-Exporter, Images are now written only once into the PDF.
+		Fixed Bug #314.
+
+04.03.2004	Updated the Ukrainian and Czech translation.
+
+03.03.2004	Updated the Finnish Translation.
+
+02.03.2004	Added the Option to delete all Objects on a Layer, when deleting this Layer.
+		Changed the readout of the Color Values to Percent in the ColorChooser.
+		Added a new Command to the Scripter.
+		Updated a couple of Tooltips and added more.
+		Updated the Czech Translation.
+
+01.03.2004	Improved the SVG-Importer, Text should be now better, but still not perfect.
+		Added a new Colorset: SVG-Colors.
+		Updated the Finnish Translation.
+
+29.02.2004	Added first Gimp Integration, contributed by Jean Jacques Sarton.
+		Improved the PrintPreview a little more.
+
+27.02.2004	Improved the PrintPreview, it now remembers the last used Settings.
+		Added some new Commands to the Scripter.
+
+25.02.2004	Included a Patch from Alessandro Rimoldini for the main.cpp file.
+		Included a Patch from Mathy Vanvoorden for the Story Editor.
+		Fixed bugs with Textframes.
+		Display of Textframes should look now the same in all Magnifications.
+		Updated scribus.desktop file.
+
+24.02.2004	Fixed Bug with wrong Gradients when copying Objects.
+		Moved the Documentation files to $prefix/share/scribus
+		Fixed Problems with Editing Styles changing unexpectedly Textframes.
+		All Fonts used in a Document are now embedded into PDF by default.
+
+23.02.2004	Added the Option to protect an Object against resizing.
+		Fixed Issues with Rounded Corners.
+		Added a Context Menueitem for updating Picture frames.
+		Updated the Finnish Translation.
+		Changed the behaviour of Mouse Clicks:
+			Ctrl+Shift+Click selects the Object beneath another.
+			Shift+Click adds an Object to the Selection.
+			Ctrl+Alt+Click selects a single Object out of a Group.
+
+22.02.2004	Included Patches from Jean-Jacques Sarton.
+		Fixed Bug #278
+		Updated the Ukrainian Translation.
+		Another addition for the Scripter from Petr Vanek.
+
+21.02.2004	Added ability to include Softmasks into PDFs when exporting to PDF 1.4
+		Fixed Bugs #279, #277, #235
+		Bug #235 was fixed by Petr Vanek.
+
+20.02.2004	Fixed Bug when scaling Groups containg lines, Bug #276
+
+19.02.2004	Improved the PDF-Export settings, the Compression method for
+	Images can now be set. Zip and JPEG Compression is available.
+
+18.02.2004	Improved the PDF-Export, Images are now written as jpg into the PDF.
+	Fixed a problem with freetype > 2.1.4
+
+17.02.2004	Updated the Danish and Welsh Translation.
+	Added a new Command to the Scripter, contributed by Petr Vanek.
+
+15.02.2004	Fixed some mismatches in the German Translation.
+	Updated the Czech Translation.
+	Fixed Bug #268
+	Fixed Problem with changing Fontsizes in Textframes with no Styles when editing Styles.
+	Fixed Bug #223
+
+Changes since Version 1.1.4
+13.02.2004	Fixed Crash when editing Linestyles.
+		Found last missing Strings for Translations.
+
+12.02.2004	Updated the Finnish and the German Translation.
+
+11.02.2004	Updated the Ukrainian Translation.
+
+10.02.2004	Updated the CzechTranslation.
+		Added a CMYK Preview to the Print Preview.
+
+09.02.2004	Updated Danish Translation.
+		Fixed Transparency Issues with Tiff Images.
+
+08.02.2004	Fixed Problems with Images having an Alpha Channel.
+		Added an Option to remove unused Colors.
+
+05.02.2004	Added two new Color Sets, a Greyscale one, and a Gnome Colors Set.
+		Added a new Splash Screen and Icons.
+ 
+02.02.2004	Added Irish Hyphenation Patterns.
+		Updated the Polish Translation.
+		Groups can now freely scaled with the Mouse.
+		Pressing the Control-Key while scaling Objects and Groups
+		keeps now the Aspect Ratio.
+		Selecting Objects below others works now with Shift+Control Click.
+
+01.02.2004	The Rulers are now following the Magnification.
+		Added a Scribus.pro file for use with lupdate for creating Translations.
+
+31.01.2004	Added a new Guide Manager from Allessandro Rimoldini.
+		More speedups for the Scripter.
+
+30.01.2004	Fixed Problems with accented Filenames.
+		Fixed some more translation Problems.
+
+29.01.2004	Added a Progress Bar for the PDF-Export too.
+
+28.01.2004	Line Styles and Paragraph Styles are now listed in alphapetical Order.
+		The Style Menue is now disabled instead of being empty when no Object is selected.
+
+26.01.2004	Added a Finnish Hyphenation.
+
+25.01.2004	Added Font Effects and Colors to the Paragraph Styles.
+		Applied Craig's patches for better Precision.
+
+24.01.2004	Since there is a bad Bug in the Font embedding Functions all
+		TrueType Fonts are now subsetted.
+
+22.01.2004	Updated Python Scripts from Henning Schröder.
+
+21.01.2004	Added the possiblity to search and replace Font Effects.
+
+20.01.2004	First Version of the "Search/Replace" Dialog working.
+
+17.01.2004	Added "Save to File" and "Load from File" Commands to the Story Editor.
+		The Clipboard no longer discards Textattributes.
+		Its no longer possible to attach linked Textframes to a Path.
+		Added new Command "Detach Text from Path".
+
+15.01.2004	Updated the Russian Translation.
+		The Page Selector on the Bottom of the Window is now a Spinbox.
+
+14.01.2004	Removed Hardcoded Paths from the Source.
+
+13.01.2004	Fixed Cursor Placement Issues.
+
+12.01.2004	Fixed Bug with Sub/Superscript.
+		Fixed Crash when copying Pages.
+
+11.01.2004	Added Drop Caps to the Paragraph Styles.
+		Applied Ted Powells Layers Patch.
+
+10.01.2004	Added Named Color Sets.
+
+09.01.2004	Fixed a problem when deleting a Layer.
+		Fixed memory leak in the Postscript Export.
+
+08.01.2004	Replaced the Color Submenue in the Style Menue with a ComboBox.
+
+07.01.2004	Added the missing centered Tabulator.
+		Added the Colors of the XFree RGB Color Database as alternative Default Colors.
+		Added a Button to restore the Default Colors to the Color Editor.
+
+06.01.2004	The Tab-Key switches now between Docs when not in Edit-Mode.
+		Improved the MSpinBox API.
+
+05.01.2004	Fixed Bug with multicolumn Textframes.
+		Started Code Documentation.
+
+04.01.2004	Added a Freehand Drawing Tool.
+		Enabled Rotation of Groups with the Mouse.
+
+03.01.2004	Fixed Cursor placement Issues with Tabulators.
+		Fixed Text editing Issues with linked Textframes.
+
+01.01.2004	Added Right, Full Stop and Comma Tabulators.
+		Default Tabs are now every 36 pts == 1.27 mm == 0.5 in.
+		Added a Dialog to manage the Tabulator Settings.
+		Textstyles have now also a Tabulator Property.
+
+31.12.2003	Fixed Rounding Errors in the Properties Palette.
+		Added Settings for Number of Columns and the ColumnGap to the Preferences.
+		First Support for Tabs, currently there is a Tab set every 100 pts in a Textframe.
+
+29.12.2003	Fixed Crash when closing Docs.
+
+28.12.2003	Text flows now around both Sides of Objects.
+		You can use now Units like pt or mm in Floating Point Spinboxes where applicable.
+		Added some new Commands to the Scripter:
+			- MessageBox
+			- StatusMessage
+			- GetColums
+			- GetColumnGap
+			- SetColums
+			- SetColumnGap
+
+27.12.2003	All Floating Point Spinboxes can now evaluate Expressions like
+		(1 + 3) * 5, there is now a full calculator available. (Code borrowed from QCad)
+
+26.12.2003	Fixed Issues with rotated Text when converting to Outlines.
+		Fixed Issues with rotated Object when joining Polygons.
+		Fixed column width not being equal for all columns on Textframes.
+
+25.12.2003	Added a Gap Setting for multi-column Textframes.
+
+23.12.2003	Textframes can have now more than 1 Column.
+		Added an Clear Contents Entry to the Context Menu.
+
+22.12.2003	Improved the Geometry Settings in the Properties Palette for Groups.
+
+21.12.2003	Added a right Click Context Menu for Pages too.
+		Improved the Node Palette.
+		You can set now the Base Point for Object resizing and moving
+		in the Properties Palette the same way as for the Rotation.
+
+Changes since Version 1.1.3
+18.12.2003	Groups can now rotated with the Properties Palette.
+
+17.12.2003	Updated the German and Russian Translation.
+
+16.12.2003	Added new Brazilian Translation.
+			Updated the Russian Translation.
+
+15.12.2003	Added infomation about Pictures to the Info Entry in the context Menue.
+
+14.12.2003	Added an Info Entry to the right mouse click context Menue.
+		Fixed redraw Issues.
+		Fixed Grid drawing Issues when the Zoom Factor is != 100 %.
+
+12.12.2003	Added a Toolbar Button for the Story Editor.
+		Added a Statusbar to the Story Editor.
+
+10.12.2003	Fixed Preferences Issues.
+		Combined the Toolbar Buttons for Rectangles and Circles into one Button
+		containing all Autoforms.
+
+09.12.2003	Added some new Shapes to the Autoforms Menue.
+		Fixed the disabled Keyboard Bug.
+
+07.12.2003	Added various Shapes to the Shape Tab in the Properties Palette.
+		Fixed misbehaviour with some corrupted Docs.
+
+06.12.2003	Added Convert to Outlines to right mouse click context Menue.
+		The resolution setting is now used for all Pictures if they provide one.
+
+05.12.2003	Fixed incorrect hyphens in the PDF-Export with Russian Text.
+
+04.12.2003	Fixed Crash with SVG-Import.
+
+03.12.2003	Updated the Danish Traslation.
+		Added a Crash Handler.
+
+01.12.2003	Fixed crash when holding down a key whilst editing a Textframe.
+		Improved import of Template Pages, Line Styles and Styles.
+		Fixed PDF-Export Issues.
+
+30.11.2003	Template Pages and Line Styles can now imported too.
+
+29.11.2003	Added Button for importing Styles for other Documents to the Style Editor.
+		You can now switch Blackpoint Compensation on or off in the CMS Preferences.
+
+Changes since Version 1.1.2
+28.11.2003	Fixed Bug that prevented proper recognition of User Defined ICC-Profile Directorys.
+
+27.11.2003	Fixed Bug that caused Scribus to hang when importing the same Page twice.
+
+26.11.2003	Fixed Crash when loading Documents.
+
+24.11.2003	Fixed duplication of Styles when importing Pages or Objects.
+
+23.11.2003	Added a "Revert to Saved" Option to the File Menu.
+
+22.11.2003	Added Group/Ungroup Items to Right Mouse Click Context Menu.
+		The Fontsize is now a float, you can have now Fontsize like 12.3 pt
+		Managed Guides is now available for Template Pages too.
+		
+21.11.2003	The Linewith of a Textframe is now honoured in the Distances of the
+		Text to the Frameborders when the Borderline is visible.
+
+20.11.2003	Fixed Bug in the PDF and Postscript Export with linked Frames.
+		Increased the maximum Linewidth to 36 pts.
+		Fixed Segfault when deleting more than one Page at once.
+
+19.11.2003	Fixed Bug in the Story Editor with linked Textframes.
+		You can now edit Texts on a Path with the Story Editor too.
+
+15.11.2003	Added first version of the Story Editor.
+
+12.11.2003	Fixed Bug with TIFF-Images.
+
+10.11.2003	Added Web-Links to the PDF-Export.
+		Fixed compilation issues with Python 2.3
+
+09.11.2003	Fixed compilation issues with the Scripter-Plugin.
+		Fixed wrong colors for Gradients in PDF.
+
+08.11.2003	You can now insert Pictures by simply dragging them to a Page.
+		Added an absolute coordinate Mode to the Node-Palette.
+
+06.11.2003	Added a --without-python option to ./configure for
+		those who don't have a use for the Scripter-Plugin.
+
+05.11.2003	Improved the Preview in the charselect plugin.
+
+04.11.2003	When you resize a Textframe with the Mouse and press
+		CTRL+SHIFT the Text is scaled accordingly.
+
+02.11.2003	Reenabled the Fontpreview in the Preferences.
+		
+Changes since Version 1.1.1
+28.10.2003	The Contents of the Outline Palette doesn't collapse anymore
+		when you are editing Objects or adding or removing Pages.
+
+26.10.2003	Added patch for acinclude.m4 to recognize Python 2.3
+		Fixed issue with certain Hebrew fonts.
+
+25.10.2003	Scribus can now handle Filenames with Spaces correctly.
+		Included Patch for BigEndian Systems.
+
+23.10.2003	Using Symlinks for Fonts works now.
+		Fixed missing Lines around Textbox in PDF-Output.
+
+21.10.2003	Included the new Icons contributed by Sven Powalla.
+
+20.10.2003	Included the Scripter Plugin into the main Package.
+		Fixed the ./configure script that libtiff is recognized
+		on a stock RH9 installation.
+
+17.10.2003	The AutoSave Option is now working again.
+
+11.10.2003	Fixed Bug when converting Text to Outlines.
+
+05.10.2003	Improved History in the Helpbrowser.
+
+Changes since Version 1.1.0
+03.10.2003	Improved rendering of linked Textframes.
+		Added a new .pot file for Scribus-1.1.1
+
+02.10.2003	Removed some small Bugs reported after reopening the CVS 
+		to the public.
+
+30.09.2003	Every Textbox can have now it's own Language for
+		Hyphenation.
+
+29.09.2003	Added a Catalan Hyphenation Dictionary.
+
+28.09.2003	Subsetting Fonts and OpenType Fonts works now in PDF and Postscript.
+		Updated the CharSelect Plugin.
+		Added a User defineable Directory for ICC-Profiles in the Preferences.
+
+27.09.2003	Replaced the LineEdit for the Zoom-Factor in the lower left Corner of
+		the Working Window by a SpinBox.
+		Updated the Welsh Translation.
+
+21.09.2003	Removed the "Modify Object" Dialog since all of it's functionality
+		in now in the former "Measurement" Palette, which is now called
+		"Properties" Palette.
+
+19.09.2003	Scaling Glyphs in the X-Direction works now in PS and PDF.
+
+18.09.2003	Now you can scale Glyphs in the X-Direction.
+
+16.09.2003	Improved Redraw of linked Textframes.
+		The PS-Exporter does now support Text with Fill & Stroke.
+		Removed all Font Encoding Stuff from the PS-Exporter, all
+		Text Rendering is now done with "glyphshow".
+
+15.09.2003	Text with Fill & Stroke can now exported to PDF and SVG.
+		Fixed Crash when deleting Pages containing linked Textframes.
+		Fixed Crash after Drag-Copying Elements.
+
+14.09.2003	Added the possibility to set the fill and stroke of Glyphs.
+
+Changes since Version 1.0.1
+06.09.2003	Unterlining doesn't cut the decents of the Glyphs anymore.
+
+04.09.2003	Added new Type Style Outlined.
+
+02.09.2003	Fixed Segfault when cutting Text when there is no Text.
+
+31.08.2003	Added a Zoom for Characters, if you click the Right Mouse Button
+		over a Character a Zoom Window pops up.
+		Added the possibility to have different Transparencys for Strokes
+		and Fills.
+
+22.08.2003	Made first Steps to replace the old rendering Engine
+		with libart.
+
+13.08.2003	Added Greek Hyphenation. 
+
+12.08.2003	Changed behaviour of the Save-Button in the Toolbar.
+
+11.08.2003	Added an SVG-Import Plugin.
+
+10.08.2003	Added PDF-Keywords.
+		Enabled the Black Point Compensation in the Color-
+		Management when lcms-1.11 is used.
+		
+09.08.2003	Added a History Function to the Help Viewer.
+
+08.08.2003	Templates are now reapplied to the Pages when 
+		they where changed.
+		Templates can now applied to more than one Page.
+		
+Changes since Version 1.0
+07.08.2003	Added Indonesian Translation.
+
+25.07.2003	Fixed Bug with the Picture Preview.
+		Added Dutch, Ukrainian and Portuguese Hyphenation.
+
+18.07.2003	Fixed Bug which caused Pictures to disappear when the actual
+		Application Directory isn't the users Home Directory.
+
+Changes since Version 0.9.11.1
+21.06.2003	Fixed the Radial Gradients in the SVG-Export.
+		Fixed Bug with rounded Rectangles.
+
+20.06.2003	Limited the Values for the Margins to fit the Page.
+
+19.06.2003	Disabled Color "None" for Gradients.
+
+18.06.2003	Implemented a new Fontselection Dialog.
+
+Changes since Version 0.9.10
+13.06.2003	Moved the Preview generation to a seperate Class.
+		Updated Polish translation.
+
+11.06.2003	Improved and updated the Creation of the Previews
+
+10.06.2003	Added Support for Named Linestyles, allowing to have
+		Paths stroked with multiple Lines.
+
+07.06.2003	Improved Image Support for SVG, Images are now saved as PNG-Images in the
+		same Folder as the SVG File.
+		Added New Plugin for Print Preview, needs Ghostscript to work.
+
+01.06.2003	Moved the SVG-Export Plugin to the Main Package
+		and added Support for Gradients and combined Polygons.
+
+30.05.2003	Added Support for Links to external PDF-Documents.
+		Added Encoding Support for writing Textfiles.
+
+27.05.2003	Added a Splash Screen.
+		Updated Danish Translation.
+
+25.05.2003	The first Page of a PDF can now placed like a EPS-File.
+		The Postscript-Exporter embeds now only really used Fonts.
+
+24.05.2003	Improved the Clipboard once more, works now with Nedit, OpenOffice
+		and Mozilla too.
+		Improved importing of Text, you can now choose an Encoding in
+		the Fileselect Dialog.
+
+22.05.2003	Added shearing of Polygons.
+		Included Patches for HP-UX contributed by Martin Gansser.
+
+19.05.2003	Added Norwegian Translation contributed by Johannes Wilm.
+
+Changes since Version 0.9.9
+16.05.2003	Added the possiblity to adjust the Display for true WYSIWYG.
+		e.g 1 Inch displayed on the Rulers is now really an Inch on the
+		Screen.
+
+14.05.2003	Picture Frames can now have a Borderline too.
+
+11.05.2003	Added Support for Automatic Kerning Values from .afm Files.
+		
+09.05.2003	Added Color Model "Websave RGB".
+		Solved the Problem that the last Hyphen in linked Textframes wasn't printed.
+		Fixed crash with PDF-Previes enabled.
+
+06.05.2003	Added a Command to split combined Polygons.
+
+05.05.2003	When you edit a Path, you can select now more than one Point for moving,
+		either by pressing the Shift Key or using the selection Rectangle.
+		Fonts are now scanned for their Chararcter width only when they are used.
+		(Avoids building big Tables for never used Fonts)
+
+04.05.2003	Extended the Node-Palette.
+		The PDF-Exporter now embeds only really used Fonts.
+
+03.05.2003	Added new Command "Convert Text to Polygons"
+
+27.04.2003	Implemented Subpaths for Polygons.
+		Removed various Copy and Paste Errors.
+
+26.04.2003	Improved Textrendering for Zoomfactors > 100 %
+
+Changes since Version 0.9.8
+18.04.2003	Added a Build-ID to the About Box for easier finding out which Librarys are used when
+		Scribus was compiled.
+
+17.04.2003	There is now an Option in the Print Dialog to apply ICC-Profiles before printing.
+
+16.04.2003	Extended the PDF-Exporter to use Unicode too.
+
+12.04.2003	Implemented Reverse Writing Mode for Textboxes.
+
+11.04.2003	Character Widths are now also calculated with Freetype.
+		The "Insert Special" now uses Freetype for displaying the Characaters.
+
+08.04.2003	Scribus uses now Freetype2 (if available) to do the embedding of TTF-Fonts
+		into Postscript, this allows the use of Unicode in the Postscript Output.
+
+05.04.2003	Added a Dialog to choose the Page when importing Pages from other Documents
+		Apply Template doesn't duplicate Guidelines anymore.
+
+03.04.2003	Added Import of Pages from other Documents.
+
+29.03.2003	Improved the zooming with the Mouse Wheel by enableing it when you press the Mouse Wheel.
+
+28.03.2003	Added an Autosave Option.
+
+27.03.2003	Added Hungarian Hyphenation.
+		The Scrapbook is now saved everytime you drop an Item on it.
+		
+Changes since Version 0.9.7
+25.03.2003	You can now zoom In and Out withe the Mouse Wheel when you hold the Shift-Key
+		whilst rotating the Wheel.
+
+23.03.2003	The Postscript Driver can now seperate RGB-Images too. The only thing that
+		doesn't work are Gradient Fills of Objects on Template Pages.
+		
+22.03.2003	The PDF-Exporter converts now RGB-Images to CMYK when Destination Printer is
+		selected.
+		
+17.03.2003	Added support for the Clipboard. (works with KDE and QT Applications)
+
+14.03.2003	Added the ability to print Pages mirrored.
+
+10.03.2003	Guides can now be locked.
+
+01.03.2003	Again redesigned the Measurement Palette to reduce their Size.
+
+26.02.2003	Fixed Bug with the Docking Palettes.
+
+24.02.2003	Added a Workaround for the Qt-3.1.1 setClipRegion Bug.
+
+Changes since Version 0.9.6
+21.02.2003	Scribus is now complete Qt-3.1.1 compatible.
+
+18.02.2003	Completed Redesign of the Measurement Palette.
+
+15.02.2003	Made Rotation from Center possible.
+
+02.02.2003	Added a "Collect for Output" Command to save everything into
+		a User Defined Folder.
+
+31.01.2003	Images are stored now with their relative Paths.
+
+29.01.2003	Added Slovak Hyphenation.
+
+28.01.2003	Added Danish Translation and Hyphenation.
+
+27.01.2003	Finished the new Bookmark-Palette.
+
+19.01.2003	Redesigned the handling of Bookmarks.
+
+18.01.2003	Added the missing Textproperties Underline and Striketrough to
+		the PDF-Exporter.
+
+16.01.2003	Moved the Documentation to a seperate Package.
+
+15.01.2003	Added several Patches.
+
+Changes since Version 0.9.5
+11.01.2003	Extended the Encryption for PDF-1.4 File to 128 Bits.
+
+07.01.2003	Added PDF-Encryption.
+
+03.01.2003	Added support for CUPS.
+
+02.01.2003	Scribus can now write PDF/X-3 conform Documents.
+
+31.12.2002	Fixed a long standing Bug with Documents printed directly after loading.
+
+Changes since Version 0.9.4
+30.12.2002	You can now embed ICC-Profiles in the PDF-Output.
+
+27.12.2002	Fixed a Bug in the PDF-Exporter with resampled Images.
+
+26.12.2002	Template Pages are now stored as Forms in the PDF and Postscript Output.
+
+24.12.2002	Added Compression for Images in the Postscript Output.
+
+22.12.2002	PDF-1.4 Transparency added.
+
+21.12.2002	Now you can manage the additional Fontpath in the Fontpreferences.
+
+20.12.2002	Now you can edit the Font Substitution List.
+
+19.12.2002	Extended the Font Preferences, now you can exlude certain Fonts from being used.
+
+18.12.2002	Added a Font Substitution List.
+
+16.12.2002	Fixed several Bugs in the Postscript Driver.
+
+Changes since Version 0.9.3
+14.12.2002	Improved the File-Format to prevent troubles loading Documents.
+
+12.12.2002	Added a Dialog to manage the Guidelines.
+
+09.12.2002	Now you can snap Objects to the Guidelines.
+
+08.12.2002	Added User defined Guidelines, which can be dragged out of the Rulers.
+
+05.12.2002	Added Polish Translation contributed by Maciej Haski <m.hanski@gmx.at>
+
+03.12.2002	PDF-Export Options are now saved with the Document.
+
+02.12.2002	The PDF-Export now also supports the Gradient Fills.
+
+01.12.2002	Gradient Fills are printable now.
+
+30.11.2002	Added Gradient Fills.
+
+26.11.2002	Added a Button to the File Select Dialog which moves to a
+		User Defined Folder.
+		Disabled deleting and editing of the Colors: White, Black, Cyan
+		Magenta and Yellow.
+		
+25.11.2002	You can now lock Objects.
+
+Changes since Version 0.9.2
+23.11.2002	PDF and Postscript Files are now spooled to Disk instead of
+		creating them in Memory.
+
+22.11.2002	Now you can set Font and Fontsize in Paragraph-Style-Templates.
+
+21.11.2002	Added Russian Hyphenation.
+
+20.11.2002	LowRes Previews are now used for displaying on the Screen.
+
+19.11.2002	Scribus now works with QT 3.1
+
+17.11.2002	You can set the Name of an Object in the "Modify Object" Dialog.
+
+Changes since Version 0.9.1
+14.11.2002	Fixed a crash in the Print Dialog when /etc/printcap is missing.
+		Type1 Fonts are now recognized even when your local encoding is
+		is08859-15 or utf8.
+
+13.11.2002	Made some cosmetic Changes to the Button Layout of varios Dialogs.
+		Fixed handling of Toolbar Buttons and Menu-Entrys when switching
+		Documents.
+
+12.11.2002	Preferences are now stored in an own Folder called ".scribus".
+
+11.11.2002	Fixed a grave Bug when opening Documents with missing Fonts.
+		MDI-Mode is generally more stable now.
+
+10.11.2002	Moved a misplaced #endif that caused Compilation Errors to the
+		right Place (the Line 5050 Bug)
+
+Changes since Version 0.8
+09.11.2002	MDI-Mode complete.
+
+05.11.2002	Begun to implement MDI-Mode.
+
+03.11.2002	Enhanched the Hyphenator by adding an Auto-Check-Mode during Typing
+
+02.11.2002	The Hypenator-Plugin is now fully integrated into the Main Code.
+
+29.09.2002	Release of Scribus 0.8
+
+Changes since Version 0.7.8
+24.09.2002	Made last Code Refinements.
+
+22.09.2002	Fixed a Bug with Documents created with Automatic Text Frames.
+
+Changes since Version 0.7.7
+08.09.2002	Added Tooltips to the Page Palette.
+
+07.09.2002	Fixed a bug in the PDF-Export with Grayscale jpg's.
+
+03.09.2002	Now you can change the Size of Textboxes during Edit-Mode.
+
+01.09.2002	Added a new Commandline Option --lang xx
+		xx represents a Language code just like the 
+		Environment Variable LANG.
+		Fixed some Bugs in the PDF-Fields.
+		
+29.08.2002	Added a Page Palette for better handling of Pages.
+
+15.08.2002	Added the missing Home and End Keys to the Textbox.
+		The Print Dialog now remembers the last extended
+		Printing Command.
+		
+Changes since Version 0.7.6
+30.07.2002	New Developers Version 0.7.7
+
+26.07.2002	Fixed a Bug with transparent Images in the Postscript Driver
+
+25.07.2002	Changed all Path Descriptions to use floating Point Coordinates.
+
+24.07.2002	Written a FPointArray Class (with floating Point Coordinate Values)
+		for the internal Path representation.
+
+23.07.2002	New Measurement Unit: Picas
+
+22.07.2002	New Measurement Unit: Inches
+		Object Movements with the Keyboard can now be undone too.
+
+21.07.2002	Improved scaling of Groups, should now be more exact.
+		Scaling of Groups is always proportional.
+		Added Undo for raising and lowering of Objects.
+
+20.07.2002	Support for Colormanagement improved.
+
+17.07.2002	Fixed Bug in the creation of Master Pages
+		Added Progress Bar for Saving
+		If you create Elements with Shift Key pressed while dragging the 
+		Mouse the dimensions are now constrained to a square.
+		
+16.07.2002	Now you can undo: Delete Object
+				  Move Object
+				  Resize Object
+				  Rotate Object
+
+15.07.2002	First Undo-Code implemented
+
+14.07.2002	Added Gamut-Check to the Colormanagement Options
+
+Changes since Version 0.7.5
+14.07.2002	New Developers Release 0.7.6
+
+13.07.2002	Improved Drag'n'Drop of Groups.
+
+06.07.2002	Groups can now be moved with the Cursor Keys,
+		Measurement-Palette and scaled with the Mouse.
+
+02.07.2002	Added Toolbar-Icon for creating PDF-Annotations.
+
+01.07.2002	Completed the Icon properties for PDF-Buttons.
+		Added Import Data Action.
+
+30.06.2002	Added Icons for PDF-Buttons.
+
+29.06.2002	Added Submit Form Action for PDF-Buttons
+		Added the ability to rotate PDF-Fields
+		Added turkish Translation for the GUI.
+
+28.06.2002	Added Toolbar-Icon for creating PDF-Fields.
+		Added support for global JavaScripts.
+
+27.06.2002	Added Page Rages to to the PDF-Export Options.
+		Added Support for translation files for Plugins.
+		The Translations must be stored in the Folder ..../scribus/plugins
+
+26.06.2002	Fixed a minor Bug in the PDF-Exporter.
+		Added a Dialog for selecting Fields in the Annotation Properties Dialog
+		Extended the JavaScript Editor with a Menu Bar for the most common
+		editing tasks.
+
+Changes since Version 0.7.4
+25.06.2002	New Developers Release 0.7.5
+
+24.06.2002	Finished development of the export of PDF-Forms.
+		Doubleclicking an Annotation now opens the Annotation Properties Dialog
+		
+08.06.2002	Began to develop the export of interactive PDF-Elements.
+
+Changes since Version 0.7.3
+07.06.2002	New Developers Release 0.7.4
+
+03.06.2002	Added document-wide Layers.
+
+01.06.2002	Added 2 new Buttons to the Node-Palette for resetting Controlpoints
+
+29.05.2002	The Clipping Paths of Picture and Text Frame are now
+		also Bezier Curves.
+
+27.05.2002	You can now convert Polygons to Beziercurves and vice versa
+
+Changes since Version 0.7.2
+26.05.2002	New Developers Release 0.7.3
+
+25.05.2002	Doubleclicking on an Object does now the following:
+		for Rectangles, Ovals and Lines:  Opens the Modify Object Dialog
+		for Text and Pictures:            Enters Textediting or Picture moving state
+		for Path-Texts and Bezier Curves: Enters Node editing mode
+
+24.05.2002	Text can now be attached to a Bezier Curve.
+
+23.05.2002	New Object: Bezier Curves
+		Combined with Polylines in one Objecttype.
+
+22.05.2002	Finished Redesign of the Node-Palette
+
+20.05.2002	New Object: Polylines
+
+19.05.2002	Now all 8 handles of an object are fully functional.
+
+16.05.2002	Improved behavior of the Zoom Tool.
+
+15.05.2002	Color-Profiles can have now the extensions .icm or .icc (Lower or Uppercase)
+
+14.05.2002	The Polygon properties Dialog has now an Option to rotate the Polygon
+
+13.05.2002	You can convert between Textframes, Pictureframes and Polygons with the
+		Context Menu.
+
+Changes since Version 0.7.1:
+12.05.2002	New Developers Release 0.7.2
+
+11.05.2002	Finished the Polygon Preferences Dialog.
+
+10.05.2002	Added Polygons
+		Final fixes for the Line-Code.
+
+09.05.2002	Finished Redesign of the Measurements Palette
+
+08.05.2002	Lines thinner than 1 pt are now possible.
+
+05.05.2002	Begun redesign of the Measurements Palette
+
+03.05.2002	Improved editing the Clipping-Path.
+
+28.04.2002	New Developers-Release 0.7.1
+		Fixed bug with "Save as..."
+		Added missing math.h to scribusXml.h
+		Added Lithauian translation
+
+27.04.2002	New Developers-Release 0.7
+		Ported to QT3
+		Rewrote the code for the Lines.
+		Changed the New File Dialog
+		Added the ability to print via an external Command.
+
+13.04.2002	New stable Version 0.6
+		Fixed a great bunch of bugs since Version 0.5.8
+		
+Changes since Version 0.5.7:
+29.03.2002	Extended the Measurements Palette a little.
+
+26.03.2002	Removed a bug with linked Textframes which caused infinite recursion.
+		Added the ability to set the Application Font Size in the Preferences.
+		
+25.03.2002	Added iso8859-15 encoding for the PDF-Export
+
+24.03.2002	Changed the Font related Code so that Fonts encoded in ISO-8859-2
+		can be used for PDF-Export
+
+Changes since Version 0.5.6:
+21.03.2002	Linked Textframes are now exported as PDF-Articles.
+
+20.03.2002	Added PDF-Presentation Effects to the PDF-Exporter.
+
+19.03.2002	Costum Clipping Paths of Text- and Pictureframes are now
+		scaled accordingly if the Frame is resized.
+
+18.03.2002	Changed the behaviour of Template Pages. They act now as
+		a background Layer. Objects of Template Pages are no longer
+		selectable if you are working on normal Pages.
+
+17.03.2002	Text- and Pictureframes are able to have rounded Corners.
+
+09.03.2002	Rectangles can have round Edges.
+
+Changes since Version 0.5.5:
+01.03.2002	Now you can define your own Keyboard-Shortcuts.
+
+23.02.2002	Hypertext-Links in PDF are now useable.
+
+17.02.2002	Now you can export PDF-Bookmarks as a Tree.
+
+07.02.2002	Redesigned the PDF-Options dialog a little.
+		Changed parsing of /etc/printcap .
+		
+06.02.2002	Enabled downsampling of Pictures in the PDF-Export.
+
+05.02.2002	Scribus now checks that fonts which are listed in fonts.dir
+		or fonts.scale really do exist.(Mandrake 8.1 seems to have
+		some faulty font.dir files)
+
+04.02.2002	Made some Bugfixes with linked Textboxes.
+
+02.02.2002	The PDF-Export works now.
+
+19.01.2002	Began work on a new PDF-Exporter.
+
+17.01.2002	Scribus can now read embedded Profiles from
+		TIFF-Pictures.
+		
+15.01.2002	Added TIFF-Support.
+
+06.01.2002	Experimental Support for Colormanagement
+
+28.12.2001	Plugins are now working.
+
+15.12.2001	Last Bugfixes in the postscript driver and some other places.
+
+11.12.2001	RGB-Mode of the Color-Chooser changed slightly.
+
+09.12.2001	Scribus now uses the extension .scd for Documents to avoid
+		conflicts with other Applications.
+		
+08.12.2001	The Postscript-Driver now uses only PS-Level 2 constructs
+		except for PDF-creation. PS-Level 3 is used to create PDF-
+		Files with masked Images due to a bug in Ghostscript.
+
+30.11.2001	Added custom Fileselector with Previews.
+
+28.11.2001	New Dialog for searching of Pictures.
+
+26.11.2001	Added RGB-Mode to the Color-Chooser
+		New Version 0.5
+
+24.11.2001	Added Keyboard Shortcuts for Textalignments
+		CTRL-E = centered, CTRL-L = left, CTRL-R = right
+		Extended the Preferences a little.
+		Added zooming to Selection Rectangle.
+
+22.11.2001	Added a Recent Documents Menue.
+
+21.11.2001	Added a Dialog for quick finding of missing Pictures.
+		Improved Screen-Redraw
+		New Version 0.4.10
+
+17.11.2001	Added french documentation contributed by Yves Ceccone <yves@yeccoe.org>
+		Made even more speed improvements.
+
+16.11.2001	Fixed several bugs
+
+14.11.2001	New french translation contributed by Yves Ceccone <yves@yeccoe.org>
+		Made some more speed improvements with large Documents.
+		Added smart hypens for better Wordbreaks.
+
+12.11.2001	Eliminated more unneeded redraws.
+		New Version 0.4.9
+
+10.11.2001	Objectgroups are now fully working.
+
+09.11.2001	Fixed a bug which causes Scribus to crash when loading Documents
+		which contain the character � This crash happens only in the
+		locale fr.
+
+07.11.2001	Objects can now be grouped together
+
+05.11.2001	Scribus now displays Pages of Documents with facing Pages side by side.
+		This can switched off in the Preferences.
+		Some new Icons contributed by Alastair Robinson.
+		New Version 0.4.8
+
+03.11.2001	Template pages are now fully working.
+		Added Slovak and Ukrainian translation.
+		
+01.11.2001	Template pages can now be used.
+
+31.10.2001	Updated TTF-Code from Alastair Robinson
+
+29.01.2001	New Version 0.4.7
+		Began work on template pages.
+
+28.10.2001	Fixed a bug that caused Scribus not to find Fonts on RedHat-Systems (again)
+		Polished the Scrapbook-Window a little.
+
+26.10.2001	Implemented the first subset of Keyboard Shortcuts.
+
+24.10.2001	Implemented the usual Selection Rectangle.
+		Bugfixes, Bugfixes, Bugfixes....
+
+23.10.2001	Fixed some bugs in the printing of text on the screen.
+		New Version 0.4.6
+
+22.10.2001	Fixed a bug that prevents Scribus from starting properly.
+		Patch submitted by Arnd Bergmann <arnd@bergmann-dalldorf.de>
+
+20.10.2001	Added a Scrapbook-Window for storing often used objects.
+		Fixed numerous minor bugs.
+		TTF-Fonts can now be printed. Code contributed by Alastair Robinson.
+
+14.10.2001	Fixed a Bug that causes Scribus not to print correctly.
+		Began work on TTF-Support, Code contributed by Alastair Robinson.
+		New version 0.4.5
+
+11.10.2001	Added a Palette for Frame-Editing
+
+06.10.2001	New Version 0.4.4
+		Scribus now uses the AFM-File of a Font if available.
+		
+03.10.2001	Added the Alignments Full and Forced.
+
+02.10.2001	Added new Options to Paragraph-Styles
+		Fixed various bugs.
+		Enhanched printing speed.
+		Patch submitted by Alastair Robinson <blackfive@fakenhamweb.co.uk>
+
+01.10.2001	New Version 0.4.3
+
+29.09.2001	Now you can set a Backgroundcolor for the Pages (Display only)
+
+28.09.2001	Implemented first subset of Paragraph-Style-Templates.
+		Fixed bug regarding the display of the rulers
+		Fixed bug in the code for the Wheel-Mouse
+		Patches submitted by Alastair Robinson <blackfive@fakenhamweb.co.uk>
+
+23.09.2001	Fixed a bug in the installation of the German documentation.
+		Fixed bug regarding the display of the Gridlines.
+		Patch submitted by Alastair Robinson <blackfive@fakenhamweb.co.uk>
+
+22.09.2001	New Version 0.4.2
+		Implemented Textalignments Left, Right and Center.
+		
+21.09.2001	Finished basic Color-Separations.
+		Fixed a bug in the embedding of Fonts in the Postscript-
+		output. Patch submitted by Alastair Robinson <blackfive@fakenhamweb.co.uk>
+
+20.09.2001	Removed a bug that causes Text that is located on other
+		pages than the first not being printed.
+
+18.09.2001	New Print-Dialog which supports Options required for
+		doing Separations.
+
+16.09.2001	The EPS-Import now recognizes DCS-Comments for CMYK-Colors
+		in the EPS-Files. Scribus imports these Colors.
+		
+15.09.2001	New ColorPicker for CMYK-Colors.
+
+10.09.2000	Changed the Color-Representation to CMYK-Colors
+
+08.09.2001	Released Version 0.4 to the Public
+
+29.08.2001	Finished reprogramming the Dialogs.
+
+27.08.2001	Version 0.4
+		Redesigned Distribute/Align Dialog
+		
+25.08.2001	Decided to make Version 0.3.11 the Release Candiate for 0.4
+		Limited maximum Pointsize for Text to 512 pt.
+		
+19.08.2001	New Version 0.3.11
+		Begin redesigning all Dialog so that Texts in all
+		Languages will fit.
+
+17.08.2001      Added Confirmation Dialogs for File->New, File->Open
+                if there is an unsaved Document in use.
+
+15.08.2001      Added automatic Linebreak on Word-Boundarys.
+
+14.08.2001      Removed the "No Fill" Checkboxes in the Modify Objects Dialog,
+                Preferencens and in the Contextmenue. Their Functionality is
+                now achieved by the Color "None".
+
+13.08.2001      Redesigned About-Box.
+
+12.08.2001      Improved Drag'nDrop.
+                New Version 0.3.10
+
+10.08.2001      ImageMagick and pfb2pfa are no longer required
+                to run Scribus
+
+09.08.2001      Added Toolbar to Main Window.
+
+08.08.2001      Added Spanish and Catalan Translations.
+                Images with Transparency are now correct printed.
+
+06.08.2001      Added PDF-Annnotations to PDF-Export.
+
+05.08.2001      Extended Drag'n'Drop.
+                Now you can:
+                Drag Pictures into a Picture-Frame.
+                Drag Textfiles into a Textbox.
+                Drag Text from another Applications into a Textbox.
+                Drag Items from Konquerer to Scribus.
+                With the right Mousebutton you can:
+                Drag Items to another place in the Document (copying it).
+                Drag Items to the KDE-Desktop.
+                Drag Items to Konquerer.
+                Drag Items to another Application, where they appear as Text.
+
+04.08.2001      Enabled Drag'n'Drop of Pictures to Scribus
+                New Version 0.3.9
+
+03.08.2001      Now you can choose Units for the Documents. Currently there
+                are Typographic Points (pt) and Millimeters (mm) supported.
+
+01.08.2001      Added new About-Box with a Logo contributed by Thomas Zastrow.
+                Added ability to display the Margins and the Guides in front
+                of the Page.
+
+31.07.2001      New Try on supporting other codecs than ISO-8859-1
+
+29.07.2001      Fixed various Bugs, implemented Clipping on Page-Boundarys
+                in the Postscript-Output.
+
+28.07.2001      Added extended German Documentation contributed
+                by Thomas Zastrow.
+                New Version 0.3.8
+
+26.07.2001      Added Preferences for the Tools.
+
+25.07.2001      Added Cursor-Up and Cursor-Down for Textframes.
+
+23.07.2001      Linked Textframes finished, Automatic Textframes
+                are now connected to a Textchain.
+
+21.07.2001      Linked Textframes can be created with the mouse,
+                new Version 0.3.7
+
+19.07.2001      Linked Textframes can now be saved to Disk.
+                Disabled linked Frames for Release 0.3.6 because
+                this Feature isn't ready for public Release.
+
+18.07.2001      Linked Textframes added (experimental)
+
+16.07.2001      Scribus now uses XML for his Preferences.
+
+15.07.2001      File-Format for Documents changed to XML.
+
+14.07.2001      Export to XML added
+                New version 0.3.6
+
+13.07.2001      Added French translation contributed from Michel Briand
+
+12.07.2001      Fixed Bug in PageItem.cpp that prevents large Textfiles to
+                be loaded and display correct.
+                Measurement Palette finished.
+
+11.07.2001      Old Measurement-Palette removed
+                Minimized Redraws
+
+10.07.2001      In the Measurement-Palette you can step by 10th of a unit
+                in all SpinBoxes by holding down the Shift-Key.
+
+09.07.2001      New Measurement-Palette partially functional
+
+08.07.2001      Begin redesigning Measurement-Palette.
+                Textflow-Flag added to PageItems.
+
+07.07.2001      Completed redesigning Modify-Object Dialog.
+                Serializer: Fixed Bug loading Documents.
+                New Version 0.3.5
+
+06.07.2001      Modify-Objects also handles Pictureframes now.
+
+05.07.2001      Documentation is now installed in $prefix/share/scribus/doc/(locale)
+                Added Modify-Dialog to Context-Menue
+
+04.07.2001      Begin redesigning Modify-Object Dialog
+
+03.07.2001      Added Online-Helpbrowser
+                Fixed a bug with magnetic Guides
+
+01.07.2001      Added Typestyles Bold and Small Caps.
+
+30.06.2001      Added transparency to EPS-Images.
+                Added ability to load Colors from other Documents
+                New Version 0.3.4
+
+29.06.2001      Improved printing of underlined and strike Characters.
+                Documentation extended.
+
+28.06.2001      Bugs in Bugreport submitted by Uwe Steinmann fixed
+                Made Resizing and Moving of Objects covered by other
+                Objects more useable.
+                Linespacing is now a float Value.
+
+27.06.2001      Added Typestyles Underline and Strikethru
+
+26.06.2001      Fixed various Redraw-Bugs introduced by QT-2.3
+                In scaled Painters Lines must have a width >= 1
+                to avoid drawing outside of Clipping-Area
+
+24.06.2001      Hopefully fixed a serious Bug, Scribus could
+                crash badly killing the X-Server when editing
+                the Clipping-Path of a Picture. Bug was reported
+                by Attila Keller.
+                Added Typstyle Italic
+                New Version 0.3.3
+
+22.06.2001      Bugfixes for Cursorhandling, changed behavior
+                of the Buttons for the Typestyles.
+                Added Preferences for Typestyles
+
+21.06.2001      Implemented Typestyle Subscribt
+                Partially added Tool-Tips to Measurement-Palette
+
+20.06.2001      Implemented first Typestyle Superscript
+
+18.06.2001      Removed Bug from Manual Kerning
+                Now it is possible to flip Textboxes like Images
+
+17.06.2001      Modify Objects Dialog for Textframes working
+                Manual Kerning added
+
+16.06.2001      Move Pages Dialog added
+                Start working on Modify Objects Dialog
+                Now Version 0.3.2
+
+15.06.2001      No more use of xset -q to get the Font-Path.
+                Thank to Christian Tpp, who pointed out a
+                way to get the Font-Path without xset.
+
+14.06.2001      Insert Page now works
+                Delete Page Dialog works
+                Added Tooltips for Tools-Palette
+
+12.06.2001	Unicode-Support enhanced???
+		Insert Page-Dialog added
+
+10.06.2001      new Options added to PDF-Options-Dialog
+                configure recognizes now --prefix
+
