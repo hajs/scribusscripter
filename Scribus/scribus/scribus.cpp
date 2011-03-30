@@ -188,6 +188,7 @@ for which a new license (GPL+exception) is in place.
 #include "ui/selectobjects.h"
 #include "serializer.h"
 #include "ui/smlinestyle.h"
+#include "ui/smtablestyle.h"
 #include "ui/smtextstyles.h"
 #include "ui/splash.h"
 #include "ui/storyeditor.h"
@@ -562,6 +563,9 @@ void ScribusMainWindow::initPalettes()
 
 	// initializing style manager here too even it's not strictly a palette
 	styleManager = new StyleManager(this, "styleManager");
+#ifdef NEW_TABLES
+	styleManager->addStyle(new SMTableStyle());
+#endif
 	styleManager->addStyle(new SMLineStyle());
 	SMCharacterStyle *tmpCS = new SMCharacterStyle();
 	styleManager->addStyle(new SMParagraphStyle(tmpCS->tmpStyles()));

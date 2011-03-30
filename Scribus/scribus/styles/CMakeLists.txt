@@ -15,6 +15,7 @@ SET(SCRIBUS_STYLES_LIB_SOURCES
   linestyle.cpp
   charstyle.cpp
   paragraphstyle.cpp
+  tablestyle.cpp
 )
 
 QT4_WRAP_CPP(SCRIBUS_STYLES_MOC_SOURCES ${SCRIBUS_STYLES_MOC_CLASSES})
