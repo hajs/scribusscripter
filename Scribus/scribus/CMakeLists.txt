@@ -137,6 +137,7 @@ SET(SCRIBUS_UI_SRC
   ui/selectobjects.ui
   ui/shortcutwidget.ui
   ui/smcstylewidget.ui
+  ui/smtablestylewidget.ui
   ui/smlinestylewidget.ui
   ui/smpstylewidget.ui
   ui/smreplacedia.ui
@@ -389,6 +390,7 @@ SET(SCRIBUS_MOC_CLASSES
   ui/smcheckbox.h
   ui/smcolorcombo.h
   ui/smcstylewidget.h
+  ui/smtablestylewidget.h
   ui/smfontcomboh.h
   ui/smlinestyle.h
   ui/smlinestylewidget.h
@@ -402,6 +404,7 @@ SET(SCRIBUS_MOC_CLASSES
   ui/smstyleselect.h
   ui/smtabruler.h
   ui/smtextstyles.h
+  ui/smtablestyle.h
   ui/spalette.h
   ui/spiralvectordialog.h
   ui/spiralwidget.h
@@ -787,6 +790,7 @@ SET(SCRIBUS_SOURCES
   ui/smcheckbox.cpp
   ui/smcolorcombo.cpp
   ui/smcstylewidget.cpp
+  ui/smtablestylewidget.cpp
   ui/smfontcomboh.cpp
   ui/smlinestyle.cpp
   ui/smlinestylewidget.cpp
@@ -801,6 +805,7 @@ SET(SCRIBUS_SOURCES
   ui/smstyleselect.cpp
   ui/smtabruler.cpp
   ui/smtextstyles.cpp
+  ui/smtablestyle.cpp
   ui/spalette.cpp
   ui/spiralvectordialog.cpp
   ui/spiralwidget.cpp
