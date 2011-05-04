@@ -25,13 +25,13 @@ class DialogsAPI : public QObject
     Q_PROPERTY(QWidget* documentChecker READ documentChecker);
     Q_PROPERTY(QWidget* pages READ pages);
     Q_PROPERTY(QWidget* bookmarks READ bookmarks);
+    Q_PROPERTY(bool newdocdia READ newdocdia);
 public:
     DialogsAPI();
     virtual ~DialogsAPI();
 
 public slots:
     void alert(const QString & message);
-    bool newdocdia();
 
 private:
     /**
@@ -105,6 +105,12 @@ private:
      */
     QWidget* bookmarks() {
         return (QWidget*)ScCore->primaryMainWindow()->bookmarkPalette;
+    };
+    /** Scripter.dialogs.newdocdia
+     *  Property
+     */
+    bool newdocdia() {
+        return ScCore->primaryMainWindow()->slotFileNew();
     };
 };
 
