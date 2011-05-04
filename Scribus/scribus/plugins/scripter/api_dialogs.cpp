@@ -36,3 +36,13 @@ void DialogsAPI::alert(const QString & message)
         QMessageBox::Ok|QMessageBox::Default|QMessageBox::Escape,
         QMessageBox::NoButton);
 }
+
+/**
+ * Scripter.dialogs.newdocdia()
+ * show new document dialog
+ *
+ */
+bool DialogsAPI::newdocdia()
+{
+    return ScCore->primaryMainWindow()->slotFileNew();
+}

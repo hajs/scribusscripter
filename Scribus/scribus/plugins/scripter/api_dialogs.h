@@ -31,6 +31,7 @@ public:
 
 public slots:
     void alert(const QString & message);
+    bool newdocdia();
 
 private:
     /**
