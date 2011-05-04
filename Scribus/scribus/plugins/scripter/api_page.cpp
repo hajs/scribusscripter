@@ -356,3 +356,16 @@ void PageAPI::placeSXD(const QString & filename, const double x, const double y)
 {
     placeImage(FORMATID_SXDIMPORT, filename, x, y);
 }
+
+
+/**
+ *  Scripter.activeDocument.activePage.savePageAsEPS(filename)
+ * filename is QString
+ */
+void PageAPI::savePageAsEPS(const QString &filename)
+{
+    QString epsError;
+    bool ret = ScCore->primaryMainWindow()->DoSaveAsEps(filename, epsError);
+    if(!ret)
+        RAISE("Failed to save as EPS");
+}

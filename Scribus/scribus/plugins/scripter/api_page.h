@@ -37,6 +37,7 @@ public slots:
     void placeODG(const QString & filename, const double x, const double y);
     void placeEPS(const QString & filename, const double x, const double y);
     void placeSXD(const QString & filename, const double x, const double y);
+    void savePageAsEPS(const QString & filename);
 
 private:
     int position();
