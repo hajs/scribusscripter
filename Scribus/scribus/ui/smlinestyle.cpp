@@ -12,6 +12,7 @@ for which a new license (GPL+exception) is in place.
 #include "smlinestylewidget.h"
 #include "scribus.h"
 #include "propertiespalette.h"
+#include "propertiespalette_line.h"
 #include "scribusdoc.h"
 #include "scribusview.h"
 #include "selection.h"
@@ -229,7 +230,11 @@ void SMLineStyle::apply()
 	doc_->MLineStyles = tmpLines;
 	QMap<QString, QString> replacement;
 	for (int i = 0; i < deleted_.count(); ++i)
+	{
+		if (deleted_[i].first == deleted_[i].second)
+			continue;
 		replacement[deleted_[i].first] = deleted_[i].second;
+	}
 
 	deleted_.clear();
 
@@ -261,7 +266,7 @@ void SMLineStyle::apply()
 		}
 	}
 	doc_->changed();
-	doc_->scMW()->propertiesPalette->SetLineFormats(doc_);
+	doc_->scMW()->requestUpdate(reqLineStylesUpdate);
 	// Better not call DrawNew() here, as this will cause several unnecessary calls
 	// doc_->view()->DrawNew();
 	selectionIsDirty_ = false;
@@ -349,7 +354,7 @@ void SMLineStyle::nameChanged(const QString &newName)
 	QList<RemoveItem>::iterator it;
 	for (it = deleted_.begin(); it != deleted_.end(); ++it)
 	{
-		if ((*it).second == oldName)
+		if (it->second == oldName)
 		{
 			oldName = (*it).first;
 			deleted_.erase(it);
@@ -357,7 +362,8 @@ void SMLineStyle::nameChanged(const QString &newName)
 		}
 	}
 
-	deleted_.append(RemoveItem(oldName, newName));
+	if (oldName != newName)
+		deleted_.append(RemoveItem(oldName, newName));
 }
 
 void SMLineStyle::changeEvent(QEvent *e)

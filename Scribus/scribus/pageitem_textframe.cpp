@@ -905,10 +905,14 @@ void PageItem_TextFrame::layout()
 //		qDebug("textframe: len=%d, going back", itemText.length());
 		invalid = false;
 		PageItem_TextFrame* prevInChain = dynamic_cast<PageItem_TextFrame*>(BackBox);
-		if (!prevInChain)
-			qDebug() << QString("layout(): backBox=%1 is no textframe!!").arg((ulong)BackBox);
-		else 
-			BackBox->layout();
+		while (prevInChain && prevInChain->invalid)
+		{
+			if (!prevInChain->BackBox || !prevInChain->BackBox->invalid)
+				break;
+			prevInChain = dynamic_cast<PageItem_TextFrame*>(prevInChain->BackBox);
+		}
+		if (prevInChain && prevInChain->invalid)
+			prevInChain->layout();
 		// #9592 : warning, BackBox->layout() may not layout BackBox next box
 		if (!invalid)
 			return;
@@ -2411,7 +2415,7 @@ void PageItem_TextFrame::DrawObj_Item(ScPainter *p, QRectF cullingArea)
 							asce = charStyleS.font().ascent(charStyleS.fontSize() / 10.0);
 							wide = hls->glyph.wide();
 							QRectF scr;
-							if (hls->ch == SpecialChars::OBJECT)
+							if ((hls->ch == SpecialChars::OBJECT)  && (hls->embedded.hasItem()))
 							{
 								double ww = (hls->embedded.getItem()->gWidth + hls->embedded.getItem()->lineWidth()) * hls->glyph.scaleH;
 								double hh = (hls->embedded.getItem()->gHeight + hls->embedded.getItem()->lineWidth()) * hls->glyph.scaleV;
@@ -2425,7 +2429,7 @@ void PageItem_TextFrame::DrawObj_Item(ScPainter *p, QRectF cullingArea)
 					}
 				}
 				// Unneeded now that glyph xadvance is set appropriately for inline objects by layout() - JG
-				/*if (hls->ch == SpecialChars::OBJECT)
+				/*if ((hls->ch == SpecialChars::OBJECT) && (hls->embedded.hasItem()))
 					selX += (hls->embedded.getItem()->gWidth + hls->embedded.getItem()->lineWidth()) * hls->glyph.scaleH;
 				else*/
 				selX += hls->glyph.wide();
@@ -2523,14 +2527,14 @@ void PageItem_TextFrame::DrawObj_Item(ScPainter *p, QRectF cullingArea)
 					{
 						p->save();//SA4
 						p->translate(CurX, ls.y);
-						if (hl->ch == SpecialChars::OBJECT)
+						if ((hl->ch == SpecialChars::OBJECT) && (hl->embedded.hasItem()))
 							DrawObj_Embedded(p, cullingArea, charStyle, hl->embedded.getItem());
 						else
 							drawGlyphs(p, charStyle, hl->glyph);
 						p->restore();//RE4
 					}
 					// Unneeded now that glyph xadvance is set appropriately for inline objects by layout() - JG
-					/*if (hl->ch == SpecialChars::OBJECT)
+					/*if ((hl->ch == SpecialChars::OBJECT) && (hl->embedded.hasItem()))
 						CurX += (hl->embedded.getItem()->gWidth + hl->embedded.getItem()->lineWidth()) * hl->glyph.scaleH;
 					else*/
 					CurX += hl->glyph.wide();

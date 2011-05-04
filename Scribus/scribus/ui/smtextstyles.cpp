@@ -6,6 +6,7 @@ for which a new license (GPL+exception) is in place.
 */
 
 #include <QEvent>
+#include <QMessageBox>
 #include <QTabWidget>
 
 #include "alignselect.h"
@@ -15,6 +16,7 @@ for which a new license (GPL+exception) is in place.
 #include "ui/scmwmenumanager.h"
 #include "prefsmanager.h"
 #include "propertiespalette.h"
+#include "propertiespalette_text.h"
 #include "sccombobox.h"
 #include "scribus.h"
 #include "scribusdoc.h"
@@ -291,15 +293,18 @@ void SMParagraphStyle::apply()
 
 	QMap<QString, QString> replacement;
 	for (int i = 0; i < deleted_.count(); ++i)
+	{
+		if (deleted_[i].first == deleted_[i].second)
+			continue;
 		replacement[deleted_[i].first] = deleted_[i].second;
+	}
 
 	doc_->redefineStyles(tmpStyles_, false);
 	doc_->replaceStyles(replacement);
 
 	deleted_.clear(); // deletion done at this point
 
-	doc_->scMW()->propertiesPalette->paraStyleCombo->updateFormatList();
-	doc_->scMW()->propertiesPalette->charStyleCombo->updateFormatList();
+	doc_->scMW()->requestUpdate(reqTextStylesUpdate);
 	// Better not call DrawNew() here, as this will cause several unnecessary calls
 	// doc_->view()->DrawNew();
 	doc_->changed();
@@ -431,7 +436,7 @@ void SMParagraphStyle::nameChanged(const QString &newName)
 	QList<RemoveItem>::iterator it;
 	for (it = deleted_.begin(); it != deleted_.end(); ++it)
 	{
-		if ((*it).second == oldName)
+		if (it->second == oldName)
 		{
 			oldName = (*it).first;
 			deleted_.erase(it);
@@ -439,7 +444,8 @@ void SMParagraphStyle::nameChanged(const QString &newName)
 		}
 	}
 
-	deleted_.append(RemoveItem(oldName, newName));
+	if (oldName != newName)
+		deleted_.append(RemoveItem(oldName, newName));
 
 	if (!selectionIsDirty_)
 	{
@@ -1651,15 +1657,18 @@ void SMCharacterStyle::apply()
 
 	QMap<QString, QString> replacement;
 	for (int i = 0; i < deleted_.count(); ++i)
+	{
+		if (deleted_[i].first == deleted_[i].second)
+			continue;
 		replacement[deleted_[i].first] = deleted_[i].second;
+	}
 
 	doc_->redefineCharStyles(tmpStyles_, false);
 	doc_->replaceCharStyles(replacement);
 
 	deleted_.clear(); // deletion done at this point
 
-	doc_->scMW()->propertiesPalette->paraStyleCombo->updateFormatList();
-	doc_->scMW()->propertiesPalette->charStyleCombo->updateFormatList();
+	doc_->scMW()->requestUpdate(reqTextStylesUpdate);
 	// Better not call DrawNew() here, as this will cause several unnecessary calls
 	// doc_->view()->DrawNew();
 	doc_->changed();
@@ -1788,7 +1797,7 @@ void SMCharacterStyle::nameChanged(const QString &newName)
 	QList<RemoveItem>::iterator it;
 	for (it = deleted_.begin(); it != deleted_.end(); ++it)
 	{
-		if ((*it).second == oldName)
+		if (it->second == oldName)
 		{
 			oldName = (*it).first;
 			deleted_.erase(it);
@@ -1796,7 +1805,8 @@ void SMCharacterStyle::nameChanged(const QString &newName)
 		}
 	}
 
-	deleted_.append(RemoveItem(oldName, newName));
+	if (oldName != newName)
+		deleted_.append(RemoveItem(oldName, newName));
 
 	if (!selectionIsDirty_)
 	{

@@ -89,7 +89,7 @@ void ScripterCore::buildScribusScriptsMenu()
 {
 	QString pfad = ScPaths::instance().scriptDir();
 	QString pfad2;
-	pfad2 = QDir::convertSeparators(pfad);
+	pfad2 = QDir::toNativeSeparators(pfad);
 	QDir ds(pfad2, "*.py", QDir::Name | QDir::IgnoreCase, QDir::Files | QDir::NoSymLinks);
 	if ((ds.exists()) && (ds.count() != 0))
 	{
@@ -199,7 +199,7 @@ void ScripterCore::StdScript(QString basefilename)
 {
 	QString pfad = ScPaths::instance().scriptDir();
 	QString pfad2;
-	pfad2 = QDir::convertSeparators(pfad);
+	pfad2 = QDir::toNativeSeparators(pfad);
 	QString fn = pfad2+basefilename+".py";
 	QFileInfo fd(fn);
 	if (!fd.exists())
@@ -223,11 +223,11 @@ void ScripterCore::RecentScript(QString fn)
 
 void ScripterCore::slotRunScriptFile(QString fileName, bool inMainInterpreter)
 {
-	PyThreadState *stateo = NULL;
 	PyThreadState *state = NULL;
 	QFileInfo fi(fileName);
 	QByteArray na = fi.fileName().toLocal8Bit();
 	// Set up a sub-interpreter if needed:
+	PyThreadState* global_state = NULL;
 	if (!inMainInterpreter)
 	{
 		ScCore->primaryMainWindow()->propertiesPalette->unsetDoc();
@@ -236,7 +236,8 @@ void ScripterCore::slotRunScriptFile(QString fileName, bool inMainInterpreter)
 		qApp->changeOverrideCursor(QCursor(Qt::WaitCursor));
 		// Create the sub-interpreter
 		// FIXME: This calls abort() in a Python debug build. We're doing something wrong.
-		stateo = PyEval_SaveThread();
+		//stateo = PyEval_SaveThread();
+		global_state = PyThreadState_Get();
 		state = Py_NewInterpreter();
 		// Chdir to the dir the script is in
 		QDir::setCurrent(fi.absolutePath());
@@ -335,7 +336,8 @@ void ScripterCore::slotRunScriptFile(QString fileName, bool inMainInterpreter)
 	if (!inMainInterpreter)
 	{
 		Py_EndInterpreter(state);
-		PyEval_RestoreThread(stateo);
+		PyThreadState_Swap(global_state);
+		//PyEval_RestoreThread(stateo);
 //		qApp->restoreOverrideCursor();
 		ScCore->primaryMainWindow()->setScriptRunning(false);
 	}	

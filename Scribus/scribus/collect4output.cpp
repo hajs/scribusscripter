@@ -24,6 +24,7 @@ for which a new license (GPL+exception) is in place.
 #include "util_file.h"
 
 #include <QMessageBox>
+#include <QProgressBar>
 #include <QString>
 #include <QMap>
 #include <QDir>
@@ -251,7 +252,7 @@ void CollectForOutput::processItem(PageItem *ite)
 			QFileInfo itf = QFileInfo(ofName);
 			if (!itf.exists())
 			{
-				ofName = QDir::convertSeparators(PrefsManager::instance()->documentDir() + "/" + ofName);
+				ofName = QDir::toNativeSeparators(PrefsManager::instance()->documentDir() + "/" + ofName);
 				itf.setFile(ofName);
 			}
 		// end of hack
@@ -272,7 +273,7 @@ void CollectForOutput::processItem(PageItem *ite)
 		QFileInfo itf = QFileInfo(ofName);
 		if (!itf.exists())
 		{
-			ofName = QDir::convertSeparators(PrefsManager::instance()->documentDir() + "/" + ofName);
+			ofName = QDir::toNativeSeparators(PrefsManager::instance()->documentDir() + "/" + ofName);
 			itf.setFile(ofName);
 		}
 		if (itf.exists())

@@ -12,6 +12,8 @@ for which a new license (GPL+exception) is in place.
 #include "../formatidlist.h"
 #include "loadsaveplugin.h"
 #include "ui/propertiespalette.h"
+#include "ui/propertiespalette_text.h"
+#include "ui/propertiespalette_line.h"
 
 
 
@@ -290,10 +292,9 @@ void PageAPI::placeImage(const int formatid, const QString & filename, const dou
                 pageXtoDocX(x) - x2, pageYtoDocY(y) - y2);
             ScCore->primaryMainWindow()->view->endGroupTransaction();
             ScCore->primaryMainWindow()->propertiesPalette->updateColorList();
-            ScCore->primaryMainWindow()->propertiesPalette->paraStyleCombo->updateFormatList();
-            ScCore->primaryMainWindow()->propertiesPalette->charStyleCombo->updateFormatList();
-            ScCore->primaryMainWindow()->propertiesPalette->SetLineFormats(
-                ScCore->primaryMainWindow()->doc);
+            ScCore->primaryMainWindow()->propertiesPalette->textPal->paraStyleCombo->updateFormatList();
+            ScCore->primaryMainWindow()->propertiesPalette->textPal->charStyleCombo->updateFormatList();
+            ScCore->primaryMainWindow()->propertiesPalette->linePal->updateLineStyles();
         }
     } else RAISE("Format plug-in not loaded.");
 }

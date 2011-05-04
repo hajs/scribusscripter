@@ -634,6 +634,27 @@ QList<PageItem*> ScribusDoc::getAllItems(QList<PageItem*> &items)
 	return ret;
 }
 
+QList<PageItem*> *ScribusDoc::parentGroup(PageItem* item, QList<PageItem*> *list)
+{
+	QList<PageItem*> *retList = NULL;
+	if (list->contains(item))
+		retList = list;
+	else
+	{
+		for (int a = 0; a < list->count(); ++a)
+		{
+			PageItem* embedded = list->at(a);
+			if (embedded->isGroup())
+			{
+				retList = parentGroup(item, &embedded->asGroupFrame()->groupItemList);
+				if (retList != NULL)
+					break;
+			}
+		}
+	}
+	return retList;
+}
+
 void ScribusDoc::setup(const int unitIndex, const int fp, const int firstLeft, const int orientation, const int firstPageNumber, const QString& defaultPageSize, const QString& documentName)
 {
 	docPrefsData.docSetupPrefs.docUnitIndex=unitIndex;
@@ -1419,10 +1440,6 @@ void ScribusDoc::undoRedoDone()
 {
 	m_Selection->delaySignalsOff();
 	m_docUpdater->endUpdate();
-	// #9500 : Ensure PP is properly disabled when selection is empty
-	// after undoing or redoing an action
-	if (m_Selection->count() == 0)
-		emit firstSelectedItemType(-1);
 }
 
 void ScribusDoc::restore(UndoState* state, bool isUndo)
@@ -2105,15 +2122,14 @@ void ScribusDoc::copyLayer(int layerIDToCopy, int whereToInsert)
 		{
 			sourceSelection.addItem(itemToCopy);
 		}
-		if (sourceSelection.count() != 0)
-		{
-			ScriXmlDoc *ss = new ScriXmlDoc();
-			QString dataS = ss->WriteElem(this, &sourceSelection);
-			ss->ReadElemToLayer(dataS, appPrefsData.fontPrefs.AvailFonts, this, Pages->at(0)->xOffset(), Pages->at(0)->yOffset(), false, true, appPrefsData.fontPrefs.GFontSub, whereToInsert);
-			delete ss;
-		}
-		sourceSelection.clear();
 	}
+	if (sourceSelection.count() != 0)
+	{
+		ScriXmlDoc ss;
+		QString dataS = ss.WriteElem(this, &sourceSelection);
+		ss.ReadElemToLayer(dataS, appPrefsData.fontPrefs.AvailFonts, this, Pages->at(0)->xOffset(), Pages->at(0)->yOffset(), false, true, appPrefsData.fontPrefs.GFontSub, whereToInsert);
+	}
+	sourceSelection.clear();
 }
 
 
@@ -3509,21 +3525,13 @@ void ScribusDoc::checkItemForFonts(PageItem *it, QMap<QString, QMap<uint, FPoint
 			}
 			if ((chr == 30) || (chr == 23))
 			{
-				/* CB Removed forced loading of 0-9 for section based numbering
-				for (uint numco = 0x30; numco < 0x3A; ++numco)
-				{
-					if (it->itemText.charStyle(e)->cfont->CharWidth.contains(numco))
-					{
-						gly = it->itemText.charStyle(e)->cfont->GlyphArray[numco].Outlines.copy();
-						it->itemText.charStyle(e)->cfont->RealGlyphs.insert(numco, gly);
-					}
-				}*/
 				//Our page number collection string
 				QString pageNumberText(QString::null);
 				if (chr == 30)
 				{//ch == SpecialChars::PAGENUMBER
-					//If not on a master page just get the page number for the page and the text
-					if (lc!=0)
+					if (e > 0 && it->itemText.text(e-1) == SpecialChars::PAGENUMBER)
+						pageNumberText=SpecialChars::ZWNBSPACE;
+					else if (lc!=0) //If not on a master page just get the page number for the page and the text
 					{
 //						pageNumberText=getSectionPageNumberForPageIndex(it->OwnPage);
 						pageNumberText = QString("%1").arg(getSectionPageNumberForPageIndex(it->OwnPage),
@@ -8674,6 +8682,23 @@ void ScribusDoc::itemSelection_FlipV()
 	emit firstSelectedItemType(m_Selection->itemAt(0)->itemType());
 }
 
+void ScribusDoc::itemSelection_Rotate(double angle, Selection* customSelection)
+{
+	Selection* itemSelection = (customSelection!=0) ? customSelection : m_Selection;
+	assert(itemSelection!=0);
+
+	if (itemSelection->count() == 0) return;
+	
+	if (itemSelection->count() > 1)
+	{
+		rotateGroup(angle, itemSelection);
+	}
+	else if (itemSelection->count() == 1)
+	{
+		RotateItem(angle, itemSelection->itemAt(0));
+	}
+	changed();
+}
 
 void ScribusDoc::itemSelection_ChangePreviewResolution(int id)
 {
@@ -8782,6 +8807,57 @@ void ScribusDoc::allItems_ChangePreviewResolution(int id)
 	if (!found) //No image frames in the current selection!
 		return;
 	recalcPicturesRes();
+	changed();
+}
+
+void ScribusDoc::item_setFrameShape(PageItem* item, int frameType, int count, double* points)
+{
+	if ((item->itemType() == PageItem::PolyLine) || (item->itemType() == PageItem::PathText))
+			return;
+
+	if (UndoManager::undoEnabled())
+	{
+		// Store shape info in this form:
+		// CHANGE_SHAPE_TYPE - ID of the undo operation
+		// OLD_FRAME_TYPE - original frame type
+		// NEW_FRAME_TYPE - change of frame type
+		// binary QPair<FPointArray, FPointArray> - .first original shape, .second new shape
+		ItemState<QPair<FPointArray,FPointArray> > *is = new ItemState<QPair<FPointArray,FPointArray> >(Um::ChangeShapeType, "", Um::IBorder);
+		is->set("CHANGE_SHAPE_TYPE", "change_shape_type");
+		is->set("OLD_FRAME_TYPE", item->FrameType);
+		is->set("NEW_FRAME_TYPE", frameType);
+		// HACK: this is propably Evil Code (TM). I have to find better way...
+		FPointArray newShape;
+		int ix = 0;
+		for (int i = 0; i < count/2; ++i)
+		{
+			double x = item->width()  * points[ix] / 100.0;
+			double y = item->height() * points[ix+1] / 100.0;
+			newShape.addPoint(x, y);
+			ix += 2;
+		}
+		// HACK: end of hack
+		is->setItem(qMakePair(item->shape(), newShape));
+		UndoManager::instance()->action(item, is);
+	}
+
+	switch (frameType)
+	{
+	case 0:
+		item->SetRectFrame();
+		this->setRedrawBounding(item);
+		break;
+	case 1:
+		item->SetOvalFrame();
+		this->setRedrawBounding(item);
+		break;
+	default:
+		item->SetFrameShape(count, points);
+		this->setRedrawBounding(item);
+		item->FrameType = frameType + 2;
+		break;
+	}
+	item->update();
 	changed();
 }
 
@@ -9483,7 +9559,10 @@ void ScribusDoc::endAlign()
 	changed();
 	m_ScMW->HaveNewSel(m_Selection->itemAt(0)->itemType());
 	for (int i = 0; i < m_Selection->count(); ++i)
+	{
 		setRedrawBounding(m_Selection->itemAt(i));
+		m_Selection->itemAt(i)->invalidateLayout();
+	}
 	m_alignTransaction->commit(); // commit and send the action to the UndoManager
 	delete m_alignTransaction;
 	m_alignTransaction = NULL;
@@ -11782,13 +11861,36 @@ void ScribusDoc::moveGroup(double x, double y, bool fromMP, Selection* customSel
 	regionsChanged()->update(OldRect.adjusted(-10, -10, 20, 20));
 }
 
+void ScribusDoc::rotateGroup(double angle, Selection* customSelection)
+{
+	Selection* itemSelection = (customSelection!=0) ? customSelection : m_Selection;
+	Q_ASSERT(itemSelection!=0);
 
-void ScribusDoc::rotateGroup(double angle, FPoint RCenter)
+	double gx, gy, gh, gw;
+	FPoint rotationPoint(0, 0);
+	itemSelection->getGroupRect(&gx, &gy, &gw, &gh);
+	if (this->rotMode == 0)
+		rotationPoint = FPoint(gx, gy);
+	if (this->rotMode == 1)
+		rotationPoint = FPoint(gx, gy);
+	if (this->rotMode == 2)
+		rotationPoint = FPoint(gx + gw / 2.0, gy + gh / 2.0);
+	if (this->rotMode == 3)
+		rotationPoint = FPoint(gx, gy+gh);
+	if (this->rotMode == 4)
+		rotationPoint = FPoint(gx+gw, gy+gh);
+	rotateGroup(angle, rotationPoint, itemSelection);
+}
+
+void ScribusDoc::rotateGroup(double angle, FPoint RCenter, Selection* customSelection)
 {
 	double gxS, gyS, ghS, gwS;
 	double sc = 1; // FIXME:av Scale;
 	PageItem* currItem;
-	m_Selection->getGroupRect(&gxS, &gyS, &gwS, &ghS);
+	Selection* itemSelection = (customSelection!=0) ? customSelection : m_Selection;
+	Q_ASSERT(itemSelection!=0);
+	
+	itemSelection->getGroupRect(&gxS, &gyS, &gwS, &ghS);
 	QTransform ma;
 	ma.translate(RCenter.x(), RCenter.y());
 	ma.scale(1, 1);
@@ -11797,18 +11899,18 @@ void ScribusDoc::rotateGroup(double angle, FPoint RCenter)
 //	gyS -= minCanvasCoordinate.y();
 	QRect oldR = QRect(static_cast<int>(gxS*sc-5), static_cast<int>(gyS*sc-5), static_cast<int>(gwS*sc+10), static_cast<int>(ghS*sc+10));
 	FPoint n;
-	for (int a = 0; a < m_Selection->count(); ++a)
+	for (int a = 0; a < itemSelection->count(); ++a)
 	{
-		currItem = m_Selection->itemAt(a);
+		currItem = itemSelection->itemAt(a);
 		n = FPoint(currItem->xPos() - RCenter.x(), currItem->yPos() - RCenter.y());
 		currItem->setXYPos(ma.m11() * n.x() + ma.m21() * n.y() + ma.dx(), ma.m22() * n.y() + ma.m12() * n.x() + ma.dy());
 		currItem->rotateBy(angle);
 		setRedrawBounding(currItem);
 	}
-	currItem = m_Selection->itemAt(0);
+	currItem = itemSelection->itemAt(0);
 	GroupOnPage(currItem);
-	m_Selection->setGroupRect();
-	m_Selection->getGroupRect(&gxS, &gyS, &gwS, &ghS);
+	itemSelection->setGroupRect();
+	itemSelection->getGroupRect(&gxS, &gyS, &gwS, &ghS);
 //	gxS -= minCanvasCoordinate.x();
 //	gyS -= minCanvasCoordinate.y();
 	regionsChanged()->update(QRectF(gxS-5, gyS-5, gwS+10, ghS+10).unite(oldR));
@@ -12307,8 +12409,10 @@ void ScribusDoc::itemSelection_UnGroupObjects(Selection* customSelection)
 		for (int b = 0; b < toDelete.count(); b++)
 		{
 			currItem = toDelete.at(b);
-			int d = Items->indexOf(currItem);
-			Items->removeAt(d);
+			QList<PageItem*> *list = Items;
+			list = parentGroup(currItem, Items);
+			int d = list->indexOf(currItem);
+			list->removeAt(d);
 			itemSelection->removeItem(currItem);
 			Selection tempSelection(this, false);
 			tempSelection.delaySignalsOn();
@@ -12317,7 +12421,7 @@ void ScribusDoc::itemSelection_UnGroupObjects(Selection* customSelection)
 			{
 				PageItem* gItem = currItem->groupItemList.at(c);
 				gItem->setXYPos(currItem->xPos() + gItem->gXpos, currItem->yPos() + gItem->gYpos, true);
-				Items->insert(d, gItem);
+				list->insert(d, gItem);
 				itemSelection->addItem(currItem->groupItemList.at(gcount - c));
 				tempSelection.addItem(currItem->groupItemList.at(gcount - c));
 			}
@@ -12337,11 +12441,15 @@ void ScribusDoc::itemSelection_UnGroupObjects(Selection* customSelection)
 			}
 			tempSelection.clear();
 			tempSelection.delaySignalsOff();
-			delete currItem;
 			renumberItemsInListOrder();
 		}
 		setLoading(wasLoad);
 		itemSelection->delaySignalsOff();
+
+		// Delete items after delaySignalsOff() call so that palette are updated before item deletion
+		for (int b = 0; b < toDelete.count(); b++)
+			delete currItem;
+
 		// Create undo actions
 /*		UndoTransaction* undoTransaction = NULL;
 		if (UndoManager::undoEnabled() && toDelete.count() > 1)

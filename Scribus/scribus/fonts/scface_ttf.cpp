@@ -75,7 +75,7 @@ double KernFeature::getPairValue ( unsigned int glyph1, unsigned int glyph2 ) co
 		}
 		else
 		{
-			qDebug()<<"Search in classes";
+			//qDebug()<<"Search in classes";
 			foreach (const quint16& coverageId, coverages.keys())
 			{
 				// for each pairpos table, coverage lists covered _first_ (left) glyph
@@ -207,7 +207,7 @@ void KernFeature::makeCoverage()
 					}
 					else
 					{
-						for ( unsigned int gl ( Start ); gl >= End; --gl )
+						for ( int gl ( Start ); gl >= (int) End; --gl )
 							coverages[SubTable]  << gl;
 					}
 				}

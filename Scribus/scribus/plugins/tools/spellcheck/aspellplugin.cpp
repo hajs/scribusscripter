@@ -12,6 +12,8 @@ for which a new license (GPL+exception) is in place.
 #include "scribusdoc.h"
 #include "pageitem.h"
 
+#include <QMessageBox>
+
 // See scplugin.h and pluginmanager.{cpp,h} for detail on what these methods
 // do. That documentatation is not duplicated here.
 // Please don't implement the functionality of your plugin here; do that
@@ -85,19 +87,19 @@ void AspellPlugin::deleteAboutData(const AboutData* about) const
 
 bool AspellPlugin::run(ScribusDoc* doc, QString target)
 {
-	AspellPluginImpl *myPluginImpl = new AspellPluginImpl( doc );
-	Q_CHECK_PTR(myPluginImpl);
+	AspellPluginImpl *aspellPluginImpl = new AspellPluginImpl( doc );
+	Q_CHECK_PTR(aspellPluginImpl);
 	// The spellcheck is disabled when there are no available
 	// dictionaries.
-	if (myPluginImpl->errorMessage().isEmpty())
-		myPluginImpl->exec();
+	if (aspellPluginImpl->errorMessage().isEmpty())
+		aspellPluginImpl->exec();
 	else
 	{
 		doc->scMW()->scrActions[m_actionInfo.name]->setEnabled(false);
 		doc->scMW()->scrActions[m_actionInfo.name]->setVisible(false);
-		QMessageBox::warning(doc->scMW(), tr("Aspell Plugin Error"), myPluginImpl->errorMessage());
+		QMessageBox::warning(doc->scMW(), tr("Aspell Plugin Error"), aspellPluginImpl->errorMessage());
 	}
-	delete myPluginImpl;
+	delete aspellPluginImpl;
 	return true;
 }
 

@@ -15,7 +15,7 @@ for which a new license (GPL+exception) is in place.
 class QEvent;
 
 #include "scribusapi.h"
-#include "scrpalettebase.h"
+#include "scdockpalette.h"
 #include "scribusstructs.h"
 
 class QHBoxLayout;
@@ -52,11 +52,9 @@ public:
 
 signals:
 	void ToggleAllPalettes();
-	void Schliessen();
-	void CloseMpal();
-	void CloseTpal();
 	void objDropped(QString text);
 	void fileDropped(QString path, int testResult);
+	void paletteClosed();
 
 protected:
 	void dragEnterEvent(QDragEnterEvent *e);
@@ -65,7 +63,7 @@ protected:
 	void startDrag(Qt::DropActions supportedActions);
 };
 
-class SCRIBUS_API Biblio : public ScrPaletteBase
+class SCRIBUS_API Biblio : public ScDockPalette
 {
 	Q_OBJECT
 
@@ -127,6 +125,7 @@ protected:
 	int tempCount;
 	QString OldName;
 	QHBoxLayout* buttonLayout;
+	QWidget* containerWidget;
 	QToolButton* newButton;
 	QToolButton* upButton;
 	QToolButton* importButton;
